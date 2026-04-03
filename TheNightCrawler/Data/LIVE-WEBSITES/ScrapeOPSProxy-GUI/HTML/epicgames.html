@@ -1,0 +1,105 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui, shrink-to-fit=no, viewport-fit=cover">
+    <meta id="theme-color-meta" name="theme-color" content="#101014">
+    <meta name="referrer" content="origin-when-cross-origin">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="https://static-assets-prod.unrealengine.com/account-portal/static/manifest.json">
+    <link rel="shortcut icon" href="https://static-assets-prod.unrealengine.com/account-portal/static/epic-favicon-96x96.png">
+    <link rel="apple-touch-icon" href="https://static-assets-prod.unrealengine.com/account-portal/static/epic_logo.png">
+    <link rel="preload" href="https://static-assets-prod.unrealengine.com/account-portal/static/assets/Inter-Bold-CuhepTt8.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://static-assets-prod.unrealengine.com/account-portal/static/assets/Inter-Light-CdXm_ABL.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://static-assets-prod.unrealengine.com/account-portal/static/assets/Inter-Medium-P1cOs5ep.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://static-assets-prod.unrealengine.com/account-portal/static/assets/Inter-Regular-CKDp9E3C.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://static-assets-prod.unrealengine.com/account-portal/static/assets/InterTight-Bold-CPdZBAQJ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://static-assets-prod.unrealengine.com/account-portal/static/assets/InterTight-Black-CBljiM1E.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <script type="text/javascript">
+        try {
+            window.AppInit = Date.now().toString();
+        } catch (err) {
+            console.error(err);
+        }
+
+        window._epicEnableCookieGuard = false;
+
+        if (window.flexview) {
+            (function(){
+                // Immediately start showing real loading progress percentage
+                window.flexview.showProgress();
+
+                // Enter and Escape keys are swapped on the Nintendo Switch and Japanese Specification PlayStations
+                var buttonsSwapped = window.kitt.version.major === 2
+                    ? window.kitt.queryFaceButtonFunction('FaceButton_Right') === 'FaceButton_Enter' // KITT 2
+                    : window.kitt.queryFaceButtonFunction(3) === 0; // KITT 1
+
+                // Allow users to back out from a slow loading process and optionally try again
+                function onKeyDown(event) {
+                    var backButton = buttonsSwapped ? event.keyCode === 13 : event.keyCode === 27;
+                    if (backButton) window.close();
+                }
+
+                document.addEventListener('keydown', onKeyDown);
+
+                var checkProgressInterval = window.setInterval(function() {
+                    if (window.flexview.getProgress() >= 99) {
+                        window.clearInterval(checkProgressInterval);
+                        document.removeEventListener('keydown', onKeyDown);
+                    }
+                }, 1000);
+            })();
+        }
+    </script>
+    <title>Epic Games</title>
+  <script type="module" crossorigin="" src="https://static-assets-prod.unrealengine.com/account-portal/static/assets/index-DXVdtiXh.js"></script>
+  <link rel="stylesheet" crossorigin="" href="https://static-assets-prod.unrealengine.com/account-portal/static/assets/index-CTGxZpYh.css">
+<script src="https://js.hcaptcha.com/1/api.js?render=explicit&amp;uj=true" async="" defer=""></script><link href="https://tracking.epicgames.com/tracking.js" rel="preload" as="script"></head>
+<body style="background: rgba(16, 16, 21, 0.83);">
+<script>
+    const isLightTheme = document.location.search.match(/theme=light/);
+    const width = window.innerWidth;
+    if (!window.ue || !window.ue.signinprompt && !window.ue.vpc && !window.ue.auth) {
+        if (isLightTheme) {
+            const themeMeta = document.getElementById('theme-color-meta');
+            themeMeta.content = '#ffffff';
+            document.body.style.background = 'rgba(255, 255, 255, 0.83)';
+        } else {
+            document.body.style.background = 'rgba(16,16,21,0.83)';
+        }
+    }
+</script>
+<script>
+    const epicTrackingBase = 'https://tracking.epicgames.com';
+    const unrealTrackingBase = 'https://tracking.unrealengine.com';
+    const fortniteTrackingBase = 'https://tracking.fortnite.com';
+    window.__tracking_base = ~window.location.hostname.indexOf('unrealengine') ? unrealTrackingBase : ~window.location.hostname.indexOf('fortnite') ? fortniteTrackingBase : epicTrackingBase;
+    const sid = document.location.search.match(/sid=([^&]*)/);
+    const src = window.__tracking_base + '/tracking.js' + (sid ? ('?sid=' + sid[1]) : '');
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = src;
+    script.async = true;
+    document.body.appendChild(script);
+    const link = document.createElement('link');
+    link.href = src;
+    link.rel = 'preload';
+    link.as = 'script';
+    document.head.appendChild(link);
+</script><script type="text/javascript" src="https://tracking.epicgames.com/tracking.js" async=""></script>
+<noscript>
+    You need to enable JavaScript to run this app.
+</noscript>
+<div id="root"></div>
+
+                  <script>
+                    console.log = function () {};
+                    console.debug = function () {};
+                    console.table = function () {};
+                    console.info = function () {};
+                    console.trace = function () {};
+                  </script>
+                <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9df7cfc36fe62f65',t:'MTc3NDA0MjE1OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+
+</body></html>

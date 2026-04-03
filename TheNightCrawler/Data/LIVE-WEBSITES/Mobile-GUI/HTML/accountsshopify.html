@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!-- saved from url=(0145)https://accounts.shopify.com/lookup?rid=6f5b4e7b-77ad-4259-86c2-080d56a5dc8e&verify=1774382186-CKRf7W7UE34Q84C58KE7s8q9VnHQkGLU2%2FIJ%2BgExxOM%3D -->
+<html lang="en" dir="ltr" class="fresh-html" data-controller="account_lookup" data-action="new"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="preconnect" href="https://shopify-assets.shopifycdn.com/" crossorigin="">
+<link rel="preconnect" href="https://monorail-edge.shopifysvc.com/" crossorigin="">
+<link rel="preconnect" href="https://www.gstatic.com/" crossorigin="">
+<link rel="preconnect" href="https://www.google.com/" crossorigin="">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link rel="preconnect" href="https://www.recaptcha.net/" crossorigin="">
+
+
+    <title>Log in — Shopify</title>
+    <meta name="description" content="The ecommerce platform made for you">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://shopify-assets.shopifycdn.com/shopify-marketing_assets/static/shopify-favicon.png">
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="kJ0mTiIbmziXJyPDP6wTeyt6LjotznRw8QQXu2BPnmpy96FhKB9tjzuEojN1bDsMy-P2Q7HHBa2kjgrcj0tCwA">
+    <meta name="action-cable-url" content="/cable">
+    <meta name="referrer" content="no-referrer">
+    <link rel="canonical" href="https://accounts.shopify.com/lookup">
+
+      <meta name="theme-color" content="#0A1314">
+
+
+
+<link rel="stylesheet" crossorigin="anonymous" href="./Log in — Shopify_files/merchant-public-989163cd8fca411b489860090c4bad282ec4a224cc7a72f19ac98f5796e18d04.css" media="all" data-turbolinks-track="reload" integrity="sha256-/kLeSMocbiyn4YVv+hHGJgTproBSXPdN5WTt4HH+V40=">
+<script src="./Log in — Shopify_files/shared-925b3e8ed4a374aecf1ffcdc58f1664659b4e85ac573a1d49cd40444ccab70c8.js" crossorigin="anonymous" data-appversion="fb49cef9fbebfae85c6c782152171ae6c4d0c0bf" data-bugsnagkey="424330c435072c4c39f8e66cf77d504f" data-releasestage="production" data-turbolinks-track="reload" integrity="sha256-pW+8vKOnHqmbVojcbIBQOHNYNmAD01dx5dEurG4Dkxo="></script>
+
+<script src="./Log in — Shopify_files/merchant-public-b9466fd75d21a111f6f17ac986de42ff7cf5345c7a908bcfb95b74023f67889a.js" crossorigin="anonymous" data-appversion="fb49cef9fbebfae85c6c782152171ae6c4d0c0bf" data-bugsnagkey="424330c435072c4c39f8e66cf77d504f" data-releasestage="production" data-turbolinks-track="reload" defer="defer" integrity="sha256-Nzbtm00wKKDknGdbr+KBdcAOhbCRQkzhTg3nUw3mFRE="></script>
+  <link rel="preload" href="https://shopify-assets.shopifycdn.com/shopifycloud/identity/assets/Inter-Variable-bec2eb93e8276b64e18e0cfeed338a15be1e7b7aa1540c605e5898d2595f7661.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+<script nonce="" data-cdn-host="shopify-assets.shopifycdn.com">
+  (function() {
+    var cdnHost = document.currentScript.dataset.cdnHost;
+    const loadScript = (src) => {
+      const promise = new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = src;
+        script.crossOrigin = 'anonymous';
+        script.onload = () => {
+          resolve(true);
+        };
+        script.onerror = () => {
+          reject(new Error('Failed to load Dux from CDN'));
+        };
+        document.head.appendChild(script);
+      });
+      return promise;
+    }
+
+    loadScript('https://' + cdnHost + '/shopifycloud/dux/dux-6.0.1.min.js')
+      .then(() => {
+        Dux.init({
+          eventHandlerEndpoint: 'https://accounts.shopify.com/.well-known/dux',
+          mode: "production" || 'production',
+          service: 'identity-dux',
+          locale: "en",
+          identityUuid: null,
+          extraMetadata: {
+            deviceId: "b7b0ee9a-8be6-4503-bd9c-599c31ccc016",
+          },
+          enableDenormalization: true,
+          disableLogger: {
+            visibility: true,
+            trafficQuality: true,
+            form: true,
+            scroll: true,
+          }
+        })
+      })
+      .catch((error) => {
+        console.warn('Failed to load Dux from CDN:', error);
+      });
+  })();
+</script><script src="./Log in — Shopify_files/dux-6.0.1.min.js" crossorigin="anonymous"></script>
+
+<script nonce="">
+  (function() {
+    const defaultAttributes = {
+      'locale': "en",
+      'device_id': "b7b0ee9a-8be6-4503-bd9c-599c31ccc016"
+    };
+    const config = {
+      Trekkie: {
+        appName: 'identity',
+      },
+      Clickstream: {},
+      'Session Attribution': {}
+    };
+
+    const analytics = window.analytics = window.analytics || [];
+    if (analytics.integrations) {
+      return;
+    }
+    analytics.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+      'trackForm',
+      'trackLink',
+    ];
+
+    analytics.factory = function(method) {
+      return function(...args) {
+        args.unshift(method);
+        analytics.push(args);
+        return analytics;
+      };
+    };
+
+    for (let i = 0; i < analytics.methods.length; i++) {
+      const key = analytics.methods[i];
+      analytics[key] = analytics.factory(key);
+    }
+
+    analytics.load = function(conf) {
+      analytics.config = conf;
+    };
+    analytics.load(config);
+    analytics.page(defaultAttributes);
+  })();
+</script>
+<script async="" src="./Log in — Shopify_files/trekkie.identity.min.js" crossorigin="anonymous" data-turbolinks-track="reload"></script>
+
+
+<script nonce="">
+  (function() {
+    fetch("/browser_feedback/system_time" + '?t=' + encodeURIComponent(new Date().toISOString()) + '&d=' + encodeURIComponent(btoa(window.location.hostname)), {
+      credentials: 'same-origin',
+    }).then(function(response) {
+      response.text();
+      if (response.status === 500) {
+        document.querySelectorAll('form').forEach(function(form) {
+          form.remove();
+        });
+        document.querySelectorAll('.page-container').forEach(function(el) {
+          el.remove();
+        });
+      }
+    }).catch(function() {});
+  })();
+</script>
+
+
+  <script src="./Log in — Shopify_files/application-97b2d5be779e809292b648d6bbdd39cd5db6a5dbefae2a7a0e65f18ff571949e.js" crossorigin="anonymous" data-turbolinks-track="reload" defer="defer" integrity="sha256-yp6gUqpZTO3CyuUoMB7oax4Rqt+BwMPI+Rc63zea4ko="></script>
+
+
+  <script src="./Log in — Shopify_files/api.js" async="" defer=""></script></head>
+  <body id="body-content" class="page fresh-ui has-dark-background" data-trekkie-device-id="b7b0ee9a-8be6-4503-bd9c-599c31ccc016" data-environment="production" data-dux-initialized="1">
+  <div style="--p-background:rgb(11, 12, 13);--p-background-hovered:rgb(11, 12, 13);--p-background-pressed:rgb(11, 12, 13);--p-background-selected:rgb(11, 12, 13);--p-surface:rgb(32, 33, 35);--p-surface-neutral:rgb(49, 51, 53);--p-surface-neutral-hovered:rgb(49, 51, 53);--p-surface-neutral-pressed:rgb(49, 51, 53);--p-surface-neutral-disabled:rgb(49, 51, 53);--p-surface-neutral-subdued:rgb(68, 71, 74);--p-surface-subdued:rgb(26, 28, 29);--p-surface-disabled:rgb(26, 28, 29);--p-surface-hovered:rgb(47, 49, 51);--p-surface-pressed:rgb(62, 64, 67);--p-surface-depressed:rgb(80, 83, 86);--p-backdrop:rgba(0, 0, 0, 0.5);--p-overlay:rgba(33, 33, 33, 0.5);--p-shadow-from-dim-light:rgba(255, 255, 255, 0.2);--p-shadow-from-ambient-light:rgba(23, 24, 24, 0.05);--p-shadow-from-direct-light:rgba(255, 255, 255, 0.15);--p-hint-from-direct-light:rgba(185, 185, 185, 0.2);--p-on-surface-background:rgb(47, 49, 51);--p-border:rgb(80, 83, 86);--p-border-neutral-subdued:rgb(130, 135, 139);--p-border-hovered:rgb(80, 83, 86);--p-border-disabled:rgb(103, 107, 111);--p-border-subdued:rgb(130, 135, 139);--p-border-depressed:rgb(142, 145, 145);--p-border-shadow:rgb(91, 95, 98);--p-border-shadow-subdued:rgb(130, 135, 139);--p-divider:rgb(26, 28, 29);--p-icon:rgb(166, 172, 178);--p-icon-hovered:rgb(225, 227, 229);--p-icon-pressed:rgb(166, 172, 178);--p-icon-disabled:rgb(84, 87, 90);--p-icon-subdued:rgb(120, 125, 129);--p-text:rgb(227, 229, 231);--p-text-disabled:rgb(111, 115, 119);--p-text-subdued:rgb(153, 159, 164);--p-interactive:rgb(54, 163, 255);--p-interactive-disabled:rgb(38, 98, 182);--p-interactive-hovered:rgb(103, 175, 255);--p-interactive-pressed:rgb(136, 188, 255);--p-focused:rgb(38, 98, 182);--p-surface-selected:rgb(2, 14, 35);--p-surface-selected-hovered:rgb(7, 29, 61);--p-surface-selected-pressed:rgb(13, 43, 86);--p-icon-on-interactive:rgb(255, 255, 255);--p-text-on-interactive:rgb(255, 255, 255);--p-action-secondary:rgb(77, 80, 83);--p-action-secondary-disabled:rgb(32, 34, 35);--p-action-secondary-hovered:rgb(84, 87, 91);--p-action-secondary-pressed:rgb(96, 100, 103);--p-action-secondary-depressed:rgb(123, 127, 132);--p-action-primary:rgb(0, 128, 96);--p-action-primary-disabled:rgb(0, 86, 64);--p-action-primary-hovered:rgb(0, 150, 113);--p-action-primary-pressed:rgb(0, 164, 124);--p-action-primary-depressed:rgb(0, 179, 136);--p-icon-on-primary:rgb(230, 255, 244);--p-text-on-primary:rgb(255, 255, 255);--p-surface-primary-selected:rgb(12, 18, 16);--p-surface-primary-selected-hovered:rgb(40, 48, 44);--p-surface-primary-selected-pressed:rgb(54, 64, 59);--p-border-critical:rgb(227, 47, 14);--p-border-critical-subdued:rgb(227, 47, 14);--p-border-critical-disabled:rgb(131, 23, 4);--p-icon-critical:rgb(218, 45, 13);--p-surface-critical:rgb(69, 7, 1);--p-surface-critical-subdued:rgb(69, 7, 1);--p-surface-critical-subdued-hovered:rgb(68, 23, 20);--p-surface-critical-subdued-pressed:rgb(107, 16, 3);--p-surface-critical-subdued-depressed:rgb(135, 24, 5);--p-text-critical:rgb(233, 128, 122);--p-action-critical:rgb(205, 41, 12);--p-action-critical-disabled:rgb(187, 37, 10);--p-action-critical-hovered:rgb(227, 47, 14);--p-action-critical-pressed:rgb(250, 53, 17);--p-action-critical-depressed:rgb(253, 87, 73);--p-icon-on-critical:rgb(255, 248, 247);--p-text-on-critical:rgb(255, 255, 255);--p-interactive-critical:rgb(253, 114, 106);--p-interactive-critical-disabled:rgb(254, 172, 168);--p-interactive-critical-hovered:rgb(253, 138, 132);--p-interactive-critical-pressed:rgb(253, 159, 155);--p-border-warning:rgb(153, 112, 0);--p-border-warning-subdued:rgb(153, 112, 0);--p-icon-warning:rgb(104, 75, 0);--p-surface-warning:rgb(153, 112, 0);--p-surface-warning-subdued:rgb(77, 59, 29);--p-surface-warning-subdued-hovered:rgb(82, 63, 32);--p-surface-warning-subdued-pressed:rgb(87, 67, 34);--p-text-warning:rgb(202, 149, 0);--p-border-highlight:rgb(68, 157, 167);--p-border-highlight-subdued:rgb(68, 157, 167);--p-icon-highlight:rgb(44, 108, 115);--p-surface-highlight:rgb(0, 105, 113);--p-surface-highlight-subdued:rgb(18, 53, 57);--p-surface-highlight-subdued-hovered:rgb(20, 58, 62);--p-surface-highlight-subdued-pressed:rgb(24, 65, 70);--p-text-highlight:rgb(162, 239, 250);--p-border-success:rgb(0, 135, 102);--p-border-success-subdued:rgb(0, 135, 102);--p-icon-success:rgb(0, 94, 70);--p-surface-success:rgb(0, 94, 70);--p-surface-success-subdued:rgb(28, 53, 44);--p-surface-success-subdued-hovered:rgb(31, 58, 48);--p-surface-success-subdued-pressed:rgb(35, 65, 54);--p-text-success:rgb(88, 173, 142);--p-decorative-one-icon:rgb(255, 186, 67);--p-decorative-one-surface:rgb(142, 102, 9);--p-decorative-one-text:rgb(255, 255, 255);--p-decorative-two-icon:rgb(245, 182, 192);--p-decorative-two-surface:rgb(206, 88, 20);--p-decorative-two-text:rgb(255, 255, 255);--p-decorative-three-icon:rgb(0, 227, 141);--p-decorative-three-surface:rgb(0, 124, 90);--p-decorative-three-text:rgb(255, 255, 255);--p-decorative-four-icon:rgb(0, 221, 218);--p-decorative-four-surface:rgb(22, 124, 121);--p-decorative-four-text:rgb(255, 255, 255);--p-decorative-five-icon:rgb(244, 183, 191);--p-decorative-five-surface:rgb(194, 51, 86);--p-decorative-five-text:rgb(255, 255, 255);--p-border-radius-base:0.25rem;--p-border-radius-wide:0.5rem;--p-card-shadow:0px 0px 5px var(--p-shadow-from-ambient-light), 0px 1px 2px var(--p-shadow-from-direct-light);--p-popover-shadow:-1px 0px 20px var(--p-shadow-from-ambient-light), 0px 1px 5px var(--p-shadow-from-direct-light);--p-modal-shadow:0px 6px 32px var(--p-shadow-from-ambient-light), 0px 1px 6px var(--p-shadow-from-direct-light);--p-top-bar-shadow:0 2px 2px -1px var(--p-shadow-from-direct-light);--p-override-none:none;--p-override-transparent:transparent;--p-override-one:1;--p-override-visible:visible;--p-override-zero:0;--p-override-loading-z-index:514;--p-button-font-weight:500;--p-choice-size:1.25rem;--p-icon-size:0.625rem;--p-choice-margin:0.0625rem;--p-control-border-width:0.125rem;--p-text-field-spinner-offset:0.125rem;--p-text-field-focus-ring-offset:-0.25rem;--p-text-field-focus-ring-border-radius:0.4375rem;--p-button-group-item-spacing:0.125rem;--p-top-bar-height:68px;--p-contextual-save-bar-height:64px;--p-banner-border-default:inset 0 0.125rem 0 0 var(--p-border), inset 0 0 0 0.125rem var(--p-border);--p-banner-border-success:inset 0 0.125rem 0 0 var(--p-border-success), inset 0 0 0 0.125rem var(--p-border-success);--p-banner-border-highlight:inset 0 0.125rem 0 0 var(--p-border-highlight), inset 0 0 0 0.125rem var(--p-border-highlight);--p-banner-border-warning:inset 0 0.125rem 0 0 var(--p-border-warning), inset 0 0 0 0.125rem var(--p-border-warning);--p-banner-border-critical:inset 0 0.125rem 0 0 var(--p-border-critical), inset 0 0 0 0.125rem var(--p-border-critical);--p-badge-mix-blend-mode:luminosity;--p-badge-font-weight:500;--p-non-null-content:&#39;&#39;;--p-thin-border-subdued:0.0625rem solid var(--p-border-subdued);--p-duration-1-0-0:100ms;--p-duration-1-5-0:150ms;--p-ease-in:cubic-bezier(0.5, 0.1, 1, 1);--p-ease:cubic-bezier(0.4, 0.22, 0.28, 1); color: var(--p-text);"><div class="ui-flash-wrapper" id="UIFlashWrapper"><div class="ui-flash" id="UIFlashMessage" data-tg-refresh-always="true" data-flash-has-message="false"><p class="ui-flash__message" tabindex="-1" aria-live="off"></p><div class="ui-flash__close-button"><button class="ui-button ui-button--transparent ui-button--icon-only" aria-label="Close message" type="button" name="button"><svg aria-hidden="true" focusable="false" class="next-icon next-icon--color-white next-icon--size-12"> <use xlink:href="#next-remove"></use> </svg></button></div></div></div></div>
+  <style>          html, body {
+            background-color: rgb(246, 246, 247);
+            color: rgb(32, 34, 35);
+          }
+</style><div style="--p-background:rgb(246, 246, 247);--p-background-hovered:rgb(241, 242, 243);--p-background-pressed:rgb(237, 238, 239);--p-background-selected:rgb(237, 238, 239);--p-surface:rgb(255, 255, 255);--p-surface-neutral:rgb(228, 229, 231);--p-surface-neutral-hovered:rgb(219, 221, 223);--p-surface-neutral-pressed:rgb(201, 204, 208);--p-surface-neutral-disabled:rgb(241, 242, 243);--p-surface-neutral-subdued:rgb(246, 246, 247);--p-surface-subdued:rgb(250, 251, 251);--p-surface-disabled:rgb(250, 251, 251);--p-surface-hovered:rgb(246, 246, 247);--p-surface-pressed:rgb(241, 242, 243);--p-surface-depressed:rgb(237, 238, 239);--p-backdrop:rgba(0, 0, 0, 0.5);--p-overlay:rgba(255, 255, 255, 0.5);--p-shadow-from-dim-light:rgba(0, 0, 0, 0.2);--p-shadow-from-ambient-light:rgba(23, 24, 24, 0.05);--p-shadow-from-direct-light:rgba(0, 0, 0, 0.15);--p-hint-from-direct-light:rgba(0, 0, 0, 0.15);--p-on-surface-background:rgb(241, 242, 243);--p-border:rgb(140, 145, 150);--p-border-neutral-subdued:rgb(186, 191, 195);--p-border-hovered:rgb(153, 158, 164);--p-border-disabled:rgb(210, 213, 216);--p-border-subdued:rgb(201, 204, 207);--p-border-depressed:rgb(87, 89, 89);--p-border-shadow:rgb(174, 180, 185);--p-border-shadow-subdued:rgb(186, 191, 196);--p-divider:rgb(225, 227, 229);--p-icon:rgb(92, 95, 98);--p-icon-hovered:rgb(26, 28, 29);--p-icon-pressed:rgb(68, 71, 74);--p-icon-disabled:rgb(186, 190, 195);--p-icon-subdued:rgb(140, 145, 150);--p-text:rgb(32, 34, 35);--p-text-disabled:rgb(140, 145, 150);--p-text-subdued:rgb(109, 113, 117);--p-interactive:rgb(44, 110, 203);--p-interactive-disabled:rgb(189, 193, 204);--p-interactive-hovered:rgb(31, 81, 153);--p-interactive-pressed:rgb(16, 50, 98);--p-focused:rgb(69, 143, 255);--p-surface-selected:rgb(242, 247, 254);--p-surface-selected-hovered:rgb(237, 244, 254);--p-surface-selected-pressed:rgb(229, 239, 253);--p-icon-on-interactive:rgb(255, 255, 255);--p-text-on-interactive:rgb(255, 255, 255);--p-action-secondary:rgb(255, 255, 255);--p-action-secondary-disabled:rgb(255, 255, 255);--p-action-secondary-hovered:rgb(246, 246, 247);--p-action-secondary-pressed:rgb(241, 242, 243);--p-action-secondary-depressed:rgb(109, 113, 117);--p-action-primary:rgb(0, 128, 96);--p-action-primary-disabled:rgb(241, 241, 241);--p-action-primary-hovered:rgb(0, 110, 82);--p-action-primary-pressed:rgb(0, 94, 70);--p-action-primary-depressed:rgb(0, 61, 44);--p-icon-on-primary:rgb(255, 255, 255);--p-text-on-primary:rgb(255, 255, 255);--p-surface-primary-selected:rgb(241, 248, 245);--p-surface-primary-selected-hovered:rgb(179, 208, 195);--p-surface-primary-selected-pressed:rgb(162, 188, 176);--p-border-critical:rgb(253, 87, 73);--p-border-critical-subdued:rgb(224, 179, 178);--p-border-critical-disabled:rgb(255, 167, 163);--p-icon-critical:rgb(215, 44, 13);--p-surface-critical:rgb(254, 211, 209);--p-surface-critical-subdued:rgb(255, 244, 244);--p-surface-critical-subdued-hovered:rgb(255, 240, 240);--p-surface-critical-subdued-pressed:rgb(255, 233, 232);--p-surface-critical-subdued-depressed:rgb(254, 188, 185);--p-text-critical:rgb(215, 44, 13);--p-action-critical:rgb(216, 44, 13);--p-action-critical-disabled:rgb(241, 241, 241);--p-action-critical-hovered:rgb(188, 34, 0);--p-action-critical-pressed:rgb(162, 27, 0);--p-action-critical-depressed:rgb(108, 15, 0);--p-icon-on-critical:rgb(255, 255, 255);--p-text-on-critical:rgb(255, 255, 255);--p-interactive-critical:rgb(216, 44, 13);--p-interactive-critical-disabled:rgb(253, 147, 141);--p-interactive-critical-hovered:rgb(205, 41, 12);--p-interactive-critical-pressed:rgb(103, 15, 3);--p-border-warning:rgb(185, 137, 0);--p-border-warning-subdued:rgb(225, 184, 120);--p-icon-warning:rgb(185, 137, 0);--p-surface-warning:rgb(255, 215, 157);--p-surface-warning-subdued:rgb(255, 245, 234);--p-surface-warning-subdued-hovered:rgb(255, 242, 226);--p-surface-warning-subdued-pressed:rgb(255, 235, 211);--p-text-warning:rgb(145, 106, 0);--p-border-highlight:rgb(68, 157, 167);--p-border-highlight-subdued:rgb(152, 198, 205);--p-icon-highlight:rgb(0, 160, 172);--p-surface-highlight:rgb(164, 232, 242);--p-surface-highlight-subdued:rgb(235, 249, 252);--p-surface-highlight-subdued-hovered:rgb(228, 247, 250);--p-surface-highlight-subdued-pressed:rgb(213, 243, 248);--p-text-highlight:rgb(52, 124, 132);--p-border-success:rgb(0, 164, 124);--p-border-success-subdued:rgb(149, 201, 180);--p-icon-success:rgb(0, 127, 95);--p-surface-success:rgb(174, 233, 209);--p-surface-success-subdued:rgb(241, 248, 245);--p-surface-success-subdued-hovered:rgb(236, 246, 241);--p-surface-success-subdued-pressed:rgb(226, 241, 234);--p-text-success:rgb(0, 128, 96);--p-decorative-one-icon:rgb(126, 87, 0);--p-decorative-one-surface:rgb(255, 201, 107);--p-decorative-one-text:rgb(61, 40, 0);--p-decorative-two-icon:rgb(175, 41, 78);--p-decorative-two-surface:rgb(255, 196, 176);--p-decorative-two-text:rgb(73, 11, 28);--p-decorative-three-icon:rgb(0, 109, 65);--p-decorative-three-surface:rgb(146, 230, 181);--p-decorative-three-text:rgb(0, 47, 25);--p-decorative-four-icon:rgb(0, 106, 104);--p-decorative-four-surface:rgb(145, 224, 214);--p-decorative-four-text:rgb(0, 45, 45);--p-decorative-five-icon:rgb(174, 43, 76);--p-decorative-five-surface:rgb(253, 201, 208);--p-decorative-five-text:rgb(79, 14, 31);--p-border-radius-base:0.25rem;--p-border-radius-wide:0.5rem;--p-card-shadow:0px 0px 5px var(--p-shadow-from-ambient-light), 0px 1px 2px var(--p-shadow-from-direct-light);--p-popover-shadow:-1px 0px 20px var(--p-shadow-from-ambient-light), 0px 1px 5px var(--p-shadow-from-direct-light);--p-modal-shadow:0px 6px 32px var(--p-shadow-from-ambient-light), 0px 1px 6px var(--p-shadow-from-direct-light);--p-top-bar-shadow:0 2px 2px -1px var(--p-shadow-from-direct-light);--p-override-none:none;--p-override-transparent:transparent;--p-override-one:1;--p-override-visible:visible;--p-override-zero:0;--p-override-loading-z-index:514;--p-button-font-weight:500;--p-choice-size:1.25rem;--p-icon-size:0.625rem;--p-choice-margin:0.0625rem;--p-control-border-width:0.125rem;--p-text-field-spinner-offset:0.125rem;--p-text-field-focus-ring-offset:-0.25rem;--p-text-field-focus-ring-border-radius:0.4375rem;--p-button-group-item-spacing:0.125rem;--p-top-bar-height:68px;--p-contextual-save-bar-height:64px;--p-banner-border-default:inset 0 0.125rem 0 0 var(--p-border), inset 0 0 0 0.125rem var(--p-border);--p-banner-border-success:inset 0 0.125rem 0 0 var(--p-border-success), inset 0 0 0 0.125rem var(--p-border-success);--p-banner-border-highlight:inset 0 0.125rem 0 0 var(--p-border-highlight), inset 0 0 0 0.125rem var(--p-border-highlight);--p-banner-border-warning:inset 0 0.125rem 0 0 var(--p-border-warning), inset 0 0 0 0.125rem var(--p-border-warning);--p-banner-border-critical:inset 0 0.125rem 0 0 var(--p-border-critical), inset 0 0 0 0.125rem var(--p-border-critical);--p-badge-mix-blend-mode:luminosity;--p-badge-font-weight:500;--p-non-null-content:&#39;&#39;;--p-thin-border-subdued:0.0625rem solid var(--p-border-subdued);--p-duration-1-0-0:100ms;--p-duration-1-5-0:150ms;--p-ease-in:cubic-bezier(0.5, 0.1, 1, 1);--p-ease:cubic-bezier(0.4, 0.22, 0.28, 1); color: var(--p-text);">
+    <div class="page-container ">
+  
+  
+
+  <div class="page-main with-unified-design">
+      
+<header class="content-unified-design__header">
+    <img class="shopify-logo" alt="" src="./Log in — Shopify_files/shopify_icon-3ec3196fc21ccd335e623091378b9da827ad0032b2e987dcd2fe6cfc32cd3c5c.svg">
+</header>
+
+    <div class="page-content with-shadow with-unified-design">
+      <div class="main-content">
+        <div class="login-card with-unified-design">
+          <div data-offline="{&quot;visible&quot;:true,&quot;appear&quot;:&quot;down&quot;}" class="connectivity-hidden login-card__content">
+  <div class="ui-banner ui-banner--status-warning ui-banner--within-page"><div class="ui-banner__ribbon"><svg class="next-icon next-icon--size-20 next-icon--no-nudge" aria-hidden="true" focusable="false"> <use xlink:href="#CircleAlertMajor"></use> </svg></div><div class="ui-banner__content-container"><div class="ui-banner__heading"><h2 class="ui-heading">You are offline</h2></div><div class="ui-banner__content"><div class="ui-type-container ui-type-container--spacing-tight">
+      <p>Reconnect or refresh the page to log in.</p>
+</div></div></div></div></div>
+
+          <div class="login-card__content">
+            <div class="main-card-section">
+              
+
+<div class="headings-container">
+  <div>
+    <h1 class="ui-heading">Log in</h1>
+    <h3 class="ui-subheading ui-subheading--subdued">Continue to Shopify</h3>
+  </div>
+</div>
+
+<noscript>
+  <div class="ui-banner ui-banner--status-warning ui-banner--within-page"><div class="ui-banner__ribbon"><svg class="next-icon next-icon--size-20 next-icon--no-nudge" aria-hidden="true" focusable="false"> <use xlink:href="#CircleAlertMajor" /> </svg></div><div class="ui-banner__content-container"><div class="ui-banner__content"><div class="ui-type-container ui-type-container--spacing-tight">
+      <p>Please enable JavaScript or use another browser to log in.</p>
+</div></div></div></div></noscript>
+
+<script nonce="">
+  document.addEventListener('DOMContentLoaded', function () {
+    const refreshButton = document.getElementById('refresh-page-trigger');
+    if (refreshButton) {
+      refreshButton.addEventListener('click', function() {
+        location.reload();
+      });
+    }
+  });
+</script>
+
+<div class="captcha-element captcha-error">
+  <div class="ui-banner ui-banner--status-warning ui-banner--within-page"><div class="ui-banner__ribbon"><svg class="next-icon next-icon--size-20 next-icon--no-nudge" aria-hidden="true" focusable="false"> <use xlink:href="#CircleAlertMajor"></use> </svg></div><div class="ui-banner__content-container"><div class="ui-banner__content"><div class="ui-type-container ui-type-container--spacing-tight">
+      <p>Captcha couldn't load. Refresh the page and try again.</p>
+      <button class="ui-button" id="refresh-page-trigger">
+        Refresh
+      </button>
+</div></div></div></div></div>
+
+
+
+
+
+<form id="account_lookup" novalidate="novalidate" action="https://accounts.shopify.com/lookup?rid=6f5b4e7b-77ad-4259-86c2-080d56a5dc8e" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="kJ0mTiIbmziXJyPDP6wTeyt6LjotznRw8QQXu2BPnmpy96FhKB9tjzuEojN1bDsMy-P2Q7HHBa2kjgrcj0tCwA" autocomplete="off">
+  <div class="ui-form__section">
+    <div class="ui-form__group polaris-uplift-input-wrapper">
+
+
+      <div class="next-input-wrapper email-input-wrapper"><label class="next-label" for="account_email">Email</label><input class="next-input email-typo-input" type="email" autocomplete="username" aria-required="true" aria-invalid="false" autofocus="autofocus" aria-describedby="help-7a44df892a1f522a68a5f20f8d12b498" size="30" name="account[email]" id="account_email"><p id="help-7a44df892a1f522a68a5f20f8d12b498" class="next-input__help-text"><span class="typo-suggestion">
+  Did you mean
+  <button type="button" class="ui-button ui-button--link">
+    <span class="suggested-local"></span>@<span class="suggested-second"></span><span class="suggested-period">.</span><span class="suggested-top"></span>
+  </button>?
+</span>
+</p></div>
+
+
+      <div class="next-input-wrapper lastpass-hidden" aria-hidden="true"><label class="next-label" for="account_password">Password</label><input type="password" autocomplete="current-password" tabindex="-1" class="next-input transferable-input" size="30" name="account[password]" id="account_password"></div>
+</div></div>
+    <div data-captcha-simple="" data-captcha-sitekey="cceb8ca4-854a-4a77-a355-1480a3a79274" data-captcha-mode="invisible" data-captcha-script-url="https://hcaptcha.com/1/api.js?render=explicit&amp;onload=simpleCaptchaReady" data-captcha-script-nonce="fcYCo2RGaXGaleiLAHCzeg==" data-captcha-id="h-captcha">
+</div>
+
+<div id="captcha-simple-container" class="captcha-element"></div>
+
+<input type="hidden" name="h-captcha-response" value="P1_eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.haJwZACjZXhwzmnC7OOncGFzc2tlecUEWIBxz35YkwHaqWLUSHtv77MzSSRdY4Ci0gaynP5jZPYITVa4QmyrayaVM-7mN9hOr4L_fhsMujFX_iKujFBTNJri14VopYXDQWgcmelw0iEj4mVrBrsJJ-J3TTzvBVszz4B_1bRJMOgLCm0SIGQkOm9H-sYpl-Q2YYNMOq5BPURwWQm4Nc8vXaY7jqtOmfo0hM0MaJoQU9sRxQ4jmG0b5ZLZ--eEN8ngi2Bw8cHeovZVpZrJp9PCvmdgP-v67VSL5Sk_h4PvThEAT88Ny-ZGInr95Urcnh30Vamv-qjMF6oW9mHN71hBiUT1Qu0sIW85uBmkOIdJlOKUhZoQTohdUto7CiW8M3b5c9komc17i9fNILN7SCGgnLdAo2aYeQsnmvZr7RSWtS8aLb3AjDltYG_219_Yl4FlyH9uIeFL6E6YygwAAjJdntHwRhTe6UmkFSsxAV6S3q3r68SuH2jOaoAUXk8VarIQyWLW5ILhZmH45K6_bPlfjhfNZ-SlGLR-rahHlHBVPyWQlClwGfDNYz8jL8cBmZZMfpSoKGi4XRDcCGVzm_mvdMHOXOqshjISU5x9nS8fu6Cnzl4Xirt1KzmOs7U8Z8cnbzugm_Sh8o-5aUhBdewFYm1fllOPpvtI4wvOmaBqo9nCmAy3eSkAzQHgHClLhMB-7sBLlX68Kw4AbRrc06b7fojJQQCNl00WfYIx-PGhGOvcIXsU2NrQx8qejP-8UhAfF964zGY0LeP34pq2ucZGFktOnHl2DDFQRDLtyEg48AJsa2jpGaRM4N2tpqN2cwt56mvi1gOVGbueeTzFTysaaPTbZQJQpvROhu1WBAKNR3iC4sTfxiOgKXZa2El2g4fPB65DEU7ZQdcPJUAhQoQ0F2FYPdSInspmC7yKJ19CzjzjqWNIi5Btp_p4jLFfuBBHS47_1Ej2wtDsdJZ6mDUvHBFcXYx5xNJavqxC69ZJm969zrsvyQYoXC8nPkDKEHpOcDHcC_N9h595DIwgbYNnTpMKKsBTrZAiaZVdVmbPbQnn3FiMxC8CHUBQjO-9L8WoyovbNUGhZNAAzcKVxH7ht_aY7q_kV4THFaTFQg1T0L1DxA91iGD1gQfhIHfDFeWj1AT_akeuUFYFsHJUj2ypHMJ0r4DKumXBxdozXSrxT9aAfPyDDsfMAJouce-ZWunQc9P0BoVuD8dJBvh-5HmfULshjMTdhK6Ar1NSSvhd17XAAA-9itcWmHux4gQD1s7_nYbNCkg5gley2M1R12dxzlQbVMo5Xi-hy3VWM84higcYZ20NEW9GQNCXf7IvQC6wX69j_l8S771F4dsccWBbTpkm3kKiIPNQc8VanT8YIRc_rTjMLV_eb4Ep9_2qKbIl8q72Tyx096AhxjkwGWzlBCPyVJPgwzO9KVDj0ZNLx86AinXl7wfMKdCY3BKOvfCnmvahEaEUb-PrMUpgJykAJ4L--5d3Q8KT3MXoje71bhhbomtyqDM2MjBmN2FlqHNoYXJkX2lkzjGtTIE.yr5KOKQ05zXg9kSSP1sbuFX0X3WARblsw-BxAmwik3A">
+
+
+    <div data-define="{showShopLoader: false}" data-bind-show="!showShopLoader">
+      <button class="ui-button ui-button--primary ui-button--full-width ui-button--size-large captcha__submit login-button ui-button--has-hover-icon" type="submit" name="commit" data-bind-event-click="setLastAuthMethod(&quot;email&quot;)">
+        <span class="content">
+          <span class="ui-button__text">Continue with email</span>
+          <span class="ui-button__hover-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.49951 10C3.49951 9.58579 3.8353 9.25 4.24951 9.25L13.9391 9.25L11.2192 6.53036C10.9263 6.23748 10.9263 5.7626 11.2192 5.4697C11.512 5.17679 11.9869 5.17676 12.2798 5.46964L16.2802 9.46964C16.4209 9.6103 16.4999 9.80107 16.4999 10C16.4999 10.1989 16.4209 10.3897 16.2802 10.5304L12.2798 14.5304C11.9869 14.8232 11.512 14.8232 11.2192 14.5303C10.9263 14.2374 10.9263 13.7625 11.2192 13.4696L13.9391 10.75L4.24951 10.75C3.8353 10.75 3.49951 10.4142 3.49951 10Z" fill="currentColor"></path>
+</svg></span>
+        </span>
+        <span class="last-used-pill" style="display: none;">
+          Last used
+        </span>
+</button>    </div>
+  <div aria-hidden="true" class="shop-loader-line shop-button-loader hide" data-bind-show="showShopLoader"></div>
+</form>
+
+  <div class="external-login-divider__container">
+  <div class="external-login-divider">
+    <span class="external-login-divider__text">
+      or
+    </span>
+  </div>
+</div>
+
+
+  <input type="hidden" name="credential_options" id="credential_options" value="{&quot;challenge&quot;:&quot;dDNXG9m2OTHmVIXF4NJmBse7ISj9PxFhQoQxPy7vj0g=&quot;,&quot;timeout&quot;:120000,&quot;extensions&quot;:{},&quot;allowCredentials&quot;:[],&quot;rpId&quot;:&quot;accounts.shopify.com&quot;,&quot;userVerification&quot;:&quot;preferred&quot;}" autocomplete="off">
+<form id="web_authn_form" action="https://accounts.shopify.com/login?rid=6f5b4e7b-77ad-4259-86c2-080d56a5dc8e" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="kJ0mTiIbmziXJyPDP6wTeyt6LjotznRw8QQXu2BPnmpy96FhKB9tjzuEojN1bDsMy-P2Q7HHBa2kjgrcj0tCwA" autocomplete="off">
+  <input type="hidden" name="web_authn[public_key_credential]" id="web_authn_public_key_credential" autocomplete="off">
+  <input type="hidden" name="web_authn[assertion_error]" id="web_authn_assertion_error" autocomplete="off">
+  <input type="hidden" name="account[empty]" id="account_empty" autocomplete="off">
+</form>
+  <button class="ui-button ui-button--full-width ui-button--size-large passkey-login-button" id="web_authn_btn_trigger" data-bind-event-click="setLastAuthMethod(&quot;psk&quot;), getLoadingAttestation()" type="button" name="button">
+    <span id="passkey-available-icon" class="next-icon next-icon--size-20 icon-reset">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9 3C7.067 3 5.5 4.567 5.5 6.5C5.5 8.433 7.067 10 9 10C10.933 10 12.5 8.433 12.5 6.5C12.5 4.567 10.933 3 9 3ZM7 6.5C7 5.39543 7.89543 4.5 9 4.5C10.1046 4.5 11 5.39543 11 6.5C11 7.60457 10.1046 8.5 9 8.5C7.89543 8.5 7 7.60457 7 6.5Z" fill="currentColor"></path>
+<path d="M4.82727 14.9552C5.66915 13.4398 7.26644 12.5 8.99999 12.5C9.4142 12.5 9.74999 12.1642 9.74999 11.75C9.74999 11.3358 9.4142 11 8.99999 11C6.72169 11 4.62247 12.2352 3.51603 14.2268L3.07937 15.0128C2.58406 15.9043 3.22875 17 4.24867 17H10.25C10.6642 17 11 16.6642 11 16.25C11 15.8358 10.6642 15.5 10.25 15.5H4.52463L4.82727 14.9552Z" fill="currentColor"></path>
+<path d="M15.125 12.5C15.6082 12.5 16 12.1082 16 11.625C16 11.1418 15.6082 10.75 15.125 10.75C14.6418 10.75 14.25 11.1418 14.25 11.625C14.25 12.1082 14.6418 12.5 15.125 12.5Z" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6745 14.8747C18.3217 14.4561 18.75 13.7281 18.75 12.9V11.625C18.75 9.62297 17.127 8 15.125 8C13.123 8 11.5 9.62297 11.5 11.625V12.9C11.5 13.8004 12.0064 14.5826 12.75 14.9772V16.8509C12.75 17.24 12.8635 17.6207 13.0766 17.9462L13.4986 18.591C14.1635 19.6068 15.5727 19.8007 16.4873 19.0023L17.0399 18.5198C17.7394 17.9091 17.9009 16.9369 17.5338 16.1584C17.7228 15.7633 17.7765 15.3088 17.6745 14.8747ZM14.2026 13.9609C14.1351 13.8353 14.0025 13.75 13.85 13.75C13.3806 13.75 13 13.3694 13 12.9V11.625C13 10.4514 13.9514 9.5 15.125 9.5C16.2986 9.5 17.25 10.4514 17.25 11.625V12.9C17.25 13.3694 16.8694 13.75 16.4 13.75H16.1818C15.9938 13.75 15.8301 13.8537 15.7447 14.0071C15.7202 14.051 15.7021 14.0991 15.6918 14.15C15.6853 14.1823 15.6818 14.2158 15.6818 14.25V14.3215C15.6818 14.4106 15.7056 14.4975 15.75 14.5736C15.7632 14.5961 15.7781 14.6177 15.7948 14.6381L16.1262 15.0431C16.1487 15.0706 16.1672 15.0998 16.1818 15.13C16.2004 15.1685 16.2129 15.2087 16.2194 15.2493C16.2497 15.4405 16.15 15.6426 15.9533 15.7227C15.8642 15.759 15.7958 15.8192 15.75 15.8915C15.6613 16.0314 15.657 16.2166 15.75 16.3612C15.7742 16.3988 15.8049 16.4336 15.8424 16.4642L16.0405 16.6256C16.2807 16.8213 16.2869 17.1861 16.0535 17.3898L15.5008 17.8723C15.2722 18.0719 14.9199 18.0234 14.7536 17.7695L14.3316 17.1247C14.2784 17.0434 14.25 16.9482 14.25 16.8509V14.15C14.25 14.0816 14.2328 14.0172 14.2026 13.9609Z" fill="currentColor"></path>
+</svg>
+
+    </span>
+    <span id="passkey-loading-icon" class="hidden">
+      <span role="img" class="ui-spinner ui-spinner--size-small"></span>
+    </span>
+
+    <p>Sign in with passkey</p>
+      <span class="last-used-pill" style="display: none;">
+        Last used
+        </span>
+</button>
+
+  <div class="external-login-providers">
+      <a href="https://accounts.shopify.com/login/external/apple/login?rid=6f5b4e7b-77ad-4259-86c2-080d56a5dc8e" class="ui-button ui-button--full-width ui-button--size-large external-login-button" data-method="post" data-provider-name="apple" data-bind-event-click="setLastAuthMethod(&quot;Apple&quot;)">
+    <svg aria-hidden="true" focusable="false" class="next-icon next-icon--size-16"> <use xlink:href="#external/apple"></use> </svg>
+  <span class="content">Continue with Apple</span>
+  <span class="last-used-pill" style="display: none;">
+    Last used
+  </span>
+</a>
+  <a href="https://accounts.shopify.com/login/external/facebook/login?rid=6f5b4e7b-77ad-4259-86c2-080d56a5dc8e" class="ui-button ui-button--full-width ui-button--size-large external-login-button" data-method="post" data-provider-name="facebook" data-bind-event-click="setLastAuthMethod(&quot;Facebook&quot;)">
+    <svg aria-hidden="true" focusable="false" class="next-icon next-icon--size-16"> <use xlink:href="#external/facebook-f"></use> </svg>
+  <span class="content">Continue with Facebook</span>
+  <span class="last-used-pill" style="display: none;">
+    Last used
+  </span>
+</a>
+  <a href="https://accounts.shopify.com/login/external/google/login?rid=6f5b4e7b-77ad-4259-86c2-080d56a5dc8e" class="ui-button ui-button--full-width ui-button--size-large external-login-button" data-method="post" data-provider-name="google" data-bind-event-click="setLastAuthMethod(&quot;Google&quot;)">
+    <svg aria-hidden="true" focusable="false" class="next-icon next-icon--size-16"> <use xlink:href="#external/google-g"></use> </svg>
+  <span class="content">Continue with Google</span>
+  <span class="last-used-pill" style="display: none;">
+    Last used
+  </span>
+</a>
+
+  </div>
+
+  <p class="help-link signup-link">
+    <span class="help-link__text">
+      New to Shopify?
+    </span>
+    <a href="https://accounts.shopify.com/signup?rid=6f5b4e7b-77ad-4259-86c2-080d56a5dc8e" class="ui-button ui-button--link arrow-link">
+      Get started
+      <span class="arrow-link__icon">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.49951 10C3.49951 9.58579 3.8353 9.25 4.24951 9.25L13.9391 9.25L11.2192 6.53036C10.9263 6.23748 10.9263 5.7626 11.2192 5.4697C11.512 5.17679 11.9869 5.17676 12.2798 5.46964L16.2802 9.46964C16.4209 9.6103 16.4999 9.80107 16.4999 10C16.4999 10.1989 16.4209 10.3897 16.2802 10.5304L12.2798 14.5304C11.9869 14.8232 11.512 14.8232 11.2192 14.5303C10.9263 14.2374 10.9263 13.7625 11.2192 13.4696L13.9391 10.75L4.24951 10.75C3.8353 10.75 3.49951 10.4142 3.49951 10Z" fill="currentColor"></path>
+</svg>
+      </span>
+</a>  </p>
+
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <footer class="content-unified-design__footer">
+  <div class="signup-terms">
+    <a class="signup-terms__link" target="_blank" href="https://help.shopify.com/en/manual/your-account/logging-in#desktop">Need Help?</a>
+  </div>
+  <div class="signup-terms">
+    By continuing, you agree to the <a class="signup-terms__link" target="_blank" href="https://www.shopify.com/legal/terms">Terms</a> and <a class="signup-terms__link" target="_blank" href="https://www.shopify.com/legal/privacy">Privacy Policy</a>.
+  </div>
+</footer>
+
+  </div>
+</div>
+
+</div>
+  
+
+  <div id="global-icon-symbols" class="icon-symbols" data-tg-refresh="global-icon-symbols" data-tg-refresh-always="true"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="CircleAlertMajor"><svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 0C4.486 0 0 4.486 0 10s4.486 10 10 10 10-4.486 10-10S15.514 0 10 0zM9 6a1 1 0 1 1 2 0v4a1 1 0 1 1-2 0V6zm1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path></svg></symbol>
+<symbol id="external/apple"><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="0 0 1000 1187.198" version="1.1" id="svg2" inkscape:version="0.91 r13725" sodipodi:docname="Apple_1998.svg"><metadata id="metadata10"><rdf:rdf><cc:work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type><dc:title></dc:title></cc:work></rdf:rdf></metadata><defs id="defs8"></defs><sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1366" inkscape:window-height="705" id="namedview6" showgrid="false" inkscape:zoom="0.1767767" inkscape:cx="-1066.5045" inkscape:cy="964.94669" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="svg2"></sodipodi:namedview><path d="m 979.04184,925.18785 c -17.95397,41.47737 -39.20563,79.65705 -63.82824,114.75895 -33.56298,47.8528 -61.04356,80.9761 -82.22194,99.3698 -32.83013,30.192 -68.00529,45.6544 -105.67203,46.5338 -27.04089,0 -59.6512,-7.6946 -97.61105,-23.3035 -38.08442,-15.5358 -73.08371,-23.2303 -105.08578,-23.2303 -33.56296,0 -69.55888,7.6945 -108.06101,23.2303 -38.5608,15.6089 -69.62484,23.7432 -93.37541,24.5493 -36.12049,1.5389 -72.1237,-14.3632 -108.06101,-47.7796 -22.93711,-20.0059 -51.62684,-54.3017 -85.99592,-102.8874 C 92.254176,984.54592 61.937588,924.38175 38.187028,855.7902 12.750995,781.70252 0,709.95986 0,640.50361 0,560.94181 17.191859,492.32094 51.626869,434.81688 78.689754,388.62753 114.69299,352.19192 159.75381,325.44413 c 45.06086,-26.74775 93.74914,-40.37812 146.18212,-41.25019 28.68971,0 66.3125,8.8744 113.06613,26.31542 46.62174,17.49964 76.55727,26.37404 89.68198,26.37404 9.8124,0 43.06758,-10.37669 99.4431,-31.06405 53.31237,-19.18512 98.30724,-27.12887 135.16787,-23.99975 99.8828,8.06098 174.92313,47.43518 224.82789,118.37174 -89.33023,54.12578 -133.51903,129.93556 -132.63966,227.18753 0.8061,75.75115 28.28668,138.78795 82.2952,188.8393 24.47603,23.23022 51.81008,41.18421 82.22186,53.93522 -6.59525,19.12648 -13.557,37.44688 -20.95846,55.03446 z M 749.96366,23.751237 c 0,59.37343 -21.69138,114.810233 -64.92748,166.121963 -52.17652,60.99961 -115.28658,96.24803 -183.72426,90.68597 -0.87204,-7.12298 -1.37769,-14.61967 -1.37769,-22.49743 0,-56.99843 24.81315,-117.99801 68.87738,-167.873453 21.99909,-25.25281 49.978,-46.25018 83.90738,-63.00018 C 686.57507,10.688027 718.59913,1.5631274 748.71783,5.2734376e-4 749.59727,7.9378274 749.96366,15.875627 749.96366,23.750467 Z" id="path4" inkscape:connector-curvature="0"></path></svg></symbol>
+<symbol id="external/facebook-f"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" aria-hidden="true" class="next-icon next-icon--size-24" role="img" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 14222 14222"><defs><style type="text/css">    .fil0 {fill:#1977F3;fill-rule:nonzero}    .fil1 {fill:#FEFEFE;fill-rule:nonzero}   </style></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path class="fil0" d="M14222 7111c0,-3927 -3184,-7111 -7111,-7111 -3927,0 -7111,3184 -7111,7111 0,3549 2600,6491 6000,7025l0 -4969 -1806 0 0 -2056 1806 0 0 -1567c0,-1782 1062,-2767 2686,-2767 778,0 1592,139 1592,139l0 1750 -897 0c-883,0 -1159,548 -1159,1111l0 1334 1972 0 -315 2056 -1657 0 0 4969c3400,-533 6000,-3475 6000,-7025z"></path><path class="fil1" d="M9879 9167l315 -2056 -1972 0 0 -1334c0,-562 275,-1111 1159,-1111l897 0 0 -1750c0,0 -814,-139 -1592,-139 -1624,0 -2686,984 -2686,2767l0 1567 -1806 0 0 2056 1806 0 0 4969c362,57 733,86 1111,86 378,0 749,-30 1111,-86l0 -4969 1657 0z"></path></g></svg></symbol>
+<symbol id="external/google-g"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 366 372"><path d="M125.9 10.2c40.2-13.9 85.3-13.6 125.3 1.1 22.2 8.2 42.5 21 59.9 37.1-5.8 6.3-12.1 12.2-18.1 18.3l-34.2 34.2c-11.3-10.8-25.1-19-40.1-23.6-17.6-5.3-36.6-6.1-54.6-2.2-21 4.5-40.5 15.5-55.6 30.9-12.2 12.3-21.4 27.5-27 43.9-20.3-15.8-40.6-31.5-61-47.3 21.5-43 60.1-76.9 105.4-92.4z" id="Shape" fill="#EA4335"></path><path d="M20.6 102.4c20.3 15.8 40.6 31.5 61 47.3-8 23.3-8 49.2 0 72.4-20.3 15.8-40.6 31.6-60.9 47.3C1.9 232.7-3.8 189.6 4.4 149.2c3.3-16.2 8.7-32 16.2-46.8z" id="Shape" fill="#FBBC05"></path><path d="M361.7 151.1c5.8 32.7 4.5 66.8-4.7 98.8-8.5 29.3-24.6 56.5-47.1 77.2l-59.1-45.9c19.5-13.1 33.3-34.3 37.2-57.5H186.6c.1-24.2.1-48.4.1-72.6h175z" id="Shape" fill="#4285F4"></path><path d="M81.4 222.2c7.8 22.9 22.8 43.2 42.6 57.1 12.4 8.7 26.6 14.9 41.4 17.9 14.6 3 29.7 2.6 44.4.1 14.6-2.6 28.7-7.9 41-16.2l59.1 45.9c-21.3 19.7-48 33.1-76.2 39.6-31.2 7.1-64.2 7.3-95.2-1-24.6-6.5-47.7-18.2-67.6-34.1-20.9-16.6-38.3-38-50.4-62 20.3-15.7 40.6-31.5 60.9-47.3z" fill="#34A853"></path></svg></symbol>
+<symbol id="next-remove"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M18.263 16l10.07-10.07c.625-.625.625-1.636 0-2.26s-1.638-.627-2.263 0L16 13.737 5.933 3.667c-.626-.624-1.637-.624-2.262 0s-.624 1.64 0 2.264L13.74 16 3.67 26.07c-.626.625-.626 1.636 0 2.26.312.313.722.47 1.13.47s.82-.157 1.132-.47l10.07-10.068 10.068 10.07c.312.31.722.468 1.13.468s.82-.157 1.132-.47c.626-.625.626-1.636 0-2.26L18.262 16z"></path></svg></symbol></svg></div>
+  <div id="UIModalContainer"><div style="--p-background:rgb(246, 246, 247);--p-background-hovered:rgb(241, 242, 243);--p-background-pressed:rgb(237, 238, 239);--p-background-selected:rgb(237, 238, 239);--p-surface:rgb(255, 255, 255);--p-surface-neutral:rgb(228, 229, 231);--p-surface-neutral-hovered:rgb(219, 221, 223);--p-surface-neutral-pressed:rgb(201, 204, 208);--p-surface-neutral-disabled:rgb(241, 242, 243);--p-surface-neutral-subdued:rgb(246, 246, 247);--p-surface-subdued:rgb(250, 251, 251);--p-surface-disabled:rgb(250, 251, 251);--p-surface-hovered:rgb(246, 246, 247);--p-surface-pressed:rgb(241, 242, 243);--p-surface-depressed:rgb(237, 238, 239);--p-backdrop:rgba(0, 0, 0, 0.5);--p-overlay:rgba(255, 255, 255, 0.5);--p-shadow-from-dim-light:rgba(0, 0, 0, 0.2);--p-shadow-from-ambient-light:rgba(23, 24, 24, 0.05);--p-shadow-from-direct-light:rgba(0, 0, 0, 0.15);--p-hint-from-direct-light:rgba(0, 0, 0, 0.15);--p-on-surface-background:rgb(241, 242, 243);--p-border:rgb(140, 145, 150);--p-border-neutral-subdued:rgb(186, 191, 195);--p-border-hovered:rgb(153, 158, 164);--p-border-disabled:rgb(210, 213, 216);--p-border-subdued:rgb(201, 204, 207);--p-border-depressed:rgb(87, 89, 89);--p-border-shadow:rgb(174, 180, 185);--p-border-shadow-subdued:rgb(186, 191, 196);--p-divider:rgb(225, 227, 229);--p-icon:rgb(92, 95, 98);--p-icon-hovered:rgb(26, 28, 29);--p-icon-pressed:rgb(68, 71, 74);--p-icon-disabled:rgb(186, 190, 195);--p-icon-subdued:rgb(140, 145, 150);--p-text:rgb(32, 34, 35);--p-text-disabled:rgb(140, 145, 150);--p-text-subdued:rgb(109, 113, 117);--p-interactive:rgb(44, 110, 203);--p-interactive-disabled:rgb(189, 193, 204);--p-interactive-hovered:rgb(31, 81, 153);--p-interactive-pressed:rgb(16, 50, 98);--p-focused:rgb(69, 143, 255);--p-surface-selected:rgb(242, 247, 254);--p-surface-selected-hovered:rgb(237, 244, 254);--p-surface-selected-pressed:rgb(229, 239, 253);--p-icon-on-interactive:rgb(255, 255, 255);--p-text-on-interactive:rgb(255, 255, 255);--p-action-secondary:rgb(255, 255, 255);--p-action-secondary-disabled:rgb(255, 255, 255);--p-action-secondary-hovered:rgb(246, 246, 247);--p-action-secondary-pressed:rgb(241, 242, 243);--p-action-secondary-depressed:rgb(109, 113, 117);--p-action-primary:rgb(0, 128, 96);--p-action-primary-disabled:rgb(241, 241, 241);--p-action-primary-hovered:rgb(0, 110, 82);--p-action-primary-pressed:rgb(0, 94, 70);--p-action-primary-depressed:rgb(0, 61, 44);--p-icon-on-primary:rgb(255, 255, 255);--p-text-on-primary:rgb(255, 255, 255);--p-surface-primary-selected:rgb(241, 248, 245);--p-surface-primary-selected-hovered:rgb(179, 208, 195);--p-surface-primary-selected-pressed:rgb(162, 188, 176);--p-border-critical:rgb(253, 87, 73);--p-border-critical-subdued:rgb(224, 179, 178);--p-border-critical-disabled:rgb(255, 167, 163);--p-icon-critical:rgb(215, 44, 13);--p-surface-critical:rgb(254, 211, 209);--p-surface-critical-subdued:rgb(255, 244, 244);--p-surface-critical-subdued-hovered:rgb(255, 240, 240);--p-surface-critical-subdued-pressed:rgb(255, 233, 232);--p-surface-critical-subdued-depressed:rgb(254, 188, 185);--p-text-critical:rgb(215, 44, 13);--p-action-critical:rgb(216, 44, 13);--p-action-critical-disabled:rgb(241, 241, 241);--p-action-critical-hovered:rgb(188, 34, 0);--p-action-critical-pressed:rgb(162, 27, 0);--p-action-critical-depressed:rgb(108, 15, 0);--p-icon-on-critical:rgb(255, 255, 255);--p-text-on-critical:rgb(255, 255, 255);--p-interactive-critical:rgb(216, 44, 13);--p-interactive-critical-disabled:rgb(253, 147, 141);--p-interactive-critical-hovered:rgb(205, 41, 12);--p-interactive-critical-pressed:rgb(103, 15, 3);--p-border-warning:rgb(185, 137, 0);--p-border-warning-subdued:rgb(225, 184, 120);--p-icon-warning:rgb(185, 137, 0);--p-surface-warning:rgb(255, 215, 157);--p-surface-warning-subdued:rgb(255, 245, 234);--p-surface-warning-subdued-hovered:rgb(255, 242, 226);--p-surface-warning-subdued-pressed:rgb(255, 235, 211);--p-text-warning:rgb(145, 106, 0);--p-border-highlight:rgb(68, 157, 167);--p-border-highlight-subdued:rgb(152, 198, 205);--p-icon-highlight:rgb(0, 160, 172);--p-surface-highlight:rgb(164, 232, 242);--p-surface-highlight-subdued:rgb(235, 249, 252);--p-surface-highlight-subdued-hovered:rgb(228, 247, 250);--p-surface-highlight-subdued-pressed:rgb(213, 243, 248);--p-text-highlight:rgb(52, 124, 132);--p-border-success:rgb(0, 164, 124);--p-border-success-subdued:rgb(149, 201, 180);--p-icon-success:rgb(0, 127, 95);--p-surface-success:rgb(174, 233, 209);--p-surface-success-subdued:rgb(241, 248, 245);--p-surface-success-subdued-hovered:rgb(236, 246, 241);--p-surface-success-subdued-pressed:rgb(226, 241, 234);--p-text-success:rgb(0, 128, 96);--p-decorative-one-icon:rgb(126, 87, 0);--p-decorative-one-surface:rgb(255, 201, 107);--p-decorative-one-text:rgb(61, 40, 0);--p-decorative-two-icon:rgb(175, 41, 78);--p-decorative-two-surface:rgb(255, 196, 176);--p-decorative-two-text:rgb(73, 11, 28);--p-decorative-three-icon:rgb(0, 109, 65);--p-decorative-three-surface:rgb(146, 230, 181);--p-decorative-three-text:rgb(0, 47, 25);--p-decorative-four-icon:rgb(0, 106, 104);--p-decorative-four-surface:rgb(145, 224, 214);--p-decorative-four-text:rgb(0, 45, 45);--p-decorative-five-icon:rgb(174, 43, 76);--p-decorative-five-surface:rgb(253, 201, 208);--p-decorative-five-text:rgb(79, 14, 31);--p-border-radius-base:0.25rem;--p-border-radius-wide:0.5rem;--p-card-shadow:0px 0px 5px var(--p-shadow-from-ambient-light), 0px 1px 2px var(--p-shadow-from-direct-light);--p-popover-shadow:-1px 0px 20px var(--p-shadow-from-ambient-light), 0px 1px 5px var(--p-shadow-from-direct-light);--p-modal-shadow:0px 6px 32px var(--p-shadow-from-ambient-light), 0px 1px 6px var(--p-shadow-from-direct-light);--p-top-bar-shadow:0 2px 2px -1px var(--p-shadow-from-direct-light);--p-override-none:none;--p-override-transparent:transparent;--p-override-one:1;--p-override-visible:visible;--p-override-zero:0;--p-override-loading-z-index:514;--p-button-font-weight:500;--p-choice-size:1.25rem;--p-icon-size:0.625rem;--p-choice-margin:0.0625rem;--p-control-border-width:0.125rem;--p-text-field-spinner-offset:0.125rem;--p-text-field-focus-ring-offset:-0.25rem;--p-text-field-focus-ring-border-radius:0.4375rem;--p-button-group-item-spacing:0.125rem;--p-top-bar-height:68px;--p-contextual-save-bar-height:64px;--p-banner-border-default:inset 0 0.125rem 0 0 var(--p-border), inset 0 0 0 0.125rem var(--p-border);--p-banner-border-success:inset 0 0.125rem 0 0 var(--p-border-success), inset 0 0 0 0.125rem var(--p-border-success);--p-banner-border-highlight:inset 0 0.125rem 0 0 var(--p-border-highlight), inset 0 0 0 0.125rem var(--p-border-highlight);--p-banner-border-warning:inset 0 0.125rem 0 0 var(--p-border-warning), inset 0 0 0 0.125rem var(--p-border-warning);--p-banner-border-critical:inset 0 0.125rem 0 0 var(--p-border-critical), inset 0 0 0 0.125rem var(--p-border-critical);--p-badge-mix-blend-mode:luminosity;--p-badge-font-weight:500;--p-non-null-content:&#39;&#39;;--p-thin-border-subdued:0.0625rem solid var(--p-border-subdued);--p-duration-1-0-0:100ms;--p-duration-1-5-0:150ms;--p-ease-in:cubic-bezier(0.5, 0.1, 1, 1);--p-ease:cubic-bezier(0.4, 0.22, 0.28, 1); color: var(--p-text);"><div id="UIModalBackdrop" data-tg-refresh="ui-modal-backdrop" class="ui-modal-backdrop"></div><div id="UIModalContents" class="ui-modal-contents" data-tg-refresh="ui-modal-contents"></div></div></div>
+
+
+
+
+<div><iframe aria-hidden="true" data-hcaptcha-widget-id="0y9y46p53o2q" data-hcaptcha-response="P1_eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.haJwZACjZXhwzmnC7OOncGFzc2tlecUEWIBxz35YkwHaqWLUSHtv77MzSSRdY4Ci0gaynP5jZPYITVa4QmyrayaVM-7mN9hOr4L_fhsMujFX_iKujFBTNJri14VopYXDQWgcmelw0iEj4mVrBrsJJ-J3TTzvBVszz4B_1bRJMOgLCm0SIGQkOm9H-sYpl-Q2YYNMOq5BPURwWQm4Nc8vXaY7jqtOmfo0hM0MaJoQU9sRxQ4jmG0b5ZLZ--eEN8ngi2Bw8cHeovZVpZrJp9PCvmdgP-v67VSL5Sk_h4PvThEAT88Ny-ZGInr95Urcnh30Vamv-qjMF6oW9mHN71hBiUT1Qu0sIW85uBmkOIdJlOKUhZoQTohdUto7CiW8M3b5c9komc17i9fNILN7SCGgnLdAo2aYeQsnmvZr7RSWtS8aLb3AjDltYG_219_Yl4FlyH9uIeFL6E6YygwAAjJdntHwRhTe6UmkFSsxAV6S3q3r68SuH2jOaoAUXk8VarIQyWLW5ILhZmH45K6_bPlfjhfNZ-SlGLR-rahHlHBVPyWQlClwGfDNYz8jL8cBmZZMfpSoKGi4XRDcCGVzm_mvdMHOXOqshjISU5x9nS8fu6Cnzl4Xirt1KzmOs7U8Z8cnbzugm_Sh8o-5aUhBdewFYm1fllOPpvtI4wvOmaBqo9nCmAy3eSkAzQHgHClLhMB-7sBLlX68Kw4AbRrc06b7fojJQQCNl00WfYIx-PGhGOvcIXsU2NrQx8qejP-8UhAfF964zGY0LeP34pq2ucZGFktOnHl2DDFQRDLtyEg48AJsa2jpGaRM4N2tpqN2cwt56mvi1gOVGbueeTzFTysaaPTbZQJQpvROhu1WBAKNR3iC4sTfxiOgKXZa2El2g4fPB65DEU7ZQdcPJUAhQoQ0F2FYPdSInspmC7yKJ19CzjzjqWNIi5Btp_p4jLFfuBBHS47_1Ej2wtDsdJZ6mDUvHBFcXYx5xNJavqxC69ZJm969zrsvyQYoXC8nPkDKEHpOcDHcC_N9h595DIwgbYNnTpMKKsBTrZAiaZVdVmbPbQnn3FiMxC8CHUBQjO-9L8WoyovbNUGhZNAAzcKVxH7ht_aY7q_kV4THFaTFQg1T0L1DxA91iGD1gQfhIHfDFeWj1AT_akeuUFYFsHJUj2ypHMJ0r4DKumXBxdozXSrxT9aAfPyDDsfMAJouce-ZWunQc9P0BoVuD8dJBvh-5HmfULshjMTdhK6Ar1NSSvhd17XAAA-9itcWmHux4gQD1s7_nYbNCkg5gley2M1R12dxzlQbVMo5Xi-hy3VWM84higcYZ20NEW9GQNCXf7IvQC6wX69j_l8S771F4dsccWBbTpkm3kKiIPNQc8VanT8YIRc_rTjMLV_eb4Ep9_2qKbIl8q72Tyx096AhxjkwGWzlBCPyVJPgwzO9KVDj0ZNLx86AinXl7wfMKdCY3BKOvfCnmvahEaEUb-PrMUpgJykAJ4L--5d3Q8KT3MXoje71bhhbomtyqDM2MjBmN2FlqHNoYXJkX2lkzjGtTIE.yr5KOKQ05zXg9kSSP1sbuFX0X3WARblsw-BxAmwik3A" src="./Log in — Shopify_files/hcaptcha.html" style="display: none;"></iframe><textarea id="g-recaptcha-response-0y9y46p53o2q" name="g-recaptcha-response" style="display: none;"></textarea><textarea id="h-captcha-response-0y9y46p53o2q" name="h-captcha-response" style="display: none;"></textarea></div><div aria-hidden="true" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(215, 215, 215); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px; border-radius: 4px; left: auto; top: -10000px; z-index: -2147483648; position: absolute; pointer-events: auto; transition: opacity 0.15s ease-out; opacity: 0; visibility: hidden;"><div style="position: relative; z-index: 1;"><iframe src="./Log in — Shopify_files/hcaptcha(1).html" frameborder="0" scrolling="no" allow="private-state-token-redemption" title="hCaptcha challenge" style="border: 0px; z-index: 2000000000; position: relative;"></iframe></div><div style="width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div style="border-width: 11px; border-style: none; position: absolute; pointer-events: none; margin-top: -11px; z-index: 1; right: 100%;"><div style="border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;"></div><div style="border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;"></div></div></div></body></html>

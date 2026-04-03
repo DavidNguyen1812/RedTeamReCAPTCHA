@@ -1,0 +1,43 @@
+<html lang="en-US"><head>
+
+
+    
+    <script>
+        window.geoIPCountry = 'US';
+        window.geoIPState = 'VA';
+        window.geoIPCountryName = 'United States';
+        window.geoIPZip = '22030';
+        window.geoPhoneCountryCode = '1'
+        window.mktoInitValues = window.mktoInitValues || {};
+        window.mktoInitValues['referringURL'] = '';        
+
+    </script>
+
+
+
+    
+	<script>
+		window['optimizely'] = window['optimizely'] || [];
+		window['optimizely'].push({
+			type: 'holdEvents'
+		});
+
+		window.OneTrustCallbacks=window.OneTrustCallbacks || [];
+		window.OneTrustCallbacks.push(function() {
+			if ( OnetrustActiveGroups && OnetrustActiveGroups.includes("C0004"))
+			{
+				window['optimizely'].push({
+					type: 'sendEvents'
+				});
+			}
+			else {
+				if(window.geoIPCountry === 'US') {
+					window['optimizely'].push({
+						type: 'holdEvents'
+					});
+				}
+			}
+		})
+
+	</script>
+	<script src="https://cdn.optimizely.com/js/6039698984927232.js" data-ot-ignore=""></script></head></html>

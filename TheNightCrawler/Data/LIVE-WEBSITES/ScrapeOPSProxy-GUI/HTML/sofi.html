@@ -1,0 +1,1958 @@
+<html lang="en" class="no-js s-healthcheck"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=DC-6375438&amp;cx=c&amp;gtm=4e63i0"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-WLSZML"></script><script async="" src="https://www.datadoghq-browser-agent.com/us1/v6/datadog-rum.js"></script><script type="text/javascript" async="" src="//cdn3.optimizely.com/js/geo4.js"></script><script src="https://cdn.optimizely.com/js/14812420277.js"></script>    <title>SoFi: Banking, Loans, Invest, Credit Card, &amp; Mortgages</title>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <script type="text/javascript">
+      // Set geolocation EU region code for testing
+      // See: https://developer.onetrust.com/onetrust/docs/custom-geolocation-integration
+      if (window.location.pathname === '/onetrust-module-eu-tests/') {
+        var OneTrust = {
+          geolocationResponse: {
+            stateCode: 'AT', // Austria
+            countryCode: 'AUT', // Austria
+            regionCode: 'EU'
+          }
+        };
+      }
+    </script>
+  
+	<!-- This site is optimized with the Yoast SEO Premium plugin v26.2 (Yoast SEO v26.2) - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="Why do 12.6M members trust SoFi? Financial solutions for school, marriage, starting a family, home buying, retirement, or whatever’s next. Member FDIC.">
+	<link rel="canonical" href="https://www.sofi.com/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="SoFi: Bank, Borrow, and Invest—All in One Finance App">
+	<meta property="og:description" content="Why do 12.6M members trust SoFi? Financial solutions for school, marriage, starting a family, home buying, retirement, or whatever’s next. Member FDIC.">
+	<meta property="og:url" content="https://www.sofi.com/">
+	<meta property="og:site_name" content="SoFi">
+	<meta property="article:publisher" content="https://www.facebook.com/SoFi">
+	<meta property="article:modified_time" content="2026-03-20T19:20:30+00:00">
+	<meta property="og:image" content="https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/SoFi-Social-Share@2x.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Great Rates. Great Benefits. | SoFi">
+	<meta name="twitter:site" content="@SoFi">
+	<meta name="google-site-verification" content="OWbWK6xOT6tDg-f0yECmRHweBqoJ6QLIgwkRj1YfWWA">
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel="dns-prefetch" href="//d32ijn7u0aqfv4.cloudfront.net">
+<link rel="dns-prefetch" href="//ajax.googleapis.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//wordpress.sofi.com">
+<link rel="alternate" type="application/rss+xml" title="SoFi » Feed" href="https://www.sofi.com/feed/">
+  <script>
+    (function(h,o,u,n,d) {
+      h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
+      d=o.createElement(u);d.async=1;d.src=n
+      n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
+    })(window,document,'script','https://www.datadoghq-browser-agent.com/us1/v6/datadog-rum.js','DD_RUM')
+    DD_RUM.onReady(function() {
+      DD_RUM.init({
+        clientToken: 'pub346aa021e965843c43f563f0bf19854f',
+        applicationId: 'fe840617-2662-4673-a92b-f6ef57f384ad',
+        service: 'wordpress',
+        env: 'production',
+        site: 'datadoghq.com',
+        sessionReplaySampleRate: 0,
+        trackLongTasks: true,
+        trackResources: true,
+      })
+    })
+  </script>
+      <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="24cdcf72-0bb7-4281-832f-a3c0971510ee">
+    </script>
+    <script type="text/javascript">
+      function initPrivacyOptionsLink() {
+        // When the user is unauthenticated, update the "Your privacy options" link in the footer to open the OneTrust privacy modal
+        // instead of take the user to their SoFi privacy preferences in profile settings
+        const privacyOptionsLink = document.querySelector('#privacy-options-link');
+        // There is no easy way to test this locally; test within kraken or staging
+
+        fetch("/verify-session?returnBody=true&nocache=true")
+        .then((response) => { return response.json(); } )
+        .then((jsonData) => {
+          if(!jsonData.isSessionAlive){
+            privacyOptionsLink.addEventListener('click', function(event) {
+              // Prevent the default link behavior. The browser will not take the user to their SoFi privacy preferences in profile settings
+              event.preventDefault();
+
+              // Open the OneTrust privacy modal
+              // See: https://developer.onetrust.com/onetrust/docs/javascript-api#show-preference-center
+              window.OneTrust.ToggleInfoDisplay();
+            });
+          }
+        });
+      }
+      document.addEventListener('DOMContentLoaded', initPrivacyOptionsLink);
+
+      function OptanonWrapper() {
+        /**
+         * When a user navigates to a new page, switches tabs, closes the tab, minimizes or closes the browser, or, on mobile, switches from the browser
+         * to a different app, opt the user into cookies if they haven't interacted with the cookie banner CTAs.
+         * See: https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilitychange_event#sending_end-of-session_analytics_on_transitioning_to_hidden
+         */
+        function optUserIntoCookiesIfCTAsNotClicked() {
+          if (document.visibilityState !== 'hidden') {
+            return;
+          }
+
+          // https://developer.onetrust.com/onetrust/docs/javascript-api#is-optanonalertboxclosed-cookie-set
+          const userClickedCTA = OneTrust.IsAlertBoxClosed();
+          // https://developer.mozilla.org/en-US/docs/Web/API/Navigator/globalPrivacyControl
+          const isGPCEnabled = navigator.globalPrivacyControl === true;
+
+          if (!userClickedCTA && !isGPCEnabled) {
+            // If the user didn't click either of the CTAs, and the user has not enabled GPC in their browser, opt the user into cookies
+            // See documentation for OneTrust.AllowAll: https://developer.onetrust.com/onetrust/docs/javascript-api#allow-all-consent
+            window.OneTrust.AllowAll();
+          } else if (isGPCEnabled) {
+            // Respect the user's browser setting for GPC
+            // See documentation for OneTrust.RejectAll: https://developer.onetrust.com/onetrust/docs/javascript-api#reject-all-consent
+            window.OneTrust.RejectAll();
+          }
+        }
+        window.addEventListener('visibilitychange', optUserIntoCookiesIfCTAsNotClicked);
+        window.addEventListener('pagehide', optUserIntoCookiesIfCTAsNotClicked);
+
+        // Any logged out page in sofi.com/learn with the query parameter ?privacy_options=true should automatically open the OneTrust preference center
+        if (window.location.search.indexOf('privacy_options=true') !== -1) {
+          // See documentation for OneTrust.ToggleInfoDisplay: https://developer.onetrust.com/onetrust/docs/javascript-api#show-preference-center
+          window.OneTrust.ToggleInfoDisplay();
+        }
+      }
+    </script>
+    <script type="text/javascript">
+    function getCookie(name) {
+      var cookies = window.document.cookie.split(";");
+      if (cookies) {
+        for (i = 0; i < cookies.length; i++) {
+          var cookie = cookies[i];
+          if (cookie.match("^ *" + name + "=")) {
+            var value = cookie.trim().replace(name + "=", "");
+            return value;
+          }
+        }
+      }
+      return null;
+    }
+
+    function isBlank(value) {
+      return !value;
+    }
+
+    function getDefaultConsentGroups() {
+      var consentParams = getOneTrustCookieValue();
+      if (consentParams && !isBlank(consentParams.get("groups"))) {
+        var consentGroups = consentParams
+          .get("groups")
+          .split(",")
+          .map(function(str) {
+            return str.split(":");
+          })
+          .reduce(function(map, arr) {
+            map[arr[0]] = arr[1];
+            return map;
+          }, {});
+        return consentGroups;
+      } else {
+        return null;
+      }
+    }
+
+    function evaluateGPCSignal() {
+      var consentParams = getOneTrustCookieValue();
+      if (consentParams) {
+        var gpcFlag = consentParams.get("browserGpcFlag");
+        if (gpcFlag === "1") {
+          // GPC is enabled and the user has not consented
+          return false;
+        } else {
+          // GPC is not enabled.
+          return true;
+        }
+      } else {
+        return true;
+      }
+    }
+
+    function getOneTrustCookieValue() {
+      var oneTrustCookie = getCookie("OptanonConsent");
+      if (oneTrustCookie) {
+        var consentParams = new URLSearchParams(decodeURIComponent(oneTrustCookie));
+        return consentParams;
+      } else {
+        return null;
+      }
+    }
+
+    function evalDefaultConsents() {
+      // these represent the consent groups defined by onetrust; if all three aren't present && == 1
+      // then we assume the user is opted out.
+      var allConsents = [
+        "C0001",
+        "C0002",
+        "C0003",
+        "C0004",
+        "C0005",
+        "SPD_BG",
+        "SSPD_BG",
+        "PO2"
+      ];
+      var consentGroups = getDefaultConsentGroups();
+      if (consentGroups) {
+        var consents = Object.entries(consentGroups)
+          .filter(function(tuple) {
+            return allConsents.includes(tuple[0]);
+          })
+          .map(function(tuple) {
+            if (tuple[1] == "1") {
+              return true;
+            } else {
+              return false;
+            }
+          });
+        // if there only exist the C0001 consent group, and no others, the user is assumed to be opted out
+        if (Object.keys(consentGroups).length == 1 && "C0001" in consentGroups) {
+          return false;
+        }
+        if (
+          Object.keys(consentGroups).length == 2 &&
+          "C0001" in consentGroups &&
+          "C0003" in consentGroups
+        ) {
+          return false;
+        }
+        // if there is any rejected consent assume the user is opted out
+        if (
+          consents.every(function(value) {
+            return value == true;
+          })
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      } else {
+        return false;
+      }
+    }
+
+    function evalLoggedInPref() {
+      var pref = getCookie("SOFI_GMPREF");
+      if (pref === "OPT_OUT") {
+        return false;
+      } else {
+        return true;
+      }
+    }
+
+    function evalConsentPreferences(eval_type) {
+      var consentState = "OPT_OUT";
+      if (evalDefaultConsents() && evaluateGPCSignal() && evalLoggedInPref()) {
+        consentState = "OPT_IN";
+      }
+      if (eval_type) {
+        dataLayer.push({event: eval_type, user_consent_state: consentState});
+      } else {
+        // if 'event' is passed upon dataLayer init, user_consent_state is not registered as a variable
+        // instead it is ignored by GTM
+        dataLayer.push({user_consent_state: consentState});
+      }
+    }
+
+    var mainDomain = document.location.hostname.match(/(([^.\/]+\.[^.\/]{2,3}\.[^.\/]{2})|(([^.\/]+\.)[^.\/]{2,4}))(\/.*)?$/)[1];
+
+    try{
+      dataLayer.push({'baseDomain': mainDomain.toLowerCase()});
+    } catch(err) {
+      dataLayer = [{'baseDomain': mainDomain.toLowerCase()}];
+    }
+
+    evalConsentPreferences();
+
+    window.addEventListener("OneTrustGroupsUpdated", (event) => {
+      evalConsentPreferences("update_ot_consent");
+    });
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-WLSZML');
+  </script>
+  <style id="wp-img-auto-sizes-contain-inline-css" type="text/css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel="stylesheet" id="soficss-css" href="https://d32ijn7u0aqfv4.cloudfront.net/dist/css/sofi-header-footer.5fddcec3.css" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link rel="stylesheet" id="google-material-icons-css" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" type="text/css" media="all">
+<script type="text/javascript" src="https://www.sofi.com/wp/wp-content/themes/sofi-wp-baby/functions/react-helpers/logTranspiledScriptError.js" id="logTranspiledScriptError-js"></script>
+
+<!-- be_ixf, sdk, gho-->
+<meta name="be:sdk" content="php_sdk_1.5.10">
+<meta name="be:timer" content="57ms">
+<meta name="be:orig_url" content="https%3A%2F%2Fwww.sofi.com%2F">
+<meta name="be:norm_url" content="https%3A%2F%2Fwww.sofi.com%2F">
+<meta name="be:capsule_url" content="https%3A%2F%2Fixfd1-api.bc0a.com%2Fapi%2Fixf%2F1.0.0%2Fget_capsule%2Ff00000000299355%2F01881629385">
+<meta name="be:api_dt" content="py_2026;pm_03;pd_20;ph_21;pmh_09;p_epoch:1774040994977">
+<meta name="be:mod_dt" content="py_2026;pm_03;pd_20;ph_21;pmh_09;p_epoch:1774040994977">
+<meta name="be:diag" content="xaEU0W6wy555KeIiC7QJPBh23geI3xJsdhS1+SyfLt/OMcjew4R8fZPm6rn+zoRKXqz0Xhk1/fPk10/xx0qB0RFwg/PIOHYRw6FZseQdD9soJCQqySzRSpJV6HCkyvbVxvAQrZXsTWa+wz6wLeX5DSoaw28vRsFJbTyVqbdqFhy2VcpVCMK3I1dD+FdVGQdXNZqsqpCxfTfvH7wEO/Bef48fFceCT/1a8YG8pqR5OLcClJjyZOU7xpmJnZ4CntwW6dQ91r48R5H7eaHM+5ElNVHx0h8r5Dcn5uMhR2ca39l1b5nYT7VAAMK5Ryeh6Qd4DBtsW9gHojpGNrVXKel/PNKt+W+meXOSkkWzCtkKl44q4baHse+YH2SnHtwuGG4amAwdxus3r+vEEWuSdRzemLDjVbJt56X+igs5fNdFdYv2zWNf2kkk4tEU2HS0B6sLMX1i3Uf4ZmiDs1m5rBZ1E3luwRYRy6HwlbHBo7xrkSU5FKmBw11YBxYKdI1LN7jr4SH8s2LWvoEwXHKC798vwRFAmgyw5np0+7WVYX7cenO2wQnY5EoW9qEzX1q8hM8HTgkluV0qWHMdZ+loF4t84+7SIJuR6LHyKIsTc3LxDip8W6RHPAI33pgSVDKUAkI98k82e5uHIAHcgRfhkqlnCejiU3ZhmofwfGEk3JW6MTqSHTXPfQevgky6OMFt3PCKISAqjkGxiJozrWqdjxRA6KvVO4ag+08InqIV+TtDHHoc5vYaG6MWhgiu0akU+pUAxnbyrymn/fDdfdIwmIYOsV8tBtHM1N1Ei33botpMmoPlOaObd/3PXlmIDnWNKPNMkUUUSc52owAPOan/1geNaVqHbrlqiaT8VVFCEb37KJTe91tR+ySUCX/UG+fCCqC5pqzKw+vAnVPXKL8p0LKolO5ljBISo3cY71rxDY5d9kaVXlk6mYSkRuGD/dhdCopdl02isAD0DW9AhjvovxcAbkpeDmfNMZf7Mnz328MbuKAhIK8arUpkgKsItATKcsx0YID04lImHaZXnCdeI5Zen1JSoHvZ/6XxLct4z/XHPELNJHxvlYI4fXUi29S897aWkN4N3M8p24qwFPN9nmNQeTUWeg4eMMKkkrcMta3u4sTc95uQh0TSrBYLpR2OBBi43FUizmdPDzM6E/gDTPpBl/K/BgW/cHrYtN+FmlSoDcMLGqaSWWKSoUOLYPtwTosKz8EcNR7kUF1RDl6eD/1NMRARqErAk/jXjTeNBrOvH4IifmTxZ8GL4zGEkKex+lwuq7h+rl02Ce3Gn+f9xxjUQamTx+XUQsNhW3+Ar8pnCfTfmnjA+8xqjN8SOiibKiujZFFK/kByk+aBf1Sh1N5C62hRDrgep0Hnn4x0JiRcplbKbFUXQAAqYrrbtsaXqlqfKxb9fT3IGhewJ5Xg2VLzJZ540fdu2TpMEUnY/Eu+32vaLDbXZT62T1gxZ7UTpTuj7JSWxgkTsTj53c/0KOc20ynxu3MymLvmrjLciQAbd9bqju8jV3lL8V7sSOGzM0NmtfqVOKdG4MZM9U9uc1gkGQ4McMpNtmbbEWg9oAhYZTbovrseIhA5afmdG06Aj6eHpg0q9OWfcOw05O0X2GCCSyXaGRrUo2Z7Lw9CB43lqGYTlzXUhD9R6E3THRs2FsG6G2+q15gUwMi7mwgoFhViNwsxnCoqYEo6QnvEXDbLZt4ko5YGhznoKcz7zjI0uyUJpRAR6yDOLgyEpROK8imqneZfG7VOsc1KE1PHedFrVYjUdRcOdJyG/CwXM35BG/QNp9q8TUPj83jxgOWkQqUDfPhvsPgCijvHdmazCAV4QLS2uumVfroGaw8VAeXZGEuD5ZC0Jk9VvdAt+oyJA0eDbCsN66/ucHUR4TWBAbgSR9f7S8NECRk81+AfxH7vQUSFky5G6fngBZDRaakdZsMqmM1TbSTlKJGkPr8W8kHEWBooMpR4mKedPOee1SNK2LzXLYHD6yhl1EdqE8CJTR0QnnXXWYQ8XJWyy8ZnvVFRq8PDUZ/zrFRqIqyUjG7Q2+0fN1rqpT7srIx62Hdy93+wO0FavdY9CWmE8EruipQYbMj+iRhx52J432mLUnMWKzF8P/JQ2TGlzqx4Zp7hYpBx8ZyQAeWImlCnsIISK2LwCXbIEaPOzvaMW5XjxwIc5JD2SaE/CYQ3d/xnvrwGtkkpzSlwSx3GMUjcMuePu58Q5YzbKMUt3YAp8UVMZvO5ZVZsFU+2Q25Eo+ilraiI6eTAU06oQ+OhAigad1+uYkH23Fid4A10PfNqUVXucdohlbmN3kk+IlgJaSPkmPg8oRUu/LeEd6cKh1hC47vr++soh+c=">
+<meta name="be:messages" content="false">
+<style>
+.be-ix-link-block {}
+</style>
+  <link rel="profile" href="https://gmpg.org/xfn/11">
+  <link rel="icon" type="image/x-icon" href="https://www.sofi.com/favicon.ico">    <!-- Start VWO Async SmartCode -->
+    <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com">
+    <script type="text/javascript" id="vwoCode">
+        window._vwo_code || (function() {
+            var account_id=916883,
+                version=2.1,
+                settings_tolerance=2000,
+                hide_element='body',
+                hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important',
+                /* DO NOT EDIT BELOW THIS LINE */
+                f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+'_settings',cc={};try{var c=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=c&&typeof c==='object'?c:{}}catch(e){}var stT=cc.stT==='session'?w.sessionStorage:w.localStorage;code={use_existing_jquery:function(){return typeof use_existing_jquery!=='undefined'?use_existing_jquery:undefined},library_tolerance:function(){return typeof library_tolerance!=='undefined'?library_tolerance:undefined},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){if(performance.getEntriesByName('first-contentful-paint')[0]){return''}return typeof cc.hE==='string'?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){if(!f){f=true;var t=d.getElementById('_vis_opt_path_hides');if(t)t.parentNode.removeChild(t);if(e)(new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e}},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript';if(e.src){t.src=e.src}else{t.text=e.text}d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){var i=this.getSettings(),n=d.createElement('script'),r=this;t=t||{};if(i){n.textContent=i;d.getElementsByTagName('head')[0].appendChild(n);if(!w.VWO||VWO.caE){stT.removeItem(cK);r.load(e)}}else{var o=new XMLHttpRequest;o.open('GET',e,true);o.withCredentials=!t.dSC;o.responseType=t.responseType||'text';o.onload=function(){if(t.onloadCb){return t.onloadCb(o,e)}if(o.status===200){_vwo_code.addScript({text:o.responseText})}else{_vwo_code.finish('&e=loading_failure:'+e)}};o.onerror=function(){if(t.onerrorCb){return t.onerrorCb(e)}_vwo_code.finish('&e=loading_failure:'+e)};o.send()}},getSettings:function(){try{var e=stT.getItem(cK);if(!e){return}e=JSON.parse(e);if(Date.now()>e.e){stT.removeItem(cK);return}return e.s}catch(e){return}},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;var e=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish();stT.removeItem(cK)},e);var t;if(this.hide_element()!=='body'){t=d.createElement('style');var i=this.hide_element(),n=i?i+this.hide_element_style():'',r=d.getElementsByTagName('head')[0];t.setAttribute('id','_vis_opt_path_hides');v&&t.setAttribute('nonce',v.nonce);t.setAttribute('type','text/css');if(t.styleSheet)t.styleSheet.cssText=n;else t.appendChild(d.createTextNode(n));r.appendChild(t)}else{t=d.getElementsByTagName('head')[0];var n=d.createElement('div');n.style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;';n.setAttribute('id','_vis_opt_path_hides');n.classList.add('_vis_hide_layer');t.parentNode.insertBefore(n,t.nextSibling)}var o='https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&vn='+version;if(w.location.search.indexOf('_vwo_xhr')!==-1){this.addScript({src:o})}else{this.load(o+'&x=true')}}};w._vwo_code=code;code.init();})();
+    </script>
+    <!-- End VWO Async SmartCode -->
+    <style type="text/css">/* THIS IS A TEMPORARY FIX UNTIL WE HAVE TIME TO CREATE A CUSTOM COMPONENT */
+/* Fix overflow issue in mobile: */
+
+/* mobile view */
+@media (max-width: 767px) {
+    .custom-style-carousel-wrapper {overflow: hidden !important;}
+
+  /* fix ProductTiles flicker (TODO: Add code to component itself) */
+  .product-tiles > li {
+    /* trigger hardware acceleration */
+    transform: translateZ(0); 
+  }
+}
+
+
+/* TODO: We should not need the below styles, try deleting or replacing -------------------- */
+div.lf {
+  border: 1px solid;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+div.ip {
+  font-size: 14px;
+}
+.dm-forms .error-message {
+    color: #EC1C1C;
+    display: none;
+    padding-left: 5px
+}
+
+.modal__close {
+    background-color: #15c0f1;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 40px;
+    padding-top: 8px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Larsseit-Bold,Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+#dm-form .icon.icon--percent {
+  display: none;
+}
+.modal--dm-offer .dm-forms .error-message {
+  padding-left: 0;
+}
+
+#v1 {display:none;}</style><script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"SoFi",
+  "alternateName": [
+    "SoFi Technologies",
+    "Social Finance"
+    ],
+  "legalName":"Social Finance, Inc.",
+  "url":"https://www.sofi.com/",
+  "contactPoint":[
+    {
+      "@type":"ContactPoint",
+      "telephone":"+1-855-456-7634",
+      "contactType":"customer support",
+      "contactOption":"TollFree",
+      "areaServed":"US",
+      "availableLanguage":[
+        "English",
+        "Spanish"
+      ]
+    }
+  ],
+  "logo":"https://wordpress.sofi.com/wp/wp-content/uploads/New-Logo@2x.webp",
+  "sameAs":[
+    "https://twitter.com/SoFi",
+    "https://www.linkedin.com/company/sofi",
+    "https://www.facebook.com/SoFi/",
+    "https://www.youtube.com/sofi",
+    "https://www.instagram.com/sofi/",
+    "https://www.tiktok.com/@sofi"
+  ],
+  "subOrganization":[
+    {
+      "name":"SoFi Bank",
+      "alternateName": [
+         "SoFi",
+         "SoFi Banking",
+         "SoFi Checking and Savings"
+      ],
+      "url":"https://www.sofi.com/banking/",
+      "contactPoint":[
+        {
+          "@type":"ContactPoint",
+          "telephone":"+1-855-456-7634",
+          "contactType":"customer support",
+          "contactOption":"TollFree",
+          "areaServed":"US",
+          "availableLanguage":[
+            "English",
+            "Spanish"
+          ]
+        }
+      ],
+      "logo":"https://wordpress.sofi.com/wp/wp-content/uploads/New-Logo@2x.webp",
+      "member":{
+        "@type":"Organization",
+        "name":"FDIC"
+      }
+    },
+    {
+      "name":"SoFi Invest",
+      "url":"https://www.sofi.com/invest/",
+      "contactPoint":[
+        {
+          "@type":"ContactPoint",
+          "telephone":"+1-855-525-7634",
+          "contactType":"customer support",
+          "contactOption":"TollFree",
+          "areaServed":"US",
+          "availableLanguage":[
+            "English",
+            "Spanish"
+          ]
+        }
+      ],
+      "logo":"https://wordpress.sofi.com/wp/wp-content/uploads/New-Logo@2x.webp"
+    },
+    {
+      "name":"SoFi Personal Loans",
+      "url":"https://www.sofi.com/personal-loans/",
+      "contactPoint":[
+        {
+          "@type":"ContactPoint",
+          "telephone":"+1-855-456-7634",
+          "contactType":"customer support",
+          "contactOption":"TollFree",
+          "areaServed":"US",
+          "availableLanguage":[
+            "English",
+            "Spanish"
+          ]
+        }
+      ],
+      "logo":"https://wordpress.sofi.com/wp/wp-content/uploads/New-Logo@2x.webp"
+    },
+    {
+      "name":"SoFi Home Loans",
+      "url":"https://www.sofi.com/home-loans/mortgage/",
+      "contactPoint":[
+        {
+          "@type":"ContactPoint",
+          "telephone":"+1-844-763-4466",
+          "contactType":"customer support",
+          "contactOption":"TollFree",
+          "areaServed":"US",
+          "availableLanguage":[
+            "English",
+            "Spanish"
+          ]
+        }
+      ],
+      "logo":"https://wordpress.sofi.com/wp/wp-content/uploads/New-Logo@2x.webp"
+    },
+    {
+      "name":"SoFi Student Loan Refinancing",
+      "url":"https://www.sofi.com/refinance-student-loan/",
+      "contactPoint":[
+        {
+          "@type":"ContactPoint",
+          "telephone":"+1-855-456-7634",
+          "contactType":"customer support",
+          "contactOption":"TollFree",
+          "areaServed":"US",
+          "availableLanguage":[
+            "English",
+            "Spanish"
+          ]
+        }
+      ],
+      "logo":"https://wordpress.sofi.com/wp/wp-content/uploads/New-Logo@2x.webp"
+    },
+    {
+      "name":"SoFi Private Student Loans",
+      "url":"https://www.sofi.com/private-student-loans/",
+      "contactPoint":[
+        {
+          "@type":"ContactPoint",
+          "telephone":"+1-855-456-7634",
+          "contactType":"customer support",
+          "contactOption":"TollFree",
+          "areaServed":"US",
+          "availableLanguage":[
+            "English",
+            "Spanish"
+          ]
+        }
+      ],
+      "logo":"https://wordpress.sofi.com/wp/wp-content/uploads/New-Logo@2x.webp"
+    },
+    {
+      "name":"SoFi Credit Card",
+      "url":"https://www.sofi.com/credit-card/",
+      "contactPoint":[
+        {
+          "@type":"ContactPoint",
+          "telephone":"+1-844-945-7634",
+          "contactType":"customer support",
+          "contactOption":"TollFree",
+          "areaServed":"US",
+          "availableLanguage":[
+            "English",
+            "Spanish"
+          ]
+        }
+      ],
+      "logo":"https://wordpress.sofi.com/wp/wp-content/uploads/New-Logo@2x.webp"
+    }
+  ]
+}
+</script><style media="print" type="text/css">div.faq_answer { display: block!important; }p.faq_nav { display: none; }</style>    <link rel="stylesheet" type="text/css" href="https://d32ijn7u0aqfv4.cloudfront.net/libraries/wp-react/master-4564/builder-css/builder.min.css"><link rel="stylesheet" type="text/css" href="https://d32ijn7u0aqfv4.cloudfront.net/libraries/wp-react/master-4564/main/main.min.css">
+    <style>
+      /* Accessible text is hidden by default but "displays" if .react-root is empty */
+      .react-content-loading {display: none;}
+      .react-root:empty + .react-content-loading {display: block;}
+      /* Reduce cumulative layout shift by hiding footer until react content is loaded in */
+      .react-root:empty ~ .footer, .react-root:empty ~ .subfooter {display: none;}
+      /* default spinner hidden */
+      .react-root:before { display: none }
+      .react-root:empty {
+        position: relative;
+      }
+
+      /* spinner */
+      .react-root:empty:before {
+        box-sizing: border-box;
+        content: "";
+        display: block;
+        animation: rotate 1.5s linear infinite;
+        border: 8px solid rgb(217, 217, 217);
+        border-left-color: rgb(0, 107, 135);
+        border-radius: 50%;
+        height: 96px;
+        width: 96px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 5;
+      }
+
+      /* desktop */
+      @media (min-width: 1025px) {
+        .react-root:empty {min-height: 500px;}
+      }
+
+      /* tablet */
+      @media (max-width: 1024px) and (min-width: 768px) {
+        .react-root:empty {min-height: 350px;}
+      }
+
+      /* mobile */
+      @media (max-width: 767px) {
+        .react-root:empty {min-height: 200px;}
+      }
+
+      @keyframes rotate {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+      }
+    </style>
+  <style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+</head>
+
+  <body class="home wp-singular page-template page-template-templates page-template-lp-react page-template-templateslp-react-php page page-id-38 wp-theme-sofi-v4 wp-child-theme-sofi-wp-baby l-body-max-page-width page-great-rates-great-benefits-sofi-2" style="padding-top: 6214px;">
+    <!-- GTM -->
+    <noscript>
+      <iframe title="Intentionally blank" aria-hidden="true" src="//www.googletagmanager.com/ns.html?id=GTM-WLSZML" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
+    <div class="header-wrapper" id="header-wrapper">
+      <div class="branch-journeys-top"></div>
+
+      
+      <div id="global-top-nav" class="global-nav-wrap">
+        <!-- insertion point for branch app download banner -->
+  <header class="global-header" role="banner">
+    <nav class="nav-bar">
+              <button aria-label="Toggle menu" class="link hamburger-button u-hide@desktop" id="toggleMenu" onclick="window.toggleMenu()" type="button">
+          <!-- TODO: Add SVG to SVG sprites -->
+          <svg class="hamburger-icon" height="1.5rem" width="1.5rem" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23,18 L23,20 L1,20 L1,18 L23,18 Z M23,11 L23,13 L1,13 L1,11 L23,11 Z M23,4 L23,6 L1,6 L1,4 L23,4 Z"></path>
+          </svg>
+        </button>
+      
+      <!-- 1. SOFI LOGO -->
+              <a href="/" onclick="return true" class="nav-bar__logo" data-qa="nav-sofi-logo" id="nav-sofi-logo">
+          <img class="icon icon--sofi-logo" alt="SoFi" src="https://d32ijn7u0aqfv4.cloudfront.net/git/svgs/sofi-logo.svg">
+        </a>
+      
+      <!-- 2. HEADING -->
+      
+      <!-- 3. MENUS -->
+              <ul class="nav-bar__menu nav-bar__menu--main">
+          <li class="branch-journeys-top"></li>
+          <li class="nav-bar__user-actions u-hide@desktop l-justified-block@mobile-and-tablet">
+                          <a data-ga="nav-link" data-qa="nav-log-in" id="nav-log-in" href="/login/"><strong>Log In</strong></a>
+                        <a data-ga="nav-link" data-qa="nav-contact-us" id="nav-contact-us" href="/contact-us/"><strong>Contact Us</strong></a>
+          </li>
+
+          <li class="nav-dropdown nav-dropdown--mobile-and-tablet nav-dropdown--desktop">
+            <!--
+              TODO: Get rid of inline jQuery!!!!!
+            -->
+            <a href="javascript:void(0);" data-qa="nav-products" id="nav-products" class="nav-dropdown__control" onclick="event.preventDefault(); sofiUtils.checkScreenWidth('/products/', this);">
+              Products
+              <span class="right-arrow u-hide@desktop"></span>
+            </a>
+
+            <div class="nav-dropdown__content">
+              <div class="nav-dropdown__content-inner u-padding-top-none@mobile-and-tablet u-padding-left-none@mobile-and-tablet u-padding-right-none@mobile-and-tablet">
+                <div class="col-group cols--full@mobile-and-tablet cols--1-2@desktop cols--gutters-ms@desktop">
+                  <div class="col">
+                    <div class="nav-dropdown nav-dropdown--mobile-and-tablet">
+                      <p class="nav-dropdown__control u-border-bottom-cantaloupe h5" arial-role="button" onclick="$(this).closest('.nav-dropdown').toggleClass('nav-dropdown--active');" data-qa="nav-borrow">
+                        Loans
+                        <span class="right-arrow u-hide@desktop"></span>
+                      </p>
+
+                      <div class="nav-dropdown__content">
+                        <div class="nav-dropdown__content-inner">
+                          <div class="col-group cols--full@mobile-and-tablet cols--1-2@desktop cols--gutters-ms@desktop">
+                            <div class="col">
+                              <p class="h5">
+                                <a data-ga="nav-link" data-qa="nav-student-loan-refinancing" id="nav-student-loan-refinancing" href="/refinance-student-loan/" aria-label="Refinance your student loans">
+                                  Student Loan Refinancing
+                                </a>
+                              </p>
+                              <ul class="u-vert-child-spacing-xs">
+                                <li><a data-ga="nav-link" data-qa="nav-medical-resident-refinancing" id="nav-medical-resident-refinancing" href="/medical-resident-refinance/">Medical Resident Refinancing</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-parent-plus-refinancing" id="nav-parent-plus-refinancing" href="/parent-plus-refinancing/">Parent PLUS Refinancing</a></li>
+                                <li><a href="/medical-professional-refinancing/">Medical Professional Refinancing</a></li>
+                                <li><a href="/law-mba-degree-refinancing/">Law and MBA Refinancing</a></li>
+                                <li><a href="/smart-start/">SmartStart Refinancing</a></li>
+                              </ul>
+
+                              <hr class="nav-menu-divider u-hide@desktop">
+
+                              <p class="h5 u-margin-top-ms@desktop">
+                                <a data-ga="nav-link" data-qa="nav-private-student-loans" id="nav-private-student-loans" href="/private-student-loans/">Private Student Loans</a>
+                              </p>
+                              <ul class="u-vert-child-spacing-xs">
+                                <li><a data-ga="nav-link" data-qa="nav-undergraduate-student-loans" id="nav-undergraduate-student-loans" href="/private-student-loans/undergraduate-loans/">Undergraduate Student Loans</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-graduate-student-loans" id="nav-graduate-student-loans" href="/private-student-loans/graduate-loans/">Graduate Student Loans</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-law-school-loans" id="nav-law-school-loans" href="/private-student-loans/law-school-loans/">Law School Loans</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-mba-loans" id="nav-mba-loans" href="/private-student-loans/mba-loans/">MBA Loans</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-health-professions-loans" id="nav-health-professions-loans" href="/private-student-loans/health-professions-loans/">Health Professions Loans</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-parent-student-loans" id="nav-parent-student-loans" href="/private-student-loans/parent-loans/">Parent Student Loans</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-medical-and-veterinary-loans" id="nav-medical-and-veterinary-loans" href="/private-student-loans/graduate-medical-veterinary/">Medical and Veterinary Loans</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-dental-loans" id="nav-dental-loans" href="/private-student-loans/dental-loans/">Dental Loans</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-stem-loans" id="nav-stem-loans" href="/private-student-loans/stem-loans/">STEM Loans</a></li>
+                              </ul>
+
+                              <hr class="nav-menu-divider u-hide@desktop">
+                              <p class="h5 u-margin-top-ms@desktop">
+                                <a data-ga="nav-link" href="/auto-loans/auto-loan-refinance/">Auto Loan Refinance</a>
+                              </p>
+
+                              <hr class="nav-menu-divider u-hide@desktop">
+                            </div><!-- /.col -->
+
+                            <div class="col u-margin-top-none@mobile-and-tablet">
+                              <p class="h5">
+                                <a data-ga="nav-link" data-qa="nav-personal-loans" id="nav-personal-loans" href="/personal-loans/">Personal Loans</a>
+                              </p>
+                              <ul class="u-vert-child-spacing-xs">
+                                <li><a data-ga="nav-link" data-qa="nav-home-improvement-loans" id="nav-home-improvement-loans" href="/personal-loans/home-improvement-loans/">Home Improvement Loans</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-credit-card-consolidation-loans" id="nav-credit-card-consolidation-loans" href="/personal-loans/credit-card-consolidation-loans/">Credit Card Consolidation Loans</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-family-planning-loans" id="nav-family-planning-loans" href="/personal-loans/family-planning/">Family Planning Loans</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-travel-loans" id="nav-travel-loans" href="/personal-loans/vacation-loans/">Travel Loans</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-wedding-loans" id="nav-wedding-loans" href="/personal-loans/wedding-loans/">Wedding Loans</a></li>
+                              </ul>
+                              <hr class="nav-menu-divider u-hide@desktop">
+
+                              <p class="h5 u-margin-top-ms@desktop">
+                                <a data-ga="nav-link" data-qa="nav-mortgage-loans" id="nav-mortgage-loans" href="/mortgage-lender/">Home Loans</a>
+                              </p>
+                              <ul class="u-vert-child-spacing-xs">
+                                <li><a data-ga="nav-link" data-qa="nav-home-purchase" id="nav-home-purchase" href="/home-loans/mortgage/">Mortgage Loans</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-mortgage-refinance" id="nav-mortgage-refinance" href="/home-loans/mortgage-refinance/">Mortgage Refinance</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-cash-out-refinance" id="nav-cash-out-refinance" href="/home-loans/cash-out-refinance/">Cash-Out Refinance</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-jumbo-loans" id="nav-jumbo-loans" href="/home-loans/jumbo-mortgage-loans/">Jumbo Loans</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-fha-loans" id="nav-fha-loans" href="/home-loans/fha-loans/">FHA Loans</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-va-loans" id="nav-va-loans" href="/home-loans/va-loans/">VA Loans</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-home-mortgage-preapproval" id="nav-home-mortgage-preapproval" href="/home-loans/mortgage-preapproval/">Mortgage Preapproval</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-home-mortgage-rates" id="nav-home-mortgage-rates" href="/home-loans/mortgage-rates/">Mortgage Rates</a></li>
+                              </ul>
+
+                              <hr class="nav-menu-divider u-hide@desktop">
+                              <p class="h5 u-margin-top-ms@desktop">
+                                <a data-ga="nav-link" data-qa="nav-home-equity" id="nav-home-equity" href="/home-loans/home-equity-loan/">Home Equity</a>
+                              </p>
+                              <ul class="u-vert-child-spacing-xs">
+                                <li><a data-ga="nav-link" data-qa="nav-home-equity-loans" id="nav-home-equity-loans" href="/home-loans/home-equity-loan/">Home Equity Loans</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-heloc" id="nav-heloc" href="/home-loans/heloc/">HELOC</a></li>
+                              </ul>
+                            </div><!-- /.col -->
+                          </div><!-- /.col-group -->
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- /.col -->
+
+                  <div class="col u-margin-top-none@mobile-and-tablet">
+                    <div class="col-group cols--full@mobile-and-tablet cols--1-3@desktop cols--gutters-ms@desktop">
+                      <div class="col">
+                        <div class="nav-dropdown nav-dropdown--mobile-and-tablet">
+                          <!-- TODO: Refactor to use actual button elements -->
+                          <p class="nav-dropdown__control u-border-bottom-cantaloupe h5" arial-role="button" onclick="$(this).closest('.nav-dropdown').toggleClass('nav-dropdown--active');" data-qa="nav-invest">
+                            Investing
+                            <span class="right-arrow u-hide@desktop"></span>
+                          </p>
+
+                          <div class="nav-dropdown__content">
+                            <div class="nav-dropdown__content-inner">
+                              <p class="h5">
+                                <a data-ga="nav-link" data-qa="nav-invest" id="nav-invest" href="/invest/">Invest</a>
+                              </p>
+                              <ul class="u-vert-child-spacing-xs">
+                                <li><a data-ga="nav-link" data-qa="nav-active-investing" id="nav-active-investing" href="/invest/active/">Self-Directed Investing</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-automated-investing" id="nav-automated-investing" href="/invest/automated/">Robo Investing</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-retirement-accounts" id="nav-retirement-accounts" href="/invest/retirement-accounts/">Retirement Accounts (IRAs)</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-retirement-accounts" id="nav-retirement-accounts" href="/invest/stock-trading/">Stock Trading</a></li>
+                                <li><a data-ga="nav-link" href="/invest/ipo-investing/">IPO Investing</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-stock-bits" id="nav-stock-bits" href="/invest/fractional-shares/">Fractional Shares</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-etfs" id="nav-etfs" href="/invest/etfs/">ETFs</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div><!-- /.nav-dropdown -->
+
+                        <div class="nav-dropdown nav-dropdown--mobile-and-tablet u-margin-top@desktop">
+                          <!-- TODO: Refactor to use actual button elements -->
+                          <p class="nav-dropdown__control u-border-bottom-cantaloupe h5" arial-role="button" onclick="$(this).closest('.nav-dropdown').toggleClass('nav-dropdown--active');" data-qa="nav-invest">
+                            Credit Cards
+                            <span class="right-arrow u-hide@desktop"></span>
+                          </p>
+
+                          <div class="nav-dropdown__content">
+                            <div class="nav-dropdown__content-inner">
+                              <ul class="u-vert-child-spacing-xs">
+                                <li class="h5">
+                                  <a data-ga="nav-link" href="/credit-card/">Credit Cards</a>
+                                </li>
+                                <li>
+                                  <a data-ga="nav-link" href="/credit-card/everyday-cash/">Everyday Cash Rewards Card</a>
+                                </li>
+                                <li>
+                                  <a data-ga="nav-link" href="/credit-card/essential/">Essential Card</a>
+                                </li>
+                                <li>
+                                  <a data-ga="nav-link" href="/credit-card/unlimited/">Unlimited 2% Card</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div><!-- /.nav-dropdown -->
+
+                        <div class="nav-dropdown nav-dropdown--mobile-and-tablet u-margin-top@desktop">
+                          <!-- TODO: Refactor to use actual button elements -->
+                          <p class="nav-dropdown__control u-border-bottom-cantaloupe h5" arial-role="button" onclick="$(this).closest('.nav-dropdown').toggleClass('nav-dropdown--active');" data-qa="nav-invest">
+                            Premium Membership
+                            <span class="right-arrow u-hide@desktop"></span>
+                          </p>
+
+                          <div class="nav-dropdown__content">
+                            <div class="nav-dropdown__content-inner">
+                              <ul class="u-vert-child-spacing-xs">
+                                <li class="h5">
+                                  <a data-ga="nav-link" data-qa="nav-sofi-plus" id="nav-plus-products" href="/sofi-plus/">
+                                    SoFi Plus
+                                  </a>
+                                </li>
+                                <li>
+                              </li></ul>
+                            </div>
+                          </div>
+                        </div><!-- /.nav-dropdown -->
+
+                      </div><!-- /.col -->
+
+                      <div class="col u-margin-top-none@mobile-and-tablet">
+                        <div class="nav-dropdown nav-dropdown--mobile-and-tablet">
+                          <p class="nav-dropdown__control u-border-bottom-cantaloupe h5" arial-role="button" onclick="$(this).closest('.nav-dropdown').toggleClass('nav-dropdown--active');" data-qa="nav-spend">
+                            Banking
+                            <span class="right-arrow u-hide@desktop"></span>
+                          </p>
+
+                          <div class="nav-dropdown__content">
+                            <div class="nav-dropdown__content-inner">
+                              <ul class="u-vert-child-spacing-xs">
+                                <p class="h5">
+                                  <a data-ga="nav-link" data-qa="nav-sofi-banking" id="nav-sofi-banking" href="/banking/">Banking</a>
+                                </p>
+                                <li><a data-ga="nav-link" data-qa="nav-sofi-checking" id="nav-sofi-checking" href="/banking/checking-account/">Checking Account</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-sofi-savings" id="nav-sofi-savings" href="/banking/savings-account/">High Yield Savings Account</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-sofi-money-transfer" id="nav-sofi-money-transfer" href="/banking/international-money-transfer/">International Money Transfers</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div><!-- /.nav-dropdown -->
+
+                        <div class="nav-dropdown nav-dropdown--mobile-and-tablet u-margin-top@desktop">
+                          <p class="nav-dropdown__control u-border-bottom-cantaloupe h5" arial-role="button" onclick="$(this).closest('.nav-dropdown').toggleClass('nav-dropdown--active');" data-qa="nav-spend">
+                            Crypto
+                            <span class="right-arrow u-hide@desktop"></span>
+                          </p>
+
+                          <div class="nav-dropdown__content">
+                            <div class="nav-dropdown__content-inner">
+                              <ul class="u-vert-child-spacing-xs">
+                                <p class="h5">
+                                  <a data-ga="nav-link" data-qa="nav-sofi-crypto" id="nav-sofi-crypto" href="/crypto/">Crypto</a>
+                                </p>
+                              </ul>
+                            </div>
+                          </div>
+                        </div><!-- /.nav-dropdown -->
+
+                        <div class="nav-dropdown nav-dropdown--mobile-and-tablet u-margin-top@desktop">
+                          <p class="nav-dropdown__control u-border-bottom-cantaloupe h5" arial-role="button" onclick="$(this).closest('.nav-dropdown').toggleClass('nav-dropdown--active');" data-qa="nav-protect">
+                            Insurance
+                            <span class="right-arrow u-hide@desktop"></span>
+                          </p>
+
+                          <div class="nav-dropdown__content">
+                            <div class="nav-dropdown__content-inner">
+                              <p class="h5">
+                                <a data-ga="nav-link" data-qa="nav-sofi-protect" id="nav-sofi-protect" href="/online-insurance/">Insurance</a>
+                              </p>
+                              <ul class="u-vert-child-spacing-xs">
+                                <li><a data-ga="nav-link" data-qa="nav-auto-insurance" id="nav-auto-insurance" href="/online-insurance/auto-insurance/">Auto Insurance</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-life-insurance" id="nav-life-insurance" href="/online-insurance/life-insurance/">Life Insurance</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-homeowners-insurance" id="nav-homeowners-insurance" href="/online-insurance/homeowners-insurance/">Homeowners Insurance</a></li>
+                                <li><a data-ga="nav-link" data-qa="nav-renters-insurance" id="nav-renters-insurance" href="/online-insurance/renters-insurance/">Renters Insurance</a></li>
+                              </ul>
+
+                              <p class="h5 u-margin-top-ms">
+                                <a data-ga="nav-link" data-qa="nav-estate-planning" id="nav-estate-planning" href="/online-insurance/estate-planning/">Estate Planning</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div><!-- /.nav-dropdown -->
+                      </div><!-- /.col -->
+
+                      <div class="col u-margin-top-none@mobile-and-tablet">
+                        <div class="nav-dropdown nav-dropdown--mobile-and-tablet">
+                          <p class="nav-dropdown__control u-border-bottom-cantaloupe h5" arial-role="button" onclick="$(this).closest('.nav-dropdown').toggleClass('nav-dropdown--active');" data-qa="nav-protect">
+                            Financial Insights
+                            <span class="right-arrow u-hide@desktop"></span>
+                          </p>
+
+                          <div class="nav-dropdown__content">
+                            <div class="nav-dropdown__content-inner">
+                              <ul class="u-vert-child-spacing-xs">
+                                <li class="h5"><a data-ga="nav-link" data-qa="nav-sofi-relay" id="nav-sofi-relay" href="/financial-insights/">Financial Insights</a></li>
+                                <li><a href="/financial-insights/credit-score-monitoring/">Credit Score Monitoring</a></li>
+                                <li><a href="/financial-insights/budgeting-and-spending/">Budgeting and Spending</a></li>
+                                <li><a href="/financial-insights/property-tracking/">Property Tracking</a></li>
+                                <li><a href="/financial-insights/investment-portfolio-summary/">Investment Portfolio Summary</a></li>
+                                <li><a href="/financial-insights/debt-summary/">Debt Summary</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div><!-- /.nav-dropdown -->
+
+                        <div class="nav-dropdown nav-dropdown--mobile-and-tablet u-margin-top@desktop">
+                          <p class="nav-dropdown__control u-border-bottom-cantaloupe h5" arial-role="button" onclick="$(this).closest('.nav-dropdown').toggleClass('nav-dropdown--active');" data-qa="nav-protect">
+                            Business Solutions
+                            <span class="right-arrow u-hide@desktop"></span>
+                          </p>
+
+                          <div class="nav-dropdown__content">
+                            <div class="nav-dropdown__content-inner">
+                              <ul class="u-vert-child-spacing-xs">
+                                <li class="h5"><a data-ga="nav-link" data-qa="nav-sofi-at-work" id="nav-sofi-at-work" href="/sofi-at-work">SoFi at Work</a></li>
+                                <li class="h5">
+                                  <a data-ga="nav-link" rel="noreferrer noopener" href="/small-business-loans/">
+                                    Small Business Financing
+                                  </a>
+                                </li>
+                                <li>
+                                  <a data-ga="nav-link" rel="noreferrer noopener" href="/small-business-loans/business-line-of-credit/">
+                                    Line of Credit
+                                  </a>
+                                </li>
+                                <li>
+                                  <a data-ga="nav-link" rel="noreferrer noopener" href="/small-business-loans/equipment-financing/">
+                                    Equipment Financing
+                                  </a>
+                                </li>
+                                <li>
+                                  <a data-ga="nav-link" rel="noreferrer noopener" href="/small-business-loans/startup-business-loans/">
+                                    Startup Loans
+                                  </a>
+                                </li>
+                                <li>
+                                  <p class="h5">
+                                    <a data-ga="nav-link" data-qa="nav-browse-all-products" id="nav-browse-all-products" href="/small-business-checking/">Business Checking</a>
+                                  </p>
+                                </li>
+                                <li>
+                                  <a class="h5" data-ga="nav-link" rel="noreferrer noopener" href="/small-business-credit-cards/">
+                                    Business Credit Card
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div><!-- /.nav-dropdown -->
+
+                        <div class="nav-dropdown__content u-margin-top@desktop">
+                          <div class="nav-dropdown__content-inner">
+                            <p class="h5">
+                              <a data-ga="nav-link" data-qa="nav-browse-all-products" id="nav-browse-all-products" href="/products/">Browse all products</a>
+                            </p>
+                          </div>
+                        </div><!-- /.nav-dropdown -->
+                      </div><!-- /.col -->
+                    </div><!-- /.col-group -->
+                  </div><!-- /.col -->
+                </div><!-- /.col-group -->
+              </div><!-- /.nav-dropdown__content-inner -->
+            </div><!-- /.nav-dropdown__content -->
+          </li>
+
+          <li class="nav-dropdown nav-dropdown--mobile-and-tablet nav-dropdown--desktop">
+            <a href="/sofi-plus/" data-qa="nav-plus-top" id="nav-plus-top" class="nav-dropdown__control">
+              SoFi Plus
+            </a>
+          </li>
+ 
+          <li class="nav-dropdown nav-dropdown--mobile-and-tablet nav-dropdown--desktop">
+            <a href="javascript:void(0);" data-qa="nav-member-benefits" id="nav-member-benefits" class="nav-dropdown__control" onclick="event.preventDefault(); sofiUtils.checkScreenWidth('/member-benefits/', this);">
+              Member Benefits
+              <span class="right-arrow u-hide@desktop"></span>
+            </a>
+
+            <div class="nav-dropdown__content">
+              <div class="nav-dropdown__content-inner">
+                <div class="col-group cols--full@mobile-and-tablet cols--1-4-and-3-4@desktop cols--gutters-ms@desktop">
+                  <div class="col l-flex-center-vertical">
+                    <div class="u-hide@mobile-and-tablet">
+                      <p class="eyebrow-header h3">Member Benefits</p>
+                      <p>
+                        As a SoFi member, you get access
+                        to exclusive benefits designed to help
+                        set you up for success with your money,
+                        community, and career.
+                      </p>
+                      <p class="u-margin-top-sm">
+                        <a href="/member-benefits/" data-qa="nav-see-all-benefits" id="nav-see-all-benefits" class="btn btn--punchout btn--white" data-ga="nav-link">See All Benefits</a>
+                      </p>
+                    </div>
+                  </div><!-- /.col -->
+
+                  <div class="col u-margin-top-none@mobile-and-tablet">
+                    <div class="col-group cols--full@mobile-and-tablet cols--1-3@desktop cols--gutters-ms@desktop">
+                      <div class="col">
+
+                        <div class="u-position-relative">
+                          <p class="h5 nav-sub-section-header">
+                            <a href="/rewards/" data-qa="nav-rewards" id="nav-rewards" class="u-expand-active-area" data-ga="nav-link">SoFi Member Rewards</a>
+                          </p>
+                          <p class="u-hide@mobile-and-tablet">Earn points for making moves toward financial independence—every step of the way.</p>
+                        </div>
+
+                        <div class="u-position-relative">
+                          <p class="h5 nav-sub-section-header u-margin-top-ms@desktop">
+                            <a href="/referral-program/" data-qa="nav-referral-program" id="nav-referral-program" class="u-expand-active-area" data-ga="nav-link">Referral Program</a>
+                          </p>
+                          <p class="u-hide@mobile-and-tablet">
+                            Refer your friends &amp; family to SoFi and get paid.
+                          </p>
+                        </div>
+                        <div class="u-position-relative">
+                          <p class="h5 nav-sub-section-header u-margin-top-ms@desktop">
+                            <a href="/member-advisory-board/" data-qa="nav-member-advisory-board" id="nav-member-advisory-board" class="u-expand-active-area" data-ga="nav-link">Member Advisory Board</a>
+                          </p>
+                          <p class="u-hide@mobile-and-tablet">
+                            Meet our panel of SoFi Members who provide invaluable feedback across all our products and services.
+                          </p>
+                        </div>
+                      </div><!-- /.col -->
+
+                      <div class="col u-margin-top-none@mobile-and-tablet">
+                        <div class="u-position-relative">
+                          <p class="h5 nav-sub-section-header">
+                            <a href="/sofi-stadium/" data-qa="nav-sofi-stadium" id="nav-sofi-stadium" class="u-expand-active-area" data-ga="nav-link">SoFi Stadium</a>
+                          </p>
+                          <p class="u-hide@mobile-and-tablet">
+                            Members get exclusive SoFi Stadium perks like expedited entry, access to the SoFi Member Lounge, and more.
+                          </p>
+                        </div>
+
+                        <div class="u-position-relative">
+                          <p class="h5 nav-sub-section-header u-margin-top-ms@desktop">
+                            <a href="/sofi-plus-experiences/" data-qa="nav-experiences" id="nav-experiences" class="u-expand-active-area" data-ga="nav-link">Member Experiences</a>
+                          </p>
+                          <p class="u-hide@mobile-and-tablet">SoFi Plus members now get one-of-a-kind entertainment access with SoFi Plus Experiences.</p>
+                        </div>
+                      </div><!-- /.col -->
+
+                      <div class="col u-margin-top-none@mobile-and-tablet">
+                        <div class="u-position-relative">
+                          <p class="h5 nav-sub-section-header">
+                            <a href="/no-cost-financial-planning/" data-qa="nav-financial-planning" id="nav-financial-planning" class="u-expand-active-area" data-ga="nav-link">Financial Planning</a>
+                          </p>
+                          <p class="u-hide@mobile-and-tablet">
+                            Get personalized advice from a credentialed financial planner.
+                          </p>
+                        </div>
+
+                        <div class="u-position-relative">
+                          <p class="h5 nav-sub-section-header u-margin-top-ms@desktop">
+                            <a href="/protect/estate-planning/" data-qa="nav-estate-planning" id="nav-estate-planning" class="u-expand-active-area" data-ga="nav-link">Estate Planning</a>
+                          </p>
+                          <p class="u-hide@mobile-and-tablet">
+                            Members get an exclusive discount on their trust, will or guardianship estate plan.
+                          </p>
+                        </div>
+
+                        <div class="u-position-relative">
+                          <p class="h5 nav-sub-section-header u-margin-top-ms@desktop">
+                            <a href="/sofi-travel/" data-qa="nav-estate-planning" id="nav-estate-planning" class="u-expand-active-area" data-ga="nav-link">SoFi Travel</a>
+                          </p>
+                          <p class="u-hide@mobile-and-tablet">
+                            Save and earn rewards as a SoFi Member.
+                          </p>
+                        </div>
+                      </div><!-- /.col -->
+                    </div><!-- /.col-group -->
+
+                    <div class="u-hide@desktop u-position-relative">
+                      <p class="h5 nav-sub-section-header">
+                        <a href="/member-benefits/" data-qa="nav-see-all-benefits" id="nav-see-all-benefits" class="u-expand-active-area" data-ga="nav-link">See All Benefits</a>
+                      </p>
+                    </div>
+                  </div><!-- /.col -->
+                </div><!-- /.col-group -->
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-dropdown nav-dropdown--mobile-and-tablet nav-dropdown--desktop">
+            <a href="javascript:void(0);" data-qa="nav-resources" id="nav-resources" class="nav-dropdown__control" onclick="event.preventDefault(); sofiUtils.checkScreenWidth('/learn/', this);">
+              Resources
+              <span class="right-arrow u-hide@desktop"></span>
+            </a>
+
+            <div class="nav-dropdown__content">
+              <div class="nav-dropdown__content-inner">
+                <div class="col-group cols--full@mobile-and-tablet cols--1-4-and-3-4@desktop cols--gutters-ms@desktop">
+                  <div class="col l-flex-center-vertical">
+                    <div class="u-hide@mobile-and-tablet">
+                      <p class="eyebrow-header h3">Resources</p>
+                      <p>Get answers to your questions; plus tools, guides, calculators, &amp; more.</p>
+                      <p class="u-margin-top-sm">
+                        <a href="/learn/" data-qa="nav-visit-sofi-learn" id="nav-visit-sofi-learn" class="btn btn--punchout btn--white" data-ga="nav-link">Visit SoFi Learn</a>
+                      </p>
+                    </div>
+
+                    <div class="u-hide@desktop">
+                      <p class="u-margin-none">
+                        <a data-ga="nav-link" data-qa="nav-visit-sofi-learn" id="nav-visit-sofi-learn" href="/learn/">Visit SoFi Learn</a>
+                      </p>
+                      <hr class="nav-menu-divider">
+                      <p class="u-margin-none">
+                        <a data-ga="nav-link" data-qa="nav-visit-our-blog" id="nav-visit-our-blog" href="/on-the-money/">On the Money</a>
+                      </p>
+                      <hr class="nav-menu-divider">
+                      <p class="u-margin-none">
+                        <a data-ga="nav-link" data-qa="nav-faqs" id="nav-faqs" href="/faq/">FAQs</a>
+                      </p>
+                      <hr class="nav-menu-divider">
+                      <p class="u-margin-none">
+                        <a data-ga="nav-link" data-qa="nav-eligibility-criteria" id="nav-eligibility-criteria" href="/eligibility-criteria/">Eligibility Criteria</a>
+                      </p>
+                      <hr class="nav-menu-divider">
+                      <p class="u-margin-none">
+                        <a data-ga="nav-link" data-qa="nav-research-hub" id="nav-research-hub" href="/research/">Research Hub</a>
+                      </p>
+                      <hr class="nav-menu-divider">
+                      <p class="u-margin-none">
+                        <a data-ga="nav-link" data-qa="nav-fraud-support" id="nav-fraud-support" href="/fraud/">Fraud Support</a>
+                      </p>
+                    </div>
+                  </div><!-- /.col -->
+
+                  <div class="col u-margin-top-none@mobile-and-tablet">
+                    <div class="col-group cols--full@mobile-and-tablet cols--1-3@desktop cols--gutters-ms@desktop">
+                      <div class="col">
+                        <hr class="nav-menu-divider u-hide@desktop">
+                        <p class="h5">Top Resources</p>
+                        <ul class="u-vert-child-spacing-xs">
+                          <li><a data-ga="nav-link" data-qa="nav-student-loans-help-center" id="nav-student-loans-help-center" href="/student-debt-guide/">Student Debt Guide</a></li>
+                          <li><a data-ga="nav-link" data-qa="nav-home-loan-help-center" id="nav-home-loan-help-center" href="/home-loan-help-center/">Mortgage Resource Center</a></li>
+                          <li><a data-ga="nav-link" data-qa="nav-fixed-vs-variable-rates" id="nav-fixed-vs-variable-rates" href="/fixed-vs-variable-rate-loans/">Fixed vs. Variable Rates</a></li>
+                          <li><a data-ga="nav-link" data-qa="nav-medical-school-refinance-guide" id="nav-medical-school-refinance-guide" href="/medical-student-loan-refinance-guide/">Medical School Refinance Guide</a></li>
+                          <li><a data-ga="nav-link" data-qa="nav-investing-101-guide" id="nav-investing-101-guide" href="/investing-101-center/">Investing 101 Guide</a></li>
+                          <li><a data-ga="nav-link" data-qa="nav-consolidate-vs-refi" id="nav-consolidate-vs-refi" href="/consolidate-student-loans-vs-refinance/">Consolidate vs. Refi</a></li>
+                          <li><a data-ga="nav-link" data-qa="nav-learn-credit-card" id="nav-learn-credit-card" href="/learn/content/credit-card/">Credit Card Resource Hub</a></li>
+                        </ul>
+                        <p class="u-margin-top-sm u-margin-bottom-none">
+                          <a data-ga="nav-link" data-qa="nav-see-all-resources" id="nav-see-all-resources" href="/learn/">
+                            See All Resources
+                            <span class="right-arrow u-hide@desktop"></span>
+                          </a>
+                        </p>
+                      </div><!-- /.col -->
+
+                      <div class="col u-margin-top-none@mobile-and-tablet">
+                        <hr class="nav-menu-divider u-hide@desktop">
+
+                        <p class="h5">Top Tools</p>
+                        <ul class="u-vert-child-spacing-xs">
+                          <li><a data-ga="nav-link" data-qa="nav-student-loan-refinance-calculator" id="nav-student-loan-refinance-calculator" href="/student-loan-refinancing-calculator/">Student Loan Refinance Calculator</a></li>
+                          <li><a data-ga="nav-link" data-qa="nav-mortgage-calculator" id="nav-mortgage-calculator" href="/mortgage-calculator/">Mortgage Calculator</a></li>
+                          <li><a data-ga="nav-link" data-qa="nav-student-loan-payment-calculator" id="nav-student-loan-payment-calculator" href="/student-loan-calculator/">Student Loan Payment Calculator</a></li>
+                          <li><a data-ga="nav-link" data-qa="nav-personal-loan-calculator" id="nav-personal-loan-calculator" href="/personal-loan-calculator/">Personal Loan Calculator</a></li>
+                          <li><a data-ga="nav-link" data-qa="nav-student-loan-payoff-calculator" id="nav-student-loan-payoff-calculator" href="/student-loans-payoff-calculator/">Student Loan Payoff Calculator</a></li>
+                          <li><a data-ga="nav-link" data-qa="nav-home-affordability-calculator" id="nav-home-affordability-calculator" href="/home-affordability-calculator/">Home Affordability Calculator</a></li>
+                          <li><a data-ga="nav-link" data-qa="nav-life-insurance-calculator" id="nav-life-insurance-calculator" href="https://www.ladderlife.com/calculator">Life Insurance Calculator</a></li>
+                        </ul>
+                        <p class="u-margin-top-sm u-margin-bottom-none">
+                          <a data-ga="nav-link" data-qa="nav-see-all-tools" id="nav-see-all-tools" href="/learn/content/tools-calculators/">
+                            See All Tools
+                            <span class="right-arrow u-hide@desktop"></span>
+                          </a>
+                        </p>
+                      </div><!-- /.col -->
+
+                      <div class="col u-hide@mobile-and-tablet u-margin-top-none@mobile-and-tablet">
+                        <hr class="nav-menu-divider u-hide@desktop">
+                        <p class="h5">Learn More</p>
+                        <ul class="u-vert-child-spacing-xs">
+                          <li><a data-ga="nav-link" data-qa="nav-sofi-daily-newsletter" id="nav-sofi-daily-newsletter" href="/scra-military-benefits/">Military Benefits</a></li>
+                          <li><a data-ga="nav-link" data-qa="nav-visit-our-blog" id="nav-visit-our-blog" href="/on-the-money/">On the Money</a></li>
+                          <li><a data-ga="nav-link" data-qa="nav-investment-strategy" id="nav-investment-strategy" href="/on-the-money/category/investment-strategy/">Investment Strategy</a></li>
+                          <li><a data-ga="nav-link" data-qa="nav-faqs" id="nav-faqs" href="/faq/">FAQs</a></li>
+                          <li><a data-ga="nav-link" data-qa="nav-eligibility-criteria" id="nav-eligibility-criteria" href="/eligibility-criteria/">Eligibility Criteria</a></li>
+                          <li><a data-ga="nav-link" data-qa="nav-research-hub" id="nav-research-hub" href="/research/">Research Hub</a></li>
+                          <li><a data-ga="nav-link" data-qa="nav-fraud-support" id="nav-fraud-support" href="/fraud/">Fraud Support</a></li>
+                        </ul>
+                      </div><!-- /.col -->
+                    </div><!-- /.col-group -->
+                  </div><!-- /.col -->
+                </div><!-- /.col-group -->
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-dropdown nav-dropdown--mobile-and-tablet nav-dropdown--desktop">
+            <a href="javascript:void(0);" data-ga="nav-about" class="link nav-dropdown__control" onclick="event.preventDefault(); sofiUtils.checkScreenWidth('/our-story/', this);">
+              About
+              <span class="right-arrow u-hide@desktop"></span>
+            </a>
+
+            <div class="nav-dropdown__content">
+              <div class="nav-dropdown__content-inner">
+                <div class="col-group cols--full@mobile-and-tablet cols--1-4-and-3-4@desktop cols--gutters-ms@desktop">
+                  <div class="col l-flex-center-vertical">
+                    <div class="u-hide@mobile-and-tablet">
+                      <p class="eyebrow-header h3">About Us</p>
+                      <p>Learn more about our mission and values, how we started, and what we’ve accomplished since then.</p>
+                      <p class="u-margin-top-sm">
+                        <a data-ga="nav-link" data-qa="nav-our-story" id="nav-our-story" href="/our-story/" class="btn btn--punchout btn--white">Learn More</a>
+                      </p>
+                    </div>
+                  </div><!-- /.col -->
+
+                  <div class="col u-margin-top-none@mobile-and-tablet">
+                    <div class="col-group cols--full cols--gutters-none@mobile-and-tablet cols--gutters-sm@desktop">
+                      <div class="col">
+                        <p class="u-margin-top-none@mobile-and-tablet u-hide@desktop">
+                          <a data-ga="nav-link" data-qa="nav-about-sofi" id="nav-about-sofi" href="/our-story/" class="u-display-block">About Us</a>
+                        </p>
+
+                        <div class="col-group cols--full@mobile-and-tablet cols--1-3@desktop cols--gutters-none@mobile-and-tablet cols--gutters-sm@desktop">
+                          <div class="col u-position-relative u-margin-top-none@mobile-and-tablet">
+                            <p class="h5 nav-sub-section-header">
+                              <a href="/our-leadership/" data-qa="nav-how-it-works" id="nav-how-it-works" class="u-expand-active-area" data-ga="nav-link">
+                                Our Leadership
+                              </a>
+                            </p>
+                            <p class="u-hide@mobile-and-tablet">
+                              Meet the SoFi leadership team and board members.
+                            </p>
+                          </div><!-- /.col -->
+
+                          <div class="col u-position-relative u-margin-top-none@mobile-and-tablet">
+                            <p class="h5 nav-sub-section-header">
+                              <a href="/how-it-works/" data-qa="nav-how-it-works" id="nav-how-it-works" class="u-expand-active-area" data-ga="nav-link">
+                                How it Works
+                              </a>
+                            </p>
+                            <p class="u-hide@mobile-and-tablet">
+                              Read about how SoFi works—and how we can help you reach your financial goals.
+                            </p>
+                          </div><!-- /.col -->
+
+                          <div class="col u-position-relative u-margin-top-none@mobile-and-tablet">
+                            <p class="h5 nav-sub-section-header">
+                              <a href="/values/" data-qa="nav-values" id="nav-values" class="u-expand-active-area" data-ga="nav-link">
+                                Our Values
+                              </a>
+                            </p>
+                            <p class="u-hide@mobile-and-tablet">Learn more about SoFi’s core values.</p>
+                          </div><!-- /.col -->
+
+                          <div class="col u-position-relative u-margin-top-none@mobile-and-tablet">
+                            <p class="h5 nav-sub-section-header">
+                              <a href="/press/" data-qa="nav-press" id="nav-press" class="u-expand-active-area" data-ga="nav-link">Press</a>
+                            </p>
+                            <p class="u-hide@mobile-and-tablet">Read through the latest SoFi news coverage.</p>
+                          </div><!-- /.col -->
+
+                          <div class="col u-position-relative u-margin-top-none@mobile-and-tablet">
+                            <p class="h5 nav-sub-section-header">
+                              <a href="/investors/" data-qa="nav-investors" id="nav-investors" class="u-expand-active-area" data-ga="nav-link">Investors</a>
+                            </p>
+                            <p class="u-hide@mobile-and-tablet">Information for investors in SOFI common stock.</p>
+                          </div><!-- /.col -->
+
+                          <div class="col u-position-relative u-margin-top-none@mobile-and-tablet">
+                            <p class="h5 nav-sub-section-header">
+                              <a href="/careers/" data-qa="nav-careers" id="nav-careers" class="u-expand-active-area" data-ga="nav-link">
+                                Careers
+                              </a>
+                            </p>
+                            <p class="u-hide@mobile-and-tablet">
+                              Come work with us!
+                            </p>
+                          </div><!-- /.col -->
+
+                          <div class="col u-position-relative u-margin-top-none@mobile-and-tablet">
+                            <p class="h5 nav-sub-section-header">
+                              <a href="/inclusive-culture/" data-qa="nav-inclusive-culture" id="nav-inclusive-culture" class="u-expand-active-area" data-ga="nav-link">
+                                Inclusive Culture
+                              </a>
+                            </p>
+                            <p class="u-hide@mobile-and-tablet">
+                              Learn about our commitment to fostering a welcoming workforce.
+                            </p>
+                          </div><!-- /.col -->
+
+                          <div class="col u-position-relative u-margin-top-none@mobile-and-tablet">
+                            <p class="h5 nav-sub-section-header">
+                              <a href="/contact-us/" data-qa="nav-contact-us" id="nav-contact-us" class="u-expand-active-area" data-ga="nav-link">
+                                Contact Us
+                              </a>
+                            </p>
+                            <p class="u-hide@mobile-and-tablet">
+                              Questions? Comments? Just want to talk? Get in touch with us via phone or email.
+                            </p>
+                          </div><!-- /.col -->
+                        </div><!-- /.col-group -->
+                      </div><!-- /.col -->
+                    </div><!-- /.col-group -->
+                  </div><!-- /.col -->
+                </div><!-- /.col-group -->
+              </div><!-- /.nav-dropdown__content-inner -->
+            </div><!-- /.nav-dropdown__content -->
+          </li>
+        </ul>
+      
+      <ul class="nav-bar__menu nav-bar__menu--ctas">
+        <!-- 4. LOG IN CTA -->
+                              <li id="login-cta-container" class="u-hide@mobile">
+              <a id="main-nav-login-link" data-ga="nav-link" data-qa="nav-log-in" class="login-cta" href="/login/">Log In</a>
+            </li>
+                  
+        <!-- 5. FMR CTA -->
+                  <li>
+                        <a id="main-nav-cta" data-qa="nav-fmr-cta" class="btn nav-bar__cta-btn" data-ga="nav-link" data-original-cta-url="https://www.sofi.com/signup/?sofi_login=true&amp;register=true&amp;endpoint=https://www.sofi.com/my/banking/setup/start" href="https://www.sofi.com/signup/?sofi_login=true&amp;register=true&amp;endpoint=https://www.sofi.com/my/banking/setup/start">
+              Get Started            </a>
+                          <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                  updateGlobalNavCtaHref();
+                });
+                function updateGlobalNavCtaHref() {
+                    const navLink = document.querySelector('[data-original-cta-url]');
+                    if (navLink) {
+                      const originalCtaUrl = navLink.getAttribute('data-original-cta-url');
+                      const currentUrl = new URL(window.location.href);
+                      const currentParams = currentUrl.search;
+                      const confirmLinkUrl = new URL(originalCtaUrl, window.location.origin);
+                      const separator = confirmLinkUrl.search ? '&' : '?';
+                      navLink.href = originalCtaUrl + (currentParams ? separator + currentParams.substring(1) : '');
+                    }
+                  }
+              </script>
+                      </li>
+              </ul>
+    </nav>
+  </header>
+
+
+<div id="modals-container">
+  <div id="m-product-category" role="dialog" aria-modal="true" aria-labelledby="product-category-title">
+  <div class="builder-modal modal__fade-screen product-category">
+    <div class="modal__inner m-large-width bg-turquoise text-white">
+      <div class="modal__content">
+        <button class="modal__close m-close" aria-label="Close modal">
+          <svg width="24" height="24" class="text-white">
+            <use xlink:href="#gray-close"></use>
+          </svg>
+        </button>
+
+        <h2 id="product-category-title">
+          Select a product to get started.
+        </h2>
+
+        <ul class="product-cards-list plain text-left">
+          <li class="card invest-card">
+            <a data-ga="product-category-modal" class="box rounded shadow" href="/login/registration/?endpoint=https%3A%2F%2Fwww.sofi.com%2Fwealth%2Fapp%2Fproductselection" aria-label="See more info">
+              <p class="margin-none"><strong class="h4 text-ink">Invest</strong></p>
+              <p class="h3 text-ocean margin-none hide@tablet hide@mobile">
+                →
+              </p>
+            </a>
+          </li>
+
+          <li class="card pl-card">
+            <a data-ga="product-category-modal" class="box rounded shadow" href="/login/registration/?appType=pl" aria-label="See more info">
+              <p class="margin-none"><strong class="h4 text-ink">Personal Loans</strong></p>
+              <p class="h3 text-ocean margin-none hide@tablet hide@mobile">
+                →
+              </p>
+            </a>
+          </li>
+
+          <li class="card slr-card">
+            <a data-ga="product-category-modal" class="box rounded shadow" href="/login/registration/?appType=refi" aria-label="See more info">
+              <p class="margin-none">
+                <strong class="h4 text-ink">
+                  Student Loan <br>
+                  Refinancing
+                </strong>
+              </p>
+              <p class="h3 text-ocean margin-none hide@tablet hide@mobile">
+                →
+              </p>
+            </a>
+          </li>
+
+          <li class="card money-card">
+            <a data-ga="product-category-modal" class="box rounded shadow" href="/banking/" aria-label="See more info">
+              <p class="margin-none"><strong class="h4 text-ink">Banking</strong></p>
+              <p class="h3 text-ocean margin-none hide@tablet hide@mobile">
+                →
+              </p>
+            </a>
+          </li>
+
+          <li class="card home-loans-card">
+            <a data-ga="product-category-modal" class="box rounded shadow" href="/home-loans/mortgage/" aria-label="See more info">
+              <p class="margin-none"><strong class="h4 text-ink">Mortgages</strong></p>
+              <p class="h3 text-ocean margin-none hide@tablet hide@mobile">
+                →
+              </p>
+            </a>
+          </li>
+
+          <li class="card credit-card">
+            <a data-ga="product-category-modal" class="box rounded shadow" href="/credit-card/" aria-label="See more info">
+              <p class="margin-none"><strong class="h4 text-ink">Credit Card</strong></p>
+              <p class="h3 text-ocean margin-none hide@tablet hide@mobile">
+                →
+              </p>
+            </a>
+          </li>
+
+          <li class="card psl-card">
+            <a data-ga="product-category-modal" class="box rounded shadow" href="/login/registration/?appType=inschool" aria-label="See more info">
+              <p class="margin-none">
+                <strong class="h4 text-ink">
+                  Private Student <br>
+                  Loans
+                </strong>
+              </p>
+              <p class="h3 text-ocean margin-none hide@tablet hide@mobile">
+                →
+              </p>
+            </a>
+          </li>
+
+          <li class="card insurance-card">
+            <a data-ga="product-category-modal" class="box rounded shadow" href="/protect/" aria-label="See more info">
+              <p class="margin-none"><strong class="h4 text-ink">Insurance</strong></p>
+              <p class="h3 text-ocean margin-none hide@tablet hide@mobile">
+                →
+              </p>
+            </a>
+          </li>
+
+          <li class="card relay-card">
+            <a data-ga="product-category-modal" class="box rounded shadow" href="/mfi/new-user" aria-label="See more info">
+              <p class="margin-none">
+                <strong class="h4 text-ink">
+                  Credit Score <br>
+                  &amp; Budgeting
+                </strong>
+              </p>
+              <p class="h3 text-ocean margin-none hide@tablet hide@mobile">
+                →
+              </p>
+            </a>
+          </li>
+
+          <li class="card auto-loan-card">
+            <a data-ga="product-category-modal" class="box rounded shadow" href="https://lanterncredit.com/auto-loan-refi?utm_source=SoFi&amp;utm_medium=productmodal" aria-label="See more info">
+              <p class="margin-none">
+                <strong class="h4 text-ink">
+                  Auto Loan Refinancing
+                </strong>
+              </p>
+              <p class="h3 text-ocean margin-none hide@tablet hide@mobile">
+                →
+              </p>
+            </a>
+          </li>
+        </ul>
+
+        <p class="margin-top margin-top-sm@mobile margin-bottom-none">
+          <a data-ga="product-category-modal" class="text-white underline" href="/b/registration">Or just create an account.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>  <div id="m-confirmation" class="modal--dm-offer" role="dialog" aria-modal="true" aria-labelledby="m-confirmation-title">
+  <div class="modal__fade-screen">
+    <div class="modal__inner u-text-left">
+      <button class="modal__close m-close btn" aria-label="Close modal">X</button>
+
+      <div class="modal__content">
+        <h2 class="h3" id="m-confirmation-title">Received mail from us?</h2>
+
+        <p>
+          If so, you are in the right place! Get started by entering your personal confirmation number below.
+        </p>
+
+        <div class="ui-input">
+          <form id="dm-form" class="dm-forms">
+            <div class="fieldset">
+              <input id="dm-reservation-number" class="dm-reservation-number-input-modal" name="reservation-number" type="text" data-type="text" autocomplete="off" required="">
+              <label for="reservation-number">Confirmation #</label>
+              <div class="icon icon--percent"></div>
+              <div class="error-message reservation-number-error-modal">Confirmation # invalid</div>
+            </div>
+
+            <div class="fieldset">
+              <input id="dm-postal-code" class="dm-postal-code" name="postal-code" type="text" data-type="number" autocomplete="off" required="">
+              <label for="postal-code">Zip Code</label>
+              <div class="icon icon--percent"></div>
+            </div>
+          </form>
+        </div>
+
+        <p class="u-margin-top">
+          <button id="modal-dm-form-submit" class="btn u-margin-right-xs">Get Started</button>
+          <button class="btn btn--transparent-punchout cancel m-close">Cancel</button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="dm-confirmation-offer-landing" class="modal--dm-offer" role="dialog" aria-modal="true" aria-labelledby="dm-confirmation-offer-title">
+  <div class="modal__fade-screen">
+    <div class="modal__inner u-text-left">
+      <button class="modal__close m-close btn" aria-label="Close modal">X</button>
+
+      <div class="modal__content">
+        <h2 class="h3" id="dm-confirmation-offer-title">Received an offer from us?</h2>
+
+        <p>
+          If so, you are in the right place! Get started by entering your personal confirmation number below.
+        </p>
+
+        <div class="ui-input">
+          <form id="dm-form-offer-landing" class="dm-forms">
+            <div class="fieldset">
+              <input id="dm-reservation-number-offer-landing" class="dm-reservation-number-input-modal" name="reservation-number" type="text" data-type="text" autocomplete="off" required="">
+              <label for="reservation-number">Confirmation #</label>
+              <div class="icon icon--percent"></div>
+              <div class="error-message reservation-number-error-modal">Confirmation # invalid</div>
+            </div>
+
+            <div class="fieldset">
+              <input id="dm-postal-code-offer-landing" class="dm-postal-code" name="postal-code" type="text" data-type="number" autocomplete="off" required="">
+              <label for="postal-code">Zip Code</label>
+              <div class="icon icon--percent"></div>
+            </div>
+          </form>
+        </div>
+
+        <p class="u-margin-top">
+          <button id="modal-dm-form-submit-offer-landing" class="btn u-margin-right-xs">Get Started</button>
+          <button class="btn btn--transparent-punchout cancel m-close">Cancel</button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>  <div id="m-exit-sofi" class="modal--exiting-sofi" role="dialog" aria-modal="true" aria-labelledby="exit-sofi-title">
+  <div class="modal__fade-screen">
+    <div class="modal__inner">
+      <button class="modal__close m-close" aria-label="Close modal">
+        <svg><use xlink:href="#gray-close"></use></svg>
+      </button>
+      <div class="modal__content">
+        <h2 id="exit-sofi-title" class="sr-only">Leaving SoFi Website</h2>
+        <p>You are now leaving the SoFi website and entering a third-party website. SoFi has no control over the content, products or services offered nor the security or privacy of information transmitted to others via their website. We recommend that you review the privacy policy of the site you are entering. SoFi does not guarantee or endorse the products, information or recommendations provided in any third party website. </p>
+        <a id="exit-cta-okay" class="btn" href="/" target="_blank">Okay</a>
+        <a id="exit-cta-cancel" class="btn btn--transparent-punchout cancel m-close">Close</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+      </div>
+    </div>
+
+    <div class="page-wrap" id="mainContent">
+      
+      <div id="root" class="react-root"></div>
+      <!-- Accessible text. Hidden from screen readers once content is loaded -->
+      <div class="react-content-loading" aria-label="Page content is loading..."></div>
+
+      <script>
+             </script>
+
+      <script crossorigin="" src="https://d32ijn7u0aqfv4.cloudfront.net/libraries/react@16.12.0/react.production.min.js"></script><script crossorigin="" src="https://d32ijn7u0aqfv4.cloudfront.net/libraries/react@16.12.0/react-dom.production.min.js"></script><script type="text/javascript" src="https://d32ijn7u0aqfv4.cloudfront.net/libraries/wp-react/master-4564/sprite/sprite.min.js"></script><script type="text/javascript">if (window["SofiReact.sprite"]) Object.entries(window["SofiReact.sprite"]).forEach(([key, val]) => { window[key] = val });</script><script type="text/javascript" src="https://d32ijn7u0aqfv4.cloudfront.net/libraries/wp-react/master-4564/main/main.min.js"></script><script type="text/javascript">if (window["SofiReact.main"]) Object.entries(window["SofiReact.main"]).forEach(([key, val]) => { window[key] = val });</script><link rel="stylesheet" type="text/css" href="https://d32ijn7u0aqfv4.cloudfront.net/libraries/wp-react/master-4564/carousel/carousel.min.css"><script src="https://d32ijn7u0aqfv4.cloudfront.net/libraries/wp-react/master-4564/carousel/carousel.min.js"></script><script>if (window["SofiReact.carousel"]) Object.entries(window["SofiReact.carousel"]).forEach(([key, val]) => { window[key] = val });</script><link rel="stylesheet" type="text/css" href="https://d32ijn7u0aqfv4.cloudfront.net/libraries/wp-react/master-4564/homepage/homepage.min.css"><script src="https://d32ijn7u0aqfv4.cloudfront.net/libraries/wp-react/master-4564/homepage/homepage.min.js"></script><script>if (window["SofiReact.homepage"]) Object.entries(window["SofiReact.homepage"]).forEach(([key, val]) => { window[key] = val });</script>
+      <script type="text/javascript">
+        try {
+          ReactDOM.render(/*#__PURE__*/React.createElement(React.Fragment,null,/*#__PURE__*/React.createElement(Page,null,/*#__PURE__*/React.createElement("div",{id:"control"},/*#__PURE__*/React.createElement(Box,{ge:!0,backgroundStyles:{"--min-height-desktop":"377px","--min-height-mobile":"220px"},className:"bg-turquoise text-white padding-none relative custom-style-carousel-wrapper"},/*#__PURE__*/React.createElement(Carousel,{dots:"false",arrows:!0,isBanner:!0,infinite:!0,autoplay:!0,autoplaySpeed:5e3},/*#__PURE__*/React.createElement(PageSection,{className:"relative padding-top-sm@mobile padding-bottom padding-bottom-sm@mobile"},/*#__PURE__*/React.createElement(ResponsiveImage,{lazyLoad:!0,className:"width-100% width-auto@mobile absolute top-zero right-zero send-back",desktopSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/IN26-3694750-B_JD-Power-Award_HP-Banner_Desktop%402x.webp",desktopSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/IN26-3694750-B_JD-Power-Award_HP-Banner_Desktop%402x.webp",desktopWidth:"1380",desktopHeight:"550",tabletSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/IN26-3694750-B_JD-Power-Award_HP-Banner_Tablet%402x.webp",tabletSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/IN26-3694750-B_JD-Power-Award_HP-Banner_Tablet%402x.webp",tabletWidth:"768",tabletHeight:"300",mobileSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/IN26-3694750-B_JD-Power-Award_HP-Banner_Mobile%402x.webp",mobileSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/IN26-3694750-B_JD-Power-Award_HP-Banner_Mobile%402x.webp",mobileWidth:"320",mobileHeight:"215"}),/*#__PURE__*/React.createElement(Eyebrow,{tag:"h2",className:"margin-top-none margin-bottom-sm bg-transparent plain text-buttercup"},"SOFI INVEST",/*#__PURE__*/React.createElement("sup",null,"\xAE")),/*#__PURE__*/React.createElement("h2",{class:"margin-none  width-1/2@desktop width-1/2@tablet width-3/5 text-white"},"Ranked #1 in ",/*#__PURE__*/React.createElement("br",{class:"hide@desktop hide@tablet"}),"DIY Investor ",/*#__PURE__*/React.createElement("br",{class:"hide@desktop hide@tablet"}),"Satisfaction ",/*#__PURE__*/React.createElement("span",{class:"text-ink"},"for ",/*#__PURE__*/React.createElement("br",{class:"hide@desktop hide@tablet"}),"2026 by ",/*#__PURE__*/React.createElement("br",{class:"hide@mobile hide@tablet"}),"JD Power.")),/*#__PURE__*/React.createElement("p",{class:"layout widths-auto widths-100%@mobile widths-100%@tablet gutters-xs margin-top"},/*#__PURE__*/React.createElement("span",null,/*#__PURE__*/React.createElement(CtaButton,{ink:!0,id:"hp-banner-invest-jd-pos1",href:"https://www.sofi.com/invest/"},"Learn more")))),/*#__PURE__*/React.createElement(PageSection,{className:"relative padding-top-sm@mobile padding-bottom padding-bottom-sm@mobile"},/*#__PURE__*/React.createElement(ResponsiveImage,{lazyLoad:!0,className:"width-100% width-auto@mobile absolute top-zero right-zero send-back",desktopSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/LND26_3519700_H_Borrow_Better_Week_Rate_Discount_Campaign_Homepagebanner_Hero.webp",desktopSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/LND26_3519700_H_Borrow_Better_Week_Rate_Discount_Campaign_Homepagebanner_Hero.webp",desktopWidth:"1380",desktopHeight:"550",tabletSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/LND26_3519700_H_Borrow_Better_Week_Rate_Discount_Campaign_Homepagebanner_Tablet.webp",tabletSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/LND26_3519700_H_Borrow_Better_Week_Rate_Discount_Campaign_Homepagebanner_Tablet.webp",tabletWidth:"768",tabletHeight:"300",mobileSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/LND26_3519700_H_Borrow_Better_Week_Rate_Discount_Campaign_Homepagebanner_Mobile.webp",mobileSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/LND26_3519700_H_Borrow_Better_Week_Rate_Discount_Campaign_Homepagebanner_Mobile.webp",mobileWidth:"320",mobileHeight:"215"}),/*#__PURE__*/React.createElement(Eyebrow,{tag:"h2",className:"margin-top-none margin-bottom-sm bg-transparent plain text-buttercup"},"SPECIAL RATE DROP EVENT"),/*#__PURE__*/React.createElement("h2",{class:"margin-none  width-1/2@desktop width-1/2@tablet width-3/5 text-white"},"Our biggest rate drop event ",/*#__PURE__*/React.createElement("span",{class:"text-ink"},"ever just dropped.*")),/*#__PURE__*/React.createElement("p",{class:"layout widths-auto widths-100%@mobile widths-100%@tablet gutters-xs margin-top"},/*#__PURE__*/React.createElement("span",null,/*#__PURE__*/React.createElement(CtaButton,{ink:!0,id:"hp-banner-csm-10-pos2",href:"/loans/"},"Learn more"))),/*#__PURE__*/React.createElement("p",{class:"small text-ink width-1/2@desktop width-1/2@tablet"},"*Limited time 0.50% rate drop for new Personal Loan, Student Loan Refinancing, Private Student Loan, and Home Equity Loan applications is valid until 3/23/26 at 11:59PM PT, subject to lender approval. Promotion does not include Mortgage Loan purchase, refinance, or HELOC applications. ",/*#__PURE__*/React.createElement("a",{href:"https://www.sofi.com/loans/#disclaimers"},/*#__PURE__*/React.createElement("span",{class:"text-ink"},/*#__PURE__*/React.createElement("u",null,"Terms and conditions apply."))))),/*#__PURE__*/React.createElement(PageSection,{className:"relative padding-top-sm@mobile padding-bottom padding-bottom-sm@mobile"},/*#__PURE__*/React.createElement(ResponsiveImage,{lazyLoad:!0,className:"width-100% width-auto@mobile absolute top-zero right-zero send-back",desktopSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/RL26_3555153_CSM_10_Banner_Homepagebanner_Desktop.webp",desktopSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/RL26_3555153_CSM_10_Banner_Homepagebanner_Desktop.webp",desktopWidth:"1380",desktopHeight:"550",tabletSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/RL26_3555153_CSM_10_Banner_Homepagebanner_Tablet.webp",tabletSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/RL26_3555153_CSM_10_Banner_Homepagebanner_Tablet.webp",tabletWidth:"768",tabletHeight:"300",mobileSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/RL26_3555153_CSM_10_Banner_Homepagebanner_Mobile.webp",mobileSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/RL26_3555153_CSM_10_Banner_Homepagebanner_Mobile.webp",mobileWidth:"320",mobileHeight:"215"}),/*#__PURE__*/React.createElement("h2",{class:"margin-none  width-1/2@desktop width-1/2@tablet width-3/5 text-white"},/*#__PURE__*/React.createElement("span",{class:"text-buttercup"},"Get $20",/*#__PURE__*/React.createElement("sup",null,"*")," "),"when you track your free credit score."),/*#__PURE__*/React.createElement("p",{class:"layout widths-auto widths-100%@mobile widths-100%@tablet gutters-xs margin-top"},/*#__PURE__*/React.createElement("span",null,/*#__PURE__*/React.createElement(CtaButton,{ink:!0,id:"hp-banner-csm-20-pos3",href:"https://www.sofi.com/financial-insights/credit-score-monitoring/"},"Get started"))),/*#__PURE__*/React.createElement("p",{class:"small text-ink width-1/2@desktop width-1/2@tablet"},/*#__PURE__*/React.createElement("sup",null,"*"),"Terms and conditions apply. Learn more at ",/*#__PURE__*/React.createElement("a",{href:"/financial-insights/credit-score-monitoring-offer/",class:"text-ink"},/*#__PURE__*/React.createElement("u",null,"SoFi.com/financial-insights/credit-score-monitoring-offer/")),".")),/*#__PURE__*/React.createElement(PageSection,{className:"relative padding-top-sm@mobile padding-bottom padding-bottom-sm@mobile"},/*#__PURE__*/React.createElement(ResponsiveImage,{lazyLoad:!0,className:"width-100% width-auto@mobile absolute top-zero right-zero send-back",desktopSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/MB26-3479165-M_SoFi-Plus-Q1_26-Sweepstakes_HP-Banner_Desktop-1.webp",desktopSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/MB26-3479165-M_SoFi-Plus-Q1_26-Sweepstakes_HP-Banner_Desktop-1.webp",desktopWidth:"1380",desktopHeight:"550",tabletSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/MB26-3479165-M_SoFi-Plus-Q1_26-Sweepstakes_HP-Banner_Tablet.webp",tabletSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/MB26-3479165-M_SoFi-Plus-Q1_26-Sweepstakes_HP-Banner_Tablet.webp",tabletWidth:"768",tabletHeight:"300",mobileSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/MB26-3479165-M_SoFi-Plus-Q1_26-Sweepstakes_HP-Banner_Mobile-1.webp",mobileSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/MB26-3479165-M_SoFi-Plus-Q1_26-Sweepstakes_HP-Banner_Mobile-1.webp",mobileWidth:"320",mobileHeight:"215"}),/*#__PURE__*/React.createElement(Eyebrow,{className:"plain text-buttercup"},"SWEEPSTAKES"),/*#__PURE__*/React.createElement("h2",{class:"margin-none  width-1/2@desktop width-3/5 text-white"},"You could win ",/*#__PURE__*/React.createElement("br",{class:"hide@desktop hide@tablet"}),"$75K* ",/*#__PURE__*/React.createElement("br",{class:"hide@mobile"}),/*#__PURE__*/React.createElement("span",{class:"text-ink"},"when ",/*#__PURE__*/React.createElement("br",{class:"hide@desktop hide@tablet"}),"you enter ",/*#__PURE__*/React.createElement("br",{class:"hide@desktop hide@tablet"}),"The Plus ",/*#__PURE__*/React.createElement("br",{class:"hide@mobile"}),"Side ",/*#__PURE__*/React.createElement("br",{class:"hide@desktop hide@tablet"}),"Sweepstakes.")),/*#__PURE__*/React.createElement("p",{class:"layout widths-auto widths-100%@mobile widths-100%@tablet gutters-xs margin-top"},/*#__PURE__*/React.createElement("span",null,/*#__PURE__*/React.createElement(CtaButton,{ink:!0,id:"hp-banner-plus-sweeps-pos-4",href:"/theplusside/"},"Learn more"))),/*#__PURE__*/React.createElement("p",{class:"margin-top-xs text-ink small width-1/2@tablet width-1/2@desktop"},/*#__PURE__*/React.createElement("strong",null,"*NO PURCHASE NECESSARY.")," Open only to legal residents of the 50 U.S./D.C., 18+. Void where prohibited by law. Sweepstakes ends at 11:59 pm ET on 4/15/26. See ",/*#__PURE__*/React.createElement("strong",null,/*#__PURE__*/React.createElement("a",{href:"/theplusside/#disclaimers/",class:"text-ink underline"},"Official Rules"))," for how to enter, alternate entry method, prizes, limits, and odds. Sponsor: Social Finance LLC (\"SoFi\") 234 1st St., San Francisco, CA 94105")),/*#__PURE__*/React.createElement(PageSection,{className:"relative padding-top-sm@mobile padding-bottom padding-bottom-sm@mobile"},/*#__PURE__*/React.createElement(ResponsiveImage,{lazyLoad:!0,className:"width-100% width-auto@mobile absolute top-zero right-zero send-back",desktopSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BNK26-3727516-A_400-DD-Announcement_HP-Banner_Desktop.webp",desktopSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BNK26-3727516-A_400-DD-Announcement_HP-Banner_Desktop.webp",desktopWidth:"1380",desktopHeight:"550",tabletSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BNK26-3727516-A_400-DD-Announcement_HP-Banner_Tablet.webp",tabletSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BNK26-3727516-A_400-DD-Announcement_HP-Banner_Tablet.webp",tabletWidth:"768",tabletHeight:"300",mobileSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BNK26-3727516-A_400-DD-Announcement_HP-Banner_Mobile.webp",mobileSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BNK26-3727516-A_400-DD-Announcement_HP-Banner_Mobile.webp",mobileWidth:"320",mobileHeight:"215"}),/*#__PURE__*/React.createElement(Eyebrow,{tag:"h2",className:"margin-top-none margin-bottom-sm bg-transparent plain text-buttercup"},"CHECKING AND SAVINGS"),/*#__PURE__*/React.createElement("h2",{class:"margin-none width-2/3@desktop width-3/5 text-ink"},/*#__PURE__*/React.createElement("span",{class:"text-white"},"Our biggest bonus yet!")," ",/*#__PURE__*/React.createElement("br",null)," Get $50 or $400.*"),/*#__PURE__*/React.createElement("p",{class:"layout widths-auto widths-100%@mobile widths-100%@tablet gutters-xs margin-top"},/*#__PURE__*/React.createElement("span",null,/*#__PURE__*/React.createElement(CtaButton,{ink:!0,id:"hp-banner-bnk-300-to-400-pos5",href:"/banking"},"Get started"),/*#__PURE__*/React.createElement("p",{class:"small text-ink"},"*",/*#__PURE__*/React.createElement("a",{href:"/bank",class:"underline text-ink",target:"_self"},"Terms and conditions apply. Click to learn more."))))),/*#__PURE__*/React.createElement(PageSection,{className:"relative padding-top-sm@mobile padding-bottom padding-bottom-sm@mobile"},/*#__PURE__*/React.createElement(ResponsiveImage,{lazyLoad:!0,className:"width-100% width-auto@mobile absolute top-zero right-zero send-back",desktopSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/HL26_3395817_A_HL_VPA_and_Save_1k_Offer_Homepagebanner_Desktop.webp",desktopSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/HL26_3395817_A_HL_VPA_and_Save_1k_Offer_Homepagebanner_Desktop.webp",desktopWidth:"1380",desktopHeight:"550",tabletSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/HL26_3395817_A_HL_VPA_and_Save_1k_Offer_Homepagebanner_Tablet.webp",tabletSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/HL26_3395817_A_HL_VPA_and_Save_1k_Offer_Homepagebanner_Tablet.webp",tabletWidth:"768",tabletHeight:"300",mobileSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/HL26_3395817_A_HL_VPA_and_Save_1k_Offer_Homepagebanner_Mobile.webp",mobileSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/HL26_3395817_A_HL_VPA_and_Save_1k_Offer_Homepagebanner_Mobile.webp",mobileWidth:"320",mobileHeight:"215"}),/*#__PURE__*/React.createElement("h2",{class:"margin-none  width-1/2@desktop width-1/2@tablet width-3/5 text-white"},"Preapproval that pays off:",/*#__PURE__*/React.createElement("br",{class:"hide@tablet hide@mobile"})," ",/*#__PURE__*/React.createElement("span",{class:"text-ink"}," Save $1,000 at closing.*")),/*#__PURE__*/React.createElement("p",{class:"layout widths-auto widths-100%@mobile widths-100%@tablet gutters-xs margin-top"},/*#__PURE__*/React.createElement("span",null,/*#__PURE__*/React.createElement(CtaButton,{ink:!0,id:"hp-banner-hl-preapproval-1k-pos6",href:"/home-loans/mortgage-vpa-offer/"},"Get preapproved"))),/*#__PURE__*/React.createElement("p",{class:"small text-ink width-1/2@desktop width-1/2@tablet"},"$1,000 closing cost discount earned with completion of SoFi Verified Preapproval by 3/31/26 and closing of eligible mortgage loan in 2026. Discount will be applied at loan closing. ",/*#__PURE__*/React.createElement("a",{href:"/home-loans/mortgage-vpa-offer/#topofdisclosures"},/*#__PURE__*/React.createElement("span",{class:"text-ink"},/*#__PURE__*/React.createElement("u",null,"Terms apply"))),".")))),/*#__PURE__*/React.createElement(PageSection,{className:"text-white padding-bottom padding-top-xs bg-turquoise"},/*#__PURE__*/React.createElement("div",{class:"relative bring-forward"},/*#__PURE__*/React.createElement("p",{class:"h4 heavy margin-none"},"Check out what SoFi has to offer:"),/*#__PURE__*/React.createElement(ProductTiles,{className:"product-tiles static-product-tiles",bankingApy:"3.30% APY",data:[{product:"PL",orderTabletDesktop:0,orderMobile:2,backgroundImageMobile:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_PL_Tile_Mobile.webp",backgroundImageTabletDesktop:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_PL-Tile%402x.webp",ctaText:"View more",displayName:"Personal Loans",subText:"Pay off high-rate debt",href:"/personal-loans/",id:"pl"},{product:"BANKING",orderTabletDesktop:1,orderMobile:1,backgroundImageMobile:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BNK24-1834587_Bank-Summer-Travel-Promo_Banking-Tile_Mobile%402x.webp",backgroundImageTabletDesktop:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BNK24-1834587_Bank-Summer-Travel-Promo_Banking-Tile_Desktop%402x.webp",ctaText:"Start now",displayName:"Banking",subText:"Get up to $300 with eligible direct deposit\u2020",href:"/signup/banking/v1?redirect=money_setup",id:"banking"},{product:"RELAY",orderTabletDesktop:2,orderMobile:3,backgroundImageMobile:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/RL22-962791_HPProductTile_Mobile%402x-1.webp",backgroundImageTabletDesktop:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/RL22-962791_HPProductTile_Desktop%402x-2.webp",ctaText:"View more",displayName:"Credit Score & Insights",subText:"New users get $20 in rewards*",href:"/financial-insights/credit-score-monitoring/",id:"credit-score"},{product:"INSCHOOL",orderTabletDesktop:6,orderMobile:7,backgroundImageMobile:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_PSL_Tile_Mobile.webp",backgroundImageTabletDesktop:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_PSL%402x.webp",ctaText:"View more",displayName:"Private Student Loans",subText:"Finance your education",href:"/private-student-loans/",id:"ps"},{product:"SL",orderTabletDesktop:4,orderMobile:6,backgroundImageMobile:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_SLR_Tile_Mobile.webp",backgroundImageTabletDesktop:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_SLR-Tile%402x.webp",ctaText:"View more",displayName:"Student Loan Refinancing",subText:"See rates and flexible terms",href:"/refinance-student-loan/",id:"sl"},{product:"INVEST",orderTabletDesktop:5,orderMobile:4,backgroundImageMobile:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Invest_Tile.webp",backgroundImageTabletDesktop:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Invest-Tile%402x.webp",ctaText:"Start now",displayName:"Invest",subText:"Explore all-in-one investing",href:"/apply/invest-standard/",id:"invest"},{product:"MORTGAGE",orderTabletDesktop:3,orderMobile:5,backgroundImageMobile:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_HL_Tile_Mobile.webp",backgroundImageTabletDesktop:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_HomeLoans-Tile%402x.webp",ctaText:"View more",displayName:"Mortgage Loans",subText:"Purchase, refinance and home equity",href:"/home-loans/mortgage/",id:"hl"},{product:"CC",orderTabletDesktop:7,orderMobile:8,backgroundImageMobile:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_CC_Tile_Mobile.webp",backgroundImageTabletDesktop:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_CC-Tile%402x.webp",ctaText:"View more",displayName:"Credit Card",subText:"Check for offers",href:"/credit-card/",id:"cc"},{product:"CRYPTO",orderTabletDesktop:8,orderMobile:9,backgroundImageMobile:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/CRYP25-2933951-Q_Crypto-Launch_Product-Tile_Mobile%402x.webp",backgroundImageTabletDesktop:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/CRYP25-2933951-R_Crypto-Launch_Product-Tile_Desktop%402x.webp",ctaText:"Start now",displayName:"Crypto",subText:"Buy, sell, hold 25+ coins",href:"/signup/?endpoint=https://www.sofi.com/crypto/app/onboarding/",id:"crypto",new:!0},{product:"SOFI PLUS",orderTabletDesktop:9,orderMobile:10,backgroundImageMobile:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/homepage_2xplus_2xtile_2xmobile.webp",backgroundImageTabletDesktop:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/homepage_plus_tile_desktop-1.webp",ctaText:"Learn more",displayName:"SoFi Plus",subText:"$1K+ annual value with qualifying activities^",href:"/sofi-plus/",id:"plus"}]}),/*#__PURE__*/React.createElement("ul",{class:"hide plain layout widths-1/5@desktop widths-1/2@tablet widths-100%@mobile gutters-sm center product-tiles"},/*#__PURE__*/React.createElement("li",{class:"stretch-contents"},/*#__PURE__*/React.createElement(Box,{rounded:!0,shadow:!0,className:"\r stretch-contents\r padding-sm\r padding-xs@mobile\r padding-top-none@mobile padding-bottom-none@mobile\r padding-top-none@tablet padding-bottom-none@tablet\r contain-target\r ",backgroundStyles:{"--background-image":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Invest_Tile.webp)","--background-image-desktop":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Invest-Tile%402x.webp)","--background-size":"contain","--background-size-desktop":"50%","--background-position":"right","--background-position-desktop":"bottom right","--min-height-mobile":"65px","--min-height-tablet":"70px","--min-height-desktop":"150px"}},/*#__PURE__*/React.createElement("a",{class:"\r expand-target\r layout\r height-100%\r widths-100%\r align-middles\r justify-vertical@desktop\r ",id:"hero-tile-invest",href:"https://www.sofi.com/invest/"},/*#__PURE__*/React.createElement("h2",{class:"h4 text-ink"},"Invest"),/*#__PURE__*/React.createElement("p",{class:"h3 margin-none@tablet margin-none@mobile"},/*#__PURE__*/React.createElement(IconArrowRight,{className:"block hide@tablet hide@mobile",width:"26",height:"15"}))))),/*#__PURE__*/React.createElement("li",{class:"stretch-contents"},/*#__PURE__*/React.createElement(Box,{rounded:!0,shadow:!0,className:"\r stretch-contents\r padding-sm\r padding-xs@mobile\r padding-top-none@mobile padding-bottom-none@mobile\r padding-top-none@tablet padding-bottom-none@tablet\r contain-target\r ",backgroundStyles:{"--background-image":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_PL_Tile_Mobile.webp)","--background-image-desktop":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_PL-Tile%402x.webp)","--background-size":"contain","--background-size-desktop":"50%","--background-position":"right","--background-position-desktop":"bottom right","--min-height-mobile":"65px","--min-height-tablet":"70px","--min-height-desktop":"150px"}},/*#__PURE__*/React.createElement("a",{class:"\r expand-target\r layout\r height-100%\r widths-100%\r align-middles\r justify-vertical@desktop\r ",id:"hero-tile-pl",href:"https://www.sofi.com/personal-loans/"},/*#__PURE__*/React.createElement("h2",{class:"h4 text-ink"},"Personal Loans"),/*#__PURE__*/React.createElement("p",{class:"h3 margin-none@tablet margin-none@mobile"},/*#__PURE__*/React.createElement(IconArrowRight,{className:"block hide@tablet hide@mobile",width:"26",height:"15"}))))),/*#__PURE__*/React.createElement("li",{class:"stretch-contents"},/*#__PURE__*/React.createElement(Box,{rounded:!0,shadow:!0,className:"\r stretch-contents\r padding-sm\r padding-xs@mobile\r padding-top-none@mobile padding-bottom-none@mobile\r padding-top-none@tablet padding-bottom-none@tablet\r contain-target\r ",backgroundStyles:{"--background-image":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_SLR_Tile_Mobile.webp)","--background-image-desktop":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_SLR-Tile%402x.webp)","--background-size":"contain","--background-size-desktop":"50%","--background-position":"right","--background-position-desktop":"bottom right","--min-height-mobile":"65px","--min-height-tablet":"70px","--min-height-desktop":"150px"}},/*#__PURE__*/React.createElement("a",{class:"\r expand-target\r layout\r height-100%\r widths-100%\r align-middles\r justify-vertical@desktop\r ",id:"hero-tile-sl",href:"https://www.sofi.com/refinance-student-loan/"},/*#__PURE__*/React.createElement("h3",{class:"h4 text-ink"},"Student Loan ",/*#__PURE__*/React.createElement("br",null),"Refinancing"),/*#__PURE__*/React.createElement("p",{class:"h3 margin-none@tablet margin-none@mobile"},/*#__PURE__*/React.createElement(IconArrowRight,{className:"block hide@tablet hide@mobile",width:"26",height:"15"}))))),/*#__PURE__*/React.createElement("li",{class:"stretch-contents"},/*#__PURE__*/React.createElement(Box,{rounded:!0,shadow:!0,className:"\r stretch-contents\r padding-sm\r padding-xs@mobile\r padding-top-none@mobile padding-bottom-none@mobile\r padding-top-none@tablet padding-bottom-none@tablet\r contain-target\r ",backgroundStyles:{"--background-image":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Money_Tile_mobile.webp)","--background-image-desktop":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20_255131_Money-Tile%402x.webp)","--background-size":"contain","--background-size-desktop":"50%","--background-position":"right","--background-position-desktop":"bottom right","--min-height-mobile":"65px","--min-height-tablet":"70px","--min-height-desktop":"150px"}},/*#__PURE__*/React.createElement("a",{class:"\r expand-target\r layout\r height-100%\r widths-100%\r align-middles\r justify-vertical@desktop\r ",id:"hero-tile-money",href:"https://www.sofi.com/money/"},/*#__PURE__*/React.createElement("h2",{class:"h4 text-ink"},"Money"),/*#__PURE__*/React.createElement("p",{class:"h3 margin-none@tablet margin-none@mobile"},/*#__PURE__*/React.createElement(IconArrowRight,{className:"block hide@tablet hide@mobile",width:"26",height:"15"}))))),/*#__PURE__*/React.createElement("li",{class:"stretch-contents"},/*#__PURE__*/React.createElement(Box,{rounded:!0,shadow:!0,className:"\r stretch-contents\r padding-sm\r padding-xs@mobile\r padding-top-none@mobile padding-bottom-none@mobile\r padding-top-none@tablet padding-bottom-none@tablet\r contain-target\r ",backgroundStyles:{"--background-image":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_HL_Tile_Mobile.webp)","--background-image-desktop":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_HomeLoans-Tile%402x.webp)","--background-size":"contain","--background-size-desktop":"50%","--background-position":"right","--background-position-desktop":"bottom right","--min-height-mobile":"65px","--min-height-tablet":"70px","--min-height-desktop":"150px"}},/*#__PURE__*/React.createElement("a",{class:"\r expand-target\r layout\r height-100%\r widths-100%\r align-middles\r justify-vertical@desktop\r ",id:"hero-tile-hl",href:"https://www.sofi.com/home-loans/"},/*#__PURE__*/React.createElement("h2",{class:"h4 text-ink"},"Home Loans"),/*#__PURE__*/React.createElement("p",{class:"h3 margin-none@tablet margin-none@mobile"},/*#__PURE__*/React.createElement(IconArrowRight,{className:"block hide@tablet hide@mobile",width:"26",height:"15"}))))),/*#__PURE__*/React.createElement("li",{class:"stretch-contents"},/*#__PURE__*/React.createElement(Box,{rounded:!0,shadow:!0,className:"\r stretch-contents\r padding-sm\r padding-xs@mobile\r padding-top-none@mobile padding-bottom-none@mobile\r padding-top-none@tablet padding-bottom-none@tablet\r contain-target\r ",backgroundStyles:{"--background-image":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_CC_Tile_Mobile.webp)","--background-image-desktop":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_CC-Tile%402x.webp)","--background-size":"contain","--background-size-desktop":"50%","--background-position":"right","--background-position-desktop":"bottom right","--min-height-mobile":"65px","--min-height-tablet":"70px","--min-height-desktop":"150px"}},/*#__PURE__*/React.createElement("a",{class:"\r expand-target\r layout\r height-100%\r widths-100%\r align-middles\r justify-vertical@desktop\r ",id:"hero-tile-cc",href:"https://www.sofi.com/credit-card/"},/*#__PURE__*/React.createElement("h2",{class:"h4 text-ink"},"Credit Card"),/*#__PURE__*/React.createElement("p",{class:"h3 margin-none@tablet margin-none@mobile"},/*#__PURE__*/React.createElement(IconArrowRight,{className:"block hide@tablet hide@mobile",width:"26",height:"15"}))))),/*#__PURE__*/React.createElement("li",{class:"stretch-contents"},/*#__PURE__*/React.createElement(Box,{rounded:!0,shadow:!0,className:"\r stretch-contents\r padding-sm\r padding-xs@mobile\r padding-top-none@mobile padding-bottom-none@mobile\r padding-top-none@tablet padding-bottom-none@tablet\r contain-target\r ",backgroundStyles:{"--background-image":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_PSL_Tile_Mobile.webp)","--background-image-desktop":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_PSL%402x.webp)","--background-size":"contain","--background-size-desktop":"50%","--background-position":"right","--background-position-desktop":"bottom right","--min-height-mobile":"65px","--min-height-tablet":"70px","--min-height-desktop":"150px"}},/*#__PURE__*/React.createElement("a",{class:"\r expand-target\r layout\r height-100%\r widths-100%\r align-middles\r justify-vertical@desktop\r ",id:"hero-tile-ps",href:"https://www.sofi.com/private-student-loans/"},/*#__PURE__*/React.createElement("h2",{class:"h4 text-ink"},"Private Student ",/*#__PURE__*/React.createElement("br",null),"Loans"),/*#__PURE__*/React.createElement("p",{class:"h3 margin-none@tablet margin-none@mobile"},/*#__PURE__*/React.createElement(IconArrowRight,{className:"block hide@tablet hide@mobile",width:"26",height:"15"}))))),/*#__PURE__*/React.createElement("li",{class:"stretch-contents"},/*#__PURE__*/React.createElement(Box,{rounded:!0,shadow:!0,className:"\r stretch-contents\r padding-sm\r padding-xs@mobile\r padding-top-none@mobile padding-bottom-none@mobile\r padding-top-none@tablet padding-bottom-none@tablet\r contain-target\r ",backgroundStyles:{"--background-image":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Insurance-Tile_Mobile.webp)","--background-image-desktop":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Insurance-Tile%402x.webp)","--background-size":"contain","--background-size-desktop":"50%","--background-position":"right","--background-position-desktop":"bottom right","--min-height-mobile":"65px","--min-height-tablet":"70px","--min-height-desktop":"150px"}},/*#__PURE__*/React.createElement("a",{class:"\r expand-target\r layout\r height-100%\r widths-100%\r align-middles\r justify-vertical@desktop\r ",id:"hero-tile-insurance",href:"https://www.sofi.com/protect/"},/*#__PURE__*/React.createElement("h2",{class:"h4 text-ink"},"Insurance"),/*#__PURE__*/React.createElement("p",{class:"h3 margin-none@tablet margin-none@mobile"},/*#__PURE__*/React.createElement(IconArrowRight,{className:"block hide@tablet hide@mobile",width:"26",height:"15"}))))),/*#__PURE__*/React.createElement("li",{class:"stretch-contents"},/*#__PURE__*/React.createElement(Box,{rounded:!0,shadow:!0,className:"\r stretch-contents\r padding-sm\r padding-xs@mobile\r padding-top-none@mobile padding-bottom-none@mobile\r padding-top-none@tablet padding-bottom-none@tablet\r contain-target\r ",backgroundStyles:{"--background-image":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/CSM_Relay_HomepageTIle_Mobile-Tablet%402x.webp)","--background-image-desktop":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/CSM-Homepage-Tile%402x.webp)","--background-size":"contain","--background-size-desktop":"50%","--background-position":"right","--background-position-desktop":"bottom right","--min-height-mobile":"65px","--min-height-tablet":"70px","--min-height-desktop":"150px"}},/*#__PURE__*/React.createElement("a",{class:"\r expand-target\r layout\r height-100%\r widths-100%\r align-middles\r justify-vertical@desktop\r ",id:"hero-tile-credit-score",href:"https://www.sofi.com/relay/#credit-score-monitoring"},/*#__PURE__*/React.createElement("h2",{class:"h4 text-ink"},"Credit Score ",/*#__PURE__*/React.createElement("br",null),"& Budgeting"),/*#__PURE__*/React.createElement("p",{class:"h3 margin-none@tablet margin-none@mobile"},/*#__PURE__*/React.createElement(IconArrowRight,{className:"block hide@tablet hide@mobile",width:"26",height:"15"}))))),/*#__PURE__*/React.createElement("li",{class:"stretch-contents"},/*#__PURE__*/React.createElement(Box,{rounded:!0,shadow:!0,className:"\r stretch-contents\r padding-sm\r padding-xs@mobile\r padding-top-none@mobile padding-bottom-none@mobile\r padding-top-none@tablet padding-bottom-none@tablet\r contain-target\r ",backgroundStyles:{"--background-image":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_ALR-Tile_Mobile%402x.webp)","--background-image-desktop":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Invest-Tile%402x1.webp)","--background-size":"contain","--background-size-desktop":"50%","--background-position":"right","--background-position-desktop":"bottom right","--min-height-mobile":"65px","--min-height-tablet":"70px","--min-height-desktop":"150px"}},/*#__PURE__*/React.createElement("a",{class:"\r expand-target\r layout\r height-100%\r widths-100%\r align-middles\r justify-vertical@desktop\r ",id:"hero-tile-auto",href:"https://lanterncredit.com/auto-loan-refi?utm_source=SoFi&utm_medium=redesign"},/*#__PURE__*/React.createElement("h2",{class:"h4 text-ink"},"Auto Loan ",/*#__PURE__*/React.createElement("br",{class:"hide@desktop hide@tablet"}),"Refinancing"),/*#__PURE__*/React.createElement("p",{class:"h3 margin-none@tablet margin-none@mobile"},/*#__PURE__*/React.createElement(IconArrowRight,{className:"block hide@tablet hide@mobile",width:"26",height:"15"}))))))))),/*#__PURE__*/React.createElement(PageSection,{className:"padding-bottom padding-top"},/*#__PURE__*/React.createElement("p",{class:"bg-white text-ocean center"},"Received an offer from us regarding one of our loans?\xA0",/*#__PURE__*/React.createElement(CtaButton,{id:"homepage-open-dm-modal-cta-primary",className:"link underline strong","data-qa":"hp-open-form-modal-slr",onClick:()=>window.sofiUtils.triggerModalById("dm-confirmation-offer-landing",this)},"Enter confirmation #")),/*#__PURE__*/React.createElement("p",{class:"bg-white text-ocean center"},"Received a credit card offer from us? ",/*#__PURE__*/React.createElement("strong",null,/*#__PURE__*/React.createElement("a",{class:"underline",href:"/creditcard-dm-gateway/"},"Enter confirmation #")))),/*#__PURE__*/React.createElement(PageSection,{className:"bg-ink text-white center padding-top-ms padding-bottom-ms strong hide"},/*#__PURE__*/React.createElement("p",null,"As natural disasters impact the United States, SoFi wishes for the safety of everyone in the affected areas. We are here to help borrowers who are in a disaster zone designated by FEMA. To find out more click ",/*#__PURE__*/React.createElement("a",{href:"/natural-disaster-support/"},/*#__PURE__*/React.createElement("u",null,/*#__PURE__*/React.createElement("span",{class:"text-white"},"here."))))),/*#__PURE__*/React.createElement(PageSection,{className:"text-ink center"},/*#__PURE__*/React.createElement("h2",{class:"width-2/5@tablet width-1/2@desktop center"},"Why do ",/*#__PURE__*/React.createElement("span",{class:"text-turquoise"},"13.7M members")," love SoFi?"),/*#__PURE__*/React.createElement("ul",{class:"plain layout widths-1/3 widths-100%@mobile gutters-lg gutters@mobile margin-top"},/*#__PURE__*/React.createElement("li",{class:"justify-vertical@desktop",id:"benefit1"},/*#__PURE__*/React.createElement(ResponsiveImage,{lazyLoad:!0,className:"animate-fade-in",desktopSrcWebP:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/webp/homepage/BR20-255131_Rewards-Asset_DESKTOP%402x.webp",desktopSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Rewards-Asset_DESKTOP.webp",desktopSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Rewards-Asset_DESKTOP%402x.webp",desktopWidth:"165",desktopHeight:"191",tabletSrcWebP:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/webp/homepage/BR20-255131_Rewards-Asset_MOBILE-TABLET%402x.webp",tabletSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Rewards-Asset_MOBILE-TABLET.webp",tabletSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Rewards-Asset_MOBILE-TABLET%402x.webp",tabletWidth:"100",tabletHeight:"116",mobileSrcWebP:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/webp/homepage/BR20-255131_Rewards-Asset_MOBILE-TABLET%402x.webp",mobileSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Rewards-Asset_MOBILE-TABLET.webp",mobileSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Rewards-Asset_MOBILE-TABLET%402x.webp",mobileWidth:"130",mobileHeight:"151"}),/*#__PURE__*/React.createElement("div",{class:"margin-top-sm"},/*#__PURE__*/React.createElement("h3",{class:"heavy"},"Smart money moves ",/*#__PURE__*/React.createElement("br",null),"earn you points."),/*#__PURE__*/React.createElement("p",null,/*#__PURE__*/React.createElement("a",{href:"/rewards/"},/*#__PURE__*/React.createElement("span",{class:"text-sofi-blue"},/*#__PURE__*/React.createElement("strong",null,/*#__PURE__*/React.createElement("u",null,"Rewards points"))))," are redeemable for cash, SoFi loan payments, and more."))),/*#__PURE__*/React.createElement("li",{class:"justify-vertical@desktop",id:"benefit2"},/*#__PURE__*/React.createElement(ResponsiveImage,{lazyLoad:!0,className:"animate-fade-in",desktopSrcWebP:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/webp/homepage/BR20-255131_Customerservice@2x.webp",desktopSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Customerservice.webp",desktopSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Customerservice%402x.webp",desktopWidth:"200",desktopHeight:"188",tabletSrcWebP:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/webp/homepage/BR20_255131_CustomerService_Tablet%402x.webp",tabletSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20_255131_CustomerService_Tablet%401x.webp",tabletSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20_255131_CustomerService_Tablet%402x.webp",tabletWidth:"130",tabletHeight:"123",mobileSrcWebP:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/webp/homepage/BR20_255131_CustomerService_Mobile%402x1.webp",mobileSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20_255131_CustomerService_Mobile%401x.webp",mobileSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20_255131_CustomerService_Mobile%402x1.webp",mobileWidth:"162",mobileHeight:"153"}),/*#__PURE__*/React.createElement("div",{class:"margin-top-sm"},/*#__PURE__*/React.createElement("h3",{class:"heavy"},"Help when you ",/*#__PURE__*/React.createElement("br",null),"need it."),/*#__PURE__*/React.createElement("p",null,/*#__PURE__*/React.createElement("a",{href:"/contact-us/"},/*#__PURE__*/React.createElement("span",{class:"text-sofi-blue"},/*#__PURE__*/React.createElement("strong",null,/*#__PURE__*/React.createElement("u",null,"Need help?"))))," Get in touch with our support team via phone or chat."))),/*#__PURE__*/React.createElement("li",{class:"justify-vertical@desktop",id:"benefit3"},/*#__PURE__*/React.createElement(ResponsiveImage,{lazyLoad:!0,className:"animate-fade-in",desktopSrcWebP:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/webp/homepage/BR20-255131_MemberBenefits%402x.webp",desktopSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_MemberBenefits.webp",desktopSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_MemberBenefits%402x.webp",desktopWidth:"240",desktopHeight:"222",tabletSrcWebP:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/webp/homepage/BR20_255131_Membership_Tablet%402x.webp",tabletSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20_255131_Membership_Tablet%401x.webp",tabletSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20_255131_Membership_Tablet%402x.webp",tabletWidth:"140",tabletHeight:"130",mobileSrcWebP:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/webp/homepage/BR20_255131_Membership_Mobile%402x1.webp",mobileSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20_255131_Membership_Mobile%401x.webp",mobileSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20_255131_Membership_Mobile%402x1.webp",mobileWidth:"173",mobileHeight:"160"}),/*#__PURE__*/React.createElement("div",{class:"margin-top-sm"},/*#__PURE__*/React.createElement("h3",{class:"heavy"},"Complimentary ",/*#__PURE__*/React.createElement("br",null),"member benefits."),/*#__PURE__*/React.createElement("p",null,"SoFi members ",/*#__PURE__*/React.createElement("a",{href:"/member-benefits/"},/*#__PURE__*/React.createElement("span",{class:"text-sofi-blue"},/*#__PURE__*/React.createElement("strong",null,/*#__PURE__*/React.createElement("u",null,"get benefits"))))," like access to financial planning and exclusive access to SoFi Stadium."))),/*#__PURE__*/React.createElement("li",{class:"justify-vertical@desktop hide@desktop hide@tablet hide@mobile",id:"benefit4"},/*#__PURE__*/React.createElement(ResponsiveImage,{lazyLoad:!0,className:"animate-fade-in",desktopSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR21-414703_Relay_DESKTOP.webp",desktopSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR21-414703_Relay_DESKTOP%402x.webp",desktopWidth:"200",desktopHeight:"188",tabletSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR21-414703_Relay_MOBILE-TABLET.webp",tabletSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR21-414703_Relay_MOBILE-TABLET%402x.webp",tabletWidth:"130",tabletHeight:"123",mobileSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR21-414703_Relay_MOBILE-TABLET.webp",mobileSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR21-414703_Relay_MOBILE-TABLET%402x.webp",mobileWidth:"162",mobileHeight:"153"}),/*#__PURE__*/React.createElement("div",{class:"margin-top-sm"},/*#__PURE__*/React.createElement("h3",{class:"heavy"},"No-cost spending and ",/*#__PURE__*/React.createElement("br",null),"budgeting tools."),/*#__PURE__*/React.createElement("p",null,"Get complimentary credit score monitoring, spending breakdowns, financial insights, ",/*#__PURE__*/React.createElement("a",{href:"/relay/"},/*#__PURE__*/React.createElement("span",{class:"text-sofi-blue"},/*#__PURE__*/React.createElement("strong",null,/*#__PURE__*/React.createElement("u",null,"and more."))))))),/*#__PURE__*/React.createElement("li",{class:"justify-vertical@desktop hide@desktop hide@tablet hide@mobile",id:"benefit5"},/*#__PURE__*/React.createElement(ResponsiveImage,{lazyLoad:!0,className:"animate-fade-in",desktopSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR21-414703_CFP-Career_DESKTOP.webp",desktopSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR21-414703_CFP-Career_DESKTOP%402x.webp",desktopWidth:"200",desktopHeight:"188",tabletSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR21-414703_CFP-Careers_MOBILE-TABLET.webp",tabletSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR21-414703_CFP-Careers_MOBILE-TABLET%402x.webp",tabletWidth:"130",tabletHeight:"123",mobileSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR21-414703_CFP-Careers_MOBILE-TABLET.webp",mobileSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR21-414703_CFP-Careers_MOBILE-TABLET%402x.webp",mobileWidth:"162",mobileHeight:"153"}),/*#__PURE__*/React.createElement("div",{class:"margin-top-sm"},/*#__PURE__*/React.createElement("h3",{class:"heavy"},"1-on-1 financial and ",/*#__PURE__*/React.createElement("br",null),"career planning."),/*#__PURE__*/React.createElement("p",null,"Members get unlimited access to ",/*#__PURE__*/React.createElement("a",{href:"/no-cost-financial-planning/"},/*#__PURE__*/React.createElement("span",{class:"text-sofi-blue"},/*#__PURE__*/React.createElement("strong",null,/*#__PURE__*/React.createElement("u",null,"personalized financial advice"))))," at no additional cost\u2014plus ",/*#__PURE__*/React.createElement("a",{href:"/career-coaching/"},/*#__PURE__*/React.createElement("span",{class:"text-sofi-blue"},/*#__PURE__*/React.createElement("strong",null,/*#__PURE__*/React.createElement("u",null,"free career tools and coaching."))))))),/*#__PURE__*/React.createElement("li",{class:"justify-vertical@desktop hide@desktop hide@tablet hide@mobile",id:"benefit6"},/*#__PURE__*/React.createElement(ResponsiveImage,{lazyLoad:!0,className:"animate-fade-in",desktopSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR21-414703_RateDiscount_DESKTOP.webp",desktopSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR21-414703_RateDiscount_DESKTOP%402x.webp",desktopWidth:"200",desktopHeight:"188",tabletSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR21-414703_RateDiscount_MOBILE-TABLET.webp",tabletSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR21-414703_RateDiscount_MOBILE-TABLET%402x.webp",tabletWidth:"130",tabletHeight:"123",mobileSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR21-414703_RateDiscount_MOBILE-TABLET.webp",mobileSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR21-414703_RateDiscount_MOBILE-TABLET%402x.webp",mobileWidth:"162",mobileHeight:"153"}),/*#__PURE__*/React.createElement("div",{class:"margin-top-sm"},/*#__PURE__*/React.createElement("h3",{class:"heavy"},"Exclusive member rate ",/*#__PURE__*/React.createElement("br",null),"discounts."),/*#__PURE__*/React.createElement("p",null,"Once you\u2019re in, you\u2019re able to ",/*#__PURE__*/React.createElement("a",{href:"/legal/#MemberRateDiscount"},/*#__PURE__*/React.createElement("span",{class:"text-sofi-blue"},/*#__PURE__*/React.createElement("strong",null,/*#__PURE__*/React.createElement("u",null,"get a rate reduction or discount"))))," on your next eligible loan."))))),/*#__PURE__*/React.createElement(PageSection,{id:"hl-redesign-variant-8",backgroundStyles:{},bleed:!0,border:!1,className:"bg-white layout align-middles",darken:!1,"data-qa":"",fullWidth:!1},/*#__PURE__*/React.createElement("h2",{class:"text-ink text-center"},"Personalized mortgage solutions to",/*#__PURE__*/React.createElement("span",{class:"text-turquoise"}," achieve your goals.")),/*#__PURE__*/React.createElement("p",{class:"text-ink big text-center"},"Select from a variety of home loan options with ",/*#__PURE__*/React.createElement("a",{href:"/home-loans/mortgage-rates/"},/*#__PURE__*/React.createElement("span",{class:"text-ink"},/*#__PURE__*/React.createElement("u",null,"mortgage rates"))),", loan terms, and monthly payments that suit your budget."),/*#__PURE__*/React.createElement("div",{id:"terms"}),/*#__PURE__*/React.createElement("div",{class:"layout widths-1/2@tablet widths-1/4desktop gutters-ms@mobile gutters-ms@tablet gutters-sm@desktop margin-top align-middles@mobile align-middles@tablet"},/*#__PURE__*/React.createElement("div",{class:"layout widths-auto center"},/*#__PURE__*/React.createElement(RateBox,{boxAprText:"6.039%",boxAprTextColor:"text-ink",boxClassName:"bg-white",boxRateText:"5.500%",boxRateTextColor:"text-turquoise",eyeBrowClassName:"bg-turquoise",eyeBrowText:"10-year fixed\u2075"})),/*#__PURE__*/React.createElement("div",{class:"layout widths-auto center"},/*#__PURE__*/React.createElement(RateBox,{boxAprText:"5.752%",boxAprTextColor:"text-ink",boxClassName:"bg-white",boxRateText:"5.375%",boxRateTextColor:"text-turquoise",eyeBrowClassName:"bg-turquoise",eyeBrowText:"15-year fixed\u2076"})),/*#__PURE__*/React.createElement("div",{class:"layout widths-auto center"},/*#__PURE__*/React.createElement(RateBox,{boxAprText:"6.154%",boxAprTextColor:"text-ink",boxClassName:"bg-white",boxRateText:"5.875%",boxRateTextColor:"text-turquoise",eyeBrowClassName:"bg-turquoise",eyeBrowText:"20-year fixed\u2077"})),/*#__PURE__*/React.createElement("div",{class:"layout widths-auto center"},/*#__PURE__*/React.createElement(RateBox,{boxAprText:"6.219% ",boxAprTextColor:"text-ink",boxClassName:"bg-white",boxRateText:"6.000% ",boxRateTextColor:"text-turquoise",eyeBrowClassName:"bg-turquoise",eyeBrowText:"30-year fixed\u2078"}))),/*#__PURE__*/React.createElement("p",{class:"small text-ink text-center"},"All APRs are updated daily"),/*#__PURE__*/React.createElement("p",{class:"margin-top text-center"},/*#__PURE__*/React.createElement(CtaButton,{"aria-label":"View your mortgage rates",href:"/home-loan/continue",turquoise:!0,id:"hl-fmr-4"},"View your rate")),/*#__PURE__*/React.createElement("p",{class:"text-ink text-center"},"Need help finding the best option for your unique needs? Get in touch with a Mortgage Loan Officer at ",/*#__PURE__*/React.createElement("a",{href:"tel:844-763-4466","aria-label":"phone number (844)-763-4466"},/*#__PURE__*/React.createElement("span",{class:"text-ink"},/*#__PURE__*/React.createElement("u",null,"(844)-763-4466"))),".")),/*#__PURE__*/React.createElement(PageSection,{className:"align-bottoms center@mobile padding-bottom-none",backgroundStyles:{"--background-size":"cover","--background-position":"top right","--min-height-desktop":"890px","--background-image":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_AppDownload_BG%402x.webp), linear-gradient(#fff 80%, #00A2C7 80%)"}},/*#__PURE__*/React.createElement("div",{class:"layout widths-1/2@desktop widths-2/5-and-3/5@tablet widths-100%@mobile gutters gutters-lg@desktop"},/*#__PURE__*/React.createElement("div",null,/*#__PURE__*/React.createElement(ResponsiveImage,{lazyLoad:!0,className:"center animate-fade-in",desktopSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR24-1752806-v2_homepage_atf_experimentation_app_Desktop.png",desktopSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR24-1752806-v2_homepage_atf_experimentation_app_Desktop.png",desktopWidth:"390",desktopHeight:"760",tabletSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR24-1752806-v2_homepage_atf_experimentation_app_Desktop.png",tabletSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR24-1752806-v2_homepage_atf_experimentation_app_Desktop.png",tabletWidth:"221",tabletHeight:"402",mobileSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR24-1752806-v2_homepage_atf_experimentation_app_Desktop.png",mobileSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR24-1752806-v2_homepage_atf_experimentation_app_Desktop.png",mobileWidth:"221",mobileHeight:"402"})),/*#__PURE__*/React.createElement("div",{class:"align-middle"},/*#__PURE__*/React.createElement("h2",null,/*#__PURE__*/React.createElement("span",{class:"bg-turquoise text-white"},"Your money ",/*#__PURE__*/React.createElement("br",{class:"hide@tablet hide@mobile"}),"works better ",/*#__PURE__*/React.createElement("br",{class:"hide@tablet hide@mobile"}),"when it\u2019s ",/*#__PURE__*/React.createElement("br",{class:"hide@tablet hide@mobile"}),/*#__PURE__*/React.createElement("span",{class:"text-ink"},"all in one app."))),/*#__PURE__*/React.createElement("p",{class:"hide@mobile hide@tablet"},/*#__PURE__*/React.createElement(LazyLoader,null,/*#__PURE__*/React.createElement(FlowCode,{dynamicSrc:"https://sofi.com/atr/p/v1/fc/",staticSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/homepage_flowcode.webp"}))),/*#__PURE__*/React.createElement("p",{class:"gutters-horizontal-xs@tablet gutters-vertical-xs@mobile hide@desktop"},/*#__PURE__*/React.createElement("a",{href:"https://sofi.app.link/9PWl9h1gs4/",target:"_blank","data-qa":"hp-apple-store-link",class:"inline-block",onmousedown:"dataLayer.push({'event': 'eventTracker', 'eventCat': 'Outbound Links', 'eventAct': 'Click', 'eventLbl': 'sofi.app.link/9PWl9h1gs4/', 'eventVal': 0});",onkeydown:"dataLayer.push({'event': 'eventTracker', 'eventCat': 'Outbound Links', 'eventAct': 'Click', 'eventLbl': 'sofi.app.link/9PWl9h1gs4/', 'eventVal': 0});",rel:"noopener noreferrer"},/*#__PURE__*/React.createElement(ResponsiveImage,{lazyLoad:!0,className:"center max-width-100% animate-fade-in",src:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/AppleAppStoreBadge%401x.webp",src2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/AppleAppStoreBadge%402x.webp",width:"162",height:"48",alt:"SoFi iOS App, Download on the App Store"})),/*#__PURE__*/React.createElement("br",{className:"hide@tablet"}),/*#__PURE__*/React.createElement("a",{href:"https://sofi.app.link/iXoJohohs4/",target:"_blank",class:"inline-block",onmousedown:"dataLayer.push({'event': 'eventTracker', 'eventCat': 'Outbound Links', 'eventAct': 'Click', 'eventLbl': 'sofi.app.link/iXoJohohs4/', 'eventVal': 0});",onkeydown:"dataLayer.push({'event': 'eventTracker', 'eventCat': 'Outbound Links', 'eventAct': 'Click', 'eventLbl': 'sofi.app.link/iXoJohohs4/', 'eventVal': 0});",rel:"noopener noreferrer"},/*#__PURE__*/React.createElement(ResponsiveImage,{lazyLoad:!0,className:"center max-width-100% animate-fade-in",src:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/GooglePlayStoreBadge%401x.webp",src2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/GooglePlayStoreBadge%402x.webp",width:"162",height:"48",alt:"SoFi Android App, Get it on Google Play"})))))),/*#__PURE__*/React.createElement(PageSection,{className:"bg-turquoise text-white center@mobile padding-bottom-none"},/*#__PURE__*/React.createElement("div",{class:"layout widths-1/2@desktop widths-2/5-and-3/5@tablet widths-100%@mobile gutters gutters-lg@desktop align-middles"},/*#__PURE__*/React.createElement("h2",null,"We\u2019ve ",/*#__PURE__*/React.createElement("span",{class:"text-ink"},"helped ",/*#__PURE__*/React.createElement("br",{class:"hide@desktop"}),"our members")," ",/*#__PURE__*/React.createElement("br",{class:"hide@desktop"}),"in a big way."),/*#__PURE__*/React.createElement("div",null,/*#__PURE__*/React.createElement("ul",{class:"plain layout widths-1/2 gutters"},/*#__PURE__*/React.createElement("li",null,/*#__PURE__*/React.createElement("span",{class:"h2 text-ink"},"13.7M")," ",/*#__PURE__*/React.createElement("br",null),/*#__PURE__*/React.createElement("span",{class:"p big strong block margin-none"},"SoFi members")),/*#__PURE__*/React.createElement("li",null,/*#__PURE__*/React.createElement("span",{class:"h2 text-ink"},"12.5B+")," ",/*#__PURE__*/React.createElement("br",null),/*#__PURE__*/React.createElement("span",{class:"p big strong block margin-none"},"in rewards earned")),/*#__PURE__*/React.createElement("li",null,/*#__PURE__*/React.createElement("span",{class:"h2 text-ink"},"$33B+")," ",/*#__PURE__*/React.createElement("br",null),/*#__PURE__*/React.createElement("span",{class:"p big strong block margin-none"},"in debt paid off")),/*#__PURE__*/React.createElement("li",null,/*#__PURE__*/React.createElement("span",{class:"h2 text-ink"},"$117B+")," ",/*#__PURE__*/React.createElement("br",null),/*#__PURE__*/React.createElement("span",{class:"p big strong block margin-none"},"in funded loans")))))),/*#__PURE__*/React.createElement(PageSection,{className:"bg-turquoise text-white center@mobile padding-top-none@tablet"},/*#__PURE__*/React.createElement("h3",{class:"big p center margin-top-xl"},"As featured in",/*#__PURE__*/React.createElement(ResponsiveImage,{lazyLoad:!0,className:"center margin-top-sm animate-fade-in",alt:"CNBC, Forbes, Nerdwallet, RealSimple",desktopSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Press_Desktop%401x.webp",desktopSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Press_Desktop%402x.webp",desktopWidth:"1007",desktopHeight:"36",tabletSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Press_Desktop%401x.webp",tabletSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Press_Desktop%402x.webp",tabletWidth:"1007",tabletHeight:"36",mobileSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Press_Mobile1x.webp",mobileSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_Press_Mobile2x.webp",mobileWidth:"278",mobileHeight:"74"}))),/*#__PURE__*/React.createElement(LazyLoader,{offset:"500"},/*#__PURE__*/React.createElement(PageSection,{className:"bg-turquoise text-white align-middles align-bottoms",backgroundStyles:{"--background-size":"cover","--background-position":"top","--min-height-desktop":"870px","--min-height-mobile":"580px","--background-image":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_SecurityBackground_Desktop%402x.webp)","--background-image-mobile":"url(https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_SecurityBG_Mobile%402x.webp)"}},/*#__PURE__*/React.createElement("div",{class:"layout widths-1/2@desktop widths-2/5-and-3/5@tablet widths-auto@mobile gutters@desktop gutters@tablet center@mobile"},/*#__PURE__*/React.createElement("div",{class:"hide@mobile"},/*#__PURE__*/React.createElement(ResponsiveImage,{lazyLoad:!0,className:"center max-width-100% animate-fade-in",src:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/Homepage_Vault-Security_DESKTOP%402x.webp",src2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/Homepage_Vault-Security_DESKTOP%402x.webp",width:"393",height:"595"})),/*#__PURE__*/React.createElement("div",{class:"align-middle max-width-100%"},/*#__PURE__*/React.createElement("h2",{class:"text-center@mobile"},"We\u2019re serious ",/*#__PURE__*/React.createElement("br",{class:"hide@tablet hide@desktop"}),"about security."),/*#__PURE__*/React.createElement("ul",{class:"plain layout block@tablet block@mobile widths-1/2@desktop gutters-vertical-sm gutters-horizontal-sm@desktop"},/*#__PURE__*/React.createElement("li",{class:"layout-media@desktop layout-flag gutters-xs"},/*#__PURE__*/React.createElement("span",null,/*#__PURE__*/React.createElement(IconCircleTick,{className:"text-turquoise block",width:"32",height:"32"})),/*#__PURE__*/React.createElement("strong",null,"24/7 account monitoring")),/*#__PURE__*/React.createElement("li",{class:"layout-media@desktop layout-flag gutters-xs"},/*#__PURE__*/React.createElement("span",null,/*#__PURE__*/React.createElement(IconCircleTick,{className:"text-turquoise",width:"32",height:"32"})),/*#__PURE__*/React.createElement("strong",null,"Investments SIPC protected up to $500",/*#__PURE__*/React.createElement("a",{href:"#\u2020\u2020"},/*#__PURE__*/React.createElement("span",{class:"text-white"},/*#__PURE__*/React.createElement("sup",null,"\u2020\u2020"))))),/*#__PURE__*/React.createElement("li",{class:"layout-media@desktop layout-flag gutters-xs"},/*#__PURE__*/React.createElement("span",null,/*#__PURE__*/React.createElement(IconCircleTick,{className:"text-turquoise",width:"32",height:"32"})),/*#__PURE__*/React.createElement("strong",null,"FDIC insurance on checking & savings balances up to $250K",/*#__PURE__*/React.createElement("a",{href:"#^^",class:"text-white"},/*#__PURE__*/React.createElement("sup",null,"^^"))))))))),/*#__PURE__*/React.createElement(PageSection,{className:"bg-turquoise text-white center padding-bottom-none"},/*#__PURE__*/React.createElement("h2",null,"Ready to go? ",/*#__PURE__*/React.createElement("br",null),/*#__PURE__*/React.createElement("span",{class:"text-ink"},"Join SoFi today!")),/*#__PURE__*/React.createElement("p",{class:"margin-top-ms"},/*#__PURE__*/React.createElement(CtaButton,{id:"homepage-join-sofi-mod-cta-primary","aria-label":"Get started with a SoFi account",href:"https://www.sofi.com/signup/?sofi_login=true&register=true&endpoint=https://www.sofi.com/my/banking/setup/start",ink:!0},"Get started")),/*#__PURE__*/React.createElement(ResponsiveImage,{lazyLoad:!0,className:"center margin-top-lg",desktopSrcWebP:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/webp/homepage/BR20-255131_SoFiPHonesCTA_Desktop%402x1.webp",desktopSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_SoFiPHonesCTA_Desktop%401x.webp",desktopSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_SoFiPHonesCTA_Desktop%402x1.webp",desktopWidth:"1182",desktopHeight:"399",tabletSrcWebP:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/webp/homepage/BR20-255131_SoFiPHonesCTA_Desktop%402x1.webp",tabletSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_SoFiPHonesCTA_Desktop%401x.webp",tabletSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20-255131_SoFiPHonesCTA_Desktop%402x1.webp",tabletWidth:"1182",tabletHeight:"399",mobileSrcWebP:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/webp/homepage/BR20_255131_SoFiPhone_CTA_Mobile%402x1.webp",mobileSrc:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20_255131_SoFiPhone_CTA_Mobile%401x.webp",mobileSrc2x:"https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BR20_255131_SoFiPhone_CTA_Mobile%402x1.webp",mobileWidth:"302",mobileHeight:"226"})),/*#__PURE__*/React.createElement(PageSection,{className:"bg-white text-ink small"},/*#__PURE__*/React.createElement("p",{class:"text-center underline strong margin-top-sm margin-bottom-sm"},"Mortgage Loan Terms"),/*#__PURE__*/React.createElement("p",{id:"5"},/*#__PURE__*/React.createElement("sup",null,"5")," 10-YEAR Payment Example: The payment for a 10-year term, loan amount $400000.00, Rate 5.500%, LTV 75% is $4341.00 for full Principal and Interest Payments with $6424.00 due at closing. The Annual Percentage Rate is 6.039%. No prepayment penalty. Payment shown does not include taxes and insurance. The actual payment amount will be greater. Interest rates and annual percentage rates (APRs) are for informational purposes only and are subject to change without notice."),/*#__PURE__*/React.createElement("p",null),/*#__PURE__*/React.createElement("p",null),/*#__PURE__*/React.createElement("p",{id:"6"},/*#__PURE__*/React.createElement("sup",null,"6")," 15-YEAR Payment Example: The payment for a 15-year term, loan amount $400000.00, Rate 5.375%, LTV 75% is $3242.00 for full Principal and Interest Payments with $6412.00 due at closing. The Annual Percentage Rate is 5.752%. No prepayment penalty. Payment shown does not include taxes and insurance. The actual payment amount will be greater. Interest rates and annual percentage rates (APRs) are for informational purposes only and are subject to change without notice."),/*#__PURE__*/React.createElement("p",null),/*#__PURE__*/React.createElement("p",null),/*#__PURE__*/React.createElement("p",{id:"7"},/*#__PURE__*/React.createElement("sup",null,"7")," 20-YEAR Payment Example: The payment for a 20-year term, loan amount $400000.00, Rate 5.875%, LTV 75% is $2837.00 for full Principal and Interest Payments with $5624.00 due at closing. The Annual Percentage Rate is 6.154%. No prepayment penalty. Payment shown does not include taxes and insurance. The actual payment amount will be greater. Interest rates and annual percentage rates (APRs) are for informational purposes only and are subject to change without notice."),/*#__PURE__*/React.createElement("p",null),/*#__PURE__*/React.createElement("p",null),/*#__PURE__*/React.createElement("p",{id:"8"},/*#__PURE__*/React.createElement("sup",null,"8")," 30-YEAR Payment Example: The payment for a 30-year term, loan amount $400000.00, Rate 6.000%, LTV 75% is $2398.00 for full Principal and Interest Payments with $5956.00 due at closing. The Annual Percentage Rate is 6.219%. No prepayment penalty. Payment shown does not include taxes and insurance. The actual payment amount will be greater. Interest rates and annual percentage rates (APRs) are for informational purposes only and are subject to change without notice."),/*#__PURE__*/React.createElement("p",{class:"text-center underline strong margin-top-sm margin-bottom-sm"},"Personal Loan Terms"),/*#__PURE__*/React.createElement("p",{id:"hi"},"Fixed rates from 7.24% APR to 35.49% APR reflect the 0.25% autopay interest rate discount and a 0.25% direct deposit interest rate discount. SoFi rate ranges are current as of 3/20/26 and are subject to change without notice. ",/*#__PURE__*/React.createElement("strong",null,"Lowest rates reserved for the most creditworthy borrowers.")," Your actual rate will be within the range of rates listed and will depend on the term you select, evaluation of your creditworthiness, income, and a variety of other factors."),/*#__PURE__*/React.createElement("p",null),/*#__PURE__*/React.createElement("p",null),"Loan amounts range from $5,000\u2013 $100,000. The APR is the cost of credit as a yearly rate and reflects both your interest rate and an origination fee of 0%-7%, which will be deducted from any loan proceeds you receive.",/*#__PURE__*/React.createElement("p",null),/*#__PURE__*/React.createElement("p",null),/*#__PURE__*/React.createElement("p",null,/*#__PURE__*/React.createElement("strong",null,"Autopay:")," The SoFi 0.25% autopay interest rate reduction requires you to agree to make monthly principal and interest payments by an automatic monthly deduction from a savings or checking account. The benefit will discontinue and be lost for periods in which you do not pay by automatic deduction from a savings or checking account. ",/*#__PURE__*/React.createElement("strong",null,"Autopay is not required to receive a loan from SoFi.")),/*#__PURE__*/React.createElement("p",null,/*#__PURE__*/React.createElement("strong",null,"SoFi Plus Discount:")," SoFi Plus members are eligible for an interest rate reduction of 0.25% on a Personal Loan. To be eligible for the discount, you must meet the SoFi Plus eligibility criteria within 31 days of the funding of your loan. For complete SoFi Plus eligibility, please see the SoFi Plus terms. When you enroll in SoFi Plus, the discount will lower the interest rate that applies to your loan only during periods in which you are enrolled in SoFi Plus. The discount will be removed during periods in which SoFi determines you are not enrolled in SoFi Plus. Each time your loan is re-amortized, your monthly payment amount will change based upon the interest rate that was in place. SoFi reserves the right to change or terminate this offer for unenrolled participants at any time. ",/*#__PURE__*/React.createElement("strong",null,"You are not required to enroll in SoFi Plus to be eligible for Loan approval."))),/*#__PURE__*/React.createElement(ContinueBanner,null))),document.getElementById("root"));
+
+        } catch(error) {
+          if (typeof logTranspiledScriptError === 'function') { 
+            logTranspiledScriptError(38, false, error); 
+          }
+          throw error;
+        }
+      </script>
+    
+      
+<!-- be_ixf, sdk, is -->
+  
+<footer class="footer" id="footer-superscript">
+  <div class="footer__inner">
+    <div class="footer__col--questions-mobile">
+      <h4>QUESTIONS?</h4>
+
+      <div>
+        <div class="support-container">
+          <div class="support-phone-container">
+            <strong>
+              Customer Support:<br>
+              <span class="info">
+                <svg>
+                  <use xlink:href="#call-now"></use>
+                </svg>
+              </span>
+              <a href="tel:+18554567634" data-qa="footer-customer-support-mobile-view-phone-number">(855) 456-7634</a>
+            </strong>
+          </div>
+
+          <div class="support-service-hours">
+            <ul>
+              <li>Mon-Thu 5:00 AM - 7:00 PM PT</li>
+              <li>Fri-Sun 5:00 AM - 5:00 PM PT</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="support-container">
+          <div class="support-phone-container">
+            <strong>
+              Home Loans General Support:<br>
+              <span class="info">
+                <svg>
+                  <use xlink:href="#call-now"></use>
+                </svg>
+              </span>
+              <a href="tel:+18447634466" data-qa="footer-home-loans-mobile-view-phone-number">(844) 763-4466</a><br>
+            </strong>
+          </div>
+          <div class="support-service-hours">
+            <ul>
+              <li>Mon-Fri 6:00 AM – 6:00 PM PT</li>
+              <li>Closed Saturday &amp; Sunday</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="footer__col--products">
+        <h4>PRODUCTS</h4>
+
+        <ul>
+          <li><a href="/sofi-plus/" data-qa="footer-plus" id="footer-plus">SoFi Plus</a></li>
+          <li><a href="/refinance-student-loan/" data-qa="footer-student-loan-refinancing">Student Loan Refinancing</a></li>
+          <li><a href="/medical-resident-refinance/" data-qa="footer-medical-dental-resident-refinancing">Medical/Dental Resident Refinancing</a></li>
+          <li><a href="/parent-plus-refinancing/" data-qa="footer-parent-plus-refinancing">Parent PLUS Refinancing</a></li>
+          <li><a href="/medical-professional-refinancing/">Medical Professional Refinancing</a></li>
+          <li><a href="/law-mba-degree-refinancing/">Law and MBA Refinancing</a></li>
+          <li><a href="/smart-start/">SmartStart Refinancing</a></li>
+          <li><a href="/private-student-loans/" data-qa="footer-private-student-loans">Private Student Loans</a></li>
+          <li><a href="/private-student-loans/undergraduate-loans/" data-qa="footer-undergraduate-student-loans">Undergraduate Student Loans</a></li>
+          <li><a href="/private-student-loans/graduate-loans/" data-qa="footer-graduate-student-loans">Graduate Student Loans</a></li>
+          <li><a href="/private-student-loans/law-school-loans/" data-qa="footer-law-school-loans">Law School Loans</a></li>
+          <li><a href="/private-student-loans/mba-loans/" data-qa="footer-mba-loans">MBA Loans</a></li>
+          <li><a href="/private-student-loans/health-professions-loans/" data-qa="footer-health-professions-loans">Health Professions Loans</a></li>
+          <li><a href="/private-student-loans/parent-loans/" data-qa="footer-parent-student-loans">Parent Student Loans</a></li>
+          <li><a href="/personal-loans/" data-qa="footer-personal-loans">Personal Loans</a></li>
+          <li><a href="/personal-loans/credit-card-consolidation-loans/" data-qa="footer-credit-card-consolidation-loans">Credit Card Consolidation Loans</a></li>
+          <li><a href="/personal-loans/home-improvement-loans/" data-qa="footer-home-improvement-loans">Home Improvement Loans</a></li>
+          <li><a href="/personal-loans/family-planning/" data-qa="footer-family-planning-loans">Family Planning Loans</a></li>
+          <li><a href="/personal-loans/vacation-loans/" data-qa="footer-travel-loans">Travel Loans</a></li>
+          <li><a href="/personal-loans/wedding-loans/" data-qa="footer-wedding-loans">Wedding Loans</a></li>
+          <li><a href="/mortgage-lender/" data-qa="footer-home-loans">Home Loans</a></li>
+          <li><a href="/home-loans/mortgage/" data-qa="footer-mortgage">Mortgage Loans</a></li>
+          <li><a href="/home-loans/mortgage-refinance/" data-qa="footer-mortgage-refinance">Mortgage Refinance</a></li>
+          <li>
+            <a href="/auto-loans/auto-loan-refinance/">Auto Loan Refinance</a>
+          </li>
+          <li><a href="/invest/" data-qa="footer-sofi-invest">Online Investing</a></li>
+          <li><a href="/invest/active/" data-qa="footer-active-investing">Self-Directed Brokerage Account</a></li>
+          <li><a href="/invest/automated/" data-qa="footer-automated-investing">Robo Investing</a></li>
+          <li><a href="/invest/retirement-accounts/">IRA Account</a></li>
+          <li><a href="/invest/stock-trading/">Stock Trading</a></li>
+          <li><a href="/invest/options-trading/">Options Trading</a></li>
+          <li><a href="/online-insurance/" data-qa="footer-sofi-protect">SoFi Protect</a></li>
+          <li><a href="/online-insurance/renters-insurance/" data-qa="footer-renters-insurance">Renters Insurance</a></li>
+          <li><a href="/online-insurance/homeowners-insurance/" data-qa="footer-homeowners-insurance">Homeowners Insurance</a></li>
+          <li><a href="/online-insurance/auto-insurance/" data-qa="footer-auto-insurance">Auto Insurance</a></li>
+          <li><a href="/online-insurance/life-insurance/" data-qa="footer-life-insurance">Life Insurance</a></li>
+          <li><a href="/online-insurance/estate-planning/" data-qa="footer-estate-planning">Estate Planning</a></li>
+          <li><a href="/credit-card/" data-qa="footer-credit-card">SoFi Credit Card</a></li>
+          <li class="money-waitlist"><a href="/banking/" data-qa="footer-sofi-checking-and-savings">SoFi Checking and Savings</a></li>
+          <li><a href="/banking/checking-account/">Online Checking Account</a></li>
+          <li><a href="/banking/savings-account/">Online Savings Account</a></li>
+          <li><a href="/banking/checking-account/debit-card/">Debit Card</a></li>
+          <li><a href="/banking/checking-offer/">Checking Account Bonus</a></li>
+          <li><a href="/crypto/" data-qa="footer-sofi-crypto">Crypto</a></li>
+          <li><a href="/financial-insights/" data-qa="footer-sofi-relay">Financial Insights</a></li>
+          <li><a href="/sofi-at-work/" data-qa="footer-sofi-at-work">SoFi at Work</a></li>
+          <li>
+            <a data-ga="nav-link" rel="noreferrer noopener" href="/small-business-loans/">
+              Small Business Financing
+            </a>
+          </li>
+          <li>
+            <a data-ga="nav-link" rel="noreferrer noopener" href="/small-business-checking/">
+              Business Checking
+            </a>
+          </li>
+          <li>
+            <a data-ga="nav-link" rel="noreferrer noopener" href="/small-business-credit-cards/">
+              Business Credit Card
+            </a>
+          </li>
+        </ul>
+    </div>
+
+    <div class="footer__col--company">
+        <h4>COMPANY</h4>
+
+        <ul>
+          <li><a href="/our-story/" data-qa="footer-about-us">About Us</a></li>
+          <li><a href="/our-leadership/" data-qa="footer-our-leadership">Our Leadership</a></li>
+          <li><a href="/how-it-works/" data-qa="footer-how-it-works">How it Works</a></li>
+          <li><a href="/values/" data-qa="footer-our-values">Our Values</a></li>
+          <li><a href="/press/" data-qa="footer-press">Press</a></li>
+          <li><a href="/investors/" data-qa="footer-investors">Investors</a></li>
+          <li><a href="/careers/" data-qa="footer-jobs">Careers</a></li>
+          <li><a href="/inclusive-culture/" data-qa="footer-inclusive-culture">Inclusive Culture</a></li>
+          <li><a href="/contact-us/" data-qa="footer-contact-us">Contact Us</a></li>
+          <li><a href="/on-the-money/" data-qa="footer-on-the-money">On the Money</a></li>
+          <li><a href="/faq/" data-qa="footer-faq">FAQs</a></li>
+        </ul>
+    </div>
+
+    <div class="footer__col--legal">
+        <h4>LEGAL</h4>
+
+        <ul>
+          <li><a href="/privacy-policies/" data-qa="footer-privacy-security">Privacy &amp; Security</a></li>
+          <li><a href="/terms-of-use/" data-qa="footer-terms-of-use">Terms of Use</a></li>
+          <li><a href="/legal/" data-qa="footer-disclaimers">Disclaimers</a></li>
+          <li><a href="/legal/#licenses" data-qa="footer-licenses">Licenses</a></li>
+          <li><a href="https://www.nmlsconsumeraccess.org/" rel="nofollow noopener noreferrer" data-qa="footer-nmls-access">NMLS Access</a></li>
+          <li><a href="/eligibility-criteria/" data-qa="footer-eligibility-criteria">Eligibility Criteria</a></li>
+          <li><a href="/american-with-disabilities-act-accessibility/" data-qa="footer-accessibility">ADA Accessibility</a></li>
+          <li><a href="/legal/#bcp" data-qa="footer-business-continuity">Business Continuity</a></li>
+          <li><div class="inline-block pointer">
+            <svg width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="align-middle">
+              <rect x="1" y="1" width="30" height="14" rx="7" fill="white" stroke="#00A2C7" stroke-width="2"></rect>
+              <rect x="16.3334" y="1" width="14" height="14" rx="7" fill="#00A2C7" stroke="#00A2C7" stroke-width="2"></rect>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.41445 10.785L12.6666 5.53582L11.7971 4.66675L7.41445 9.0121L5.53619 7.13491L4.66663 8.03875L7.41445 10.785Z" fill="#00A2C7"></path>
+            </svg>
+            <a href="/member-home/account-settings#privacy-preferences" id="privacy-options-link" class="text-ocean bold underline">Your privacy options</a>
+          </div></li>
+        </ul>
+    </div>
+
+    <div class="footer__col--questions">
+     <h4>QUESTIONS</h4>
+
+     <ul>
+        <li><a href="/faq/" data-qa="footer-faq">FAQs</a></li>
+        <li><a href="/contact-us/" data-qa="footer-contact-us">Contact Us</a></li>
+     </ul><div class="be-ix-link-block"><div class="be-ix-link-block"><div class="be-related-link-container"><h4 class="be-label" role="heading" aria-level="2">ALSO OF INTEREST</h4><ul class="be-list"><li class="be-list-item"><a class="be-related-link" href="https://www.sofi.com/personal-loans/">Apply Online for Personal Loans</a></li><li class="be-list-item"><a class="be-related-link" href="https://www.sofi.com/mortgage-calculator/">Home Mortgage Calculator</a></li><li class="be-list-item"><a class="be-related-link" href="https://www.sofi.com/personal-loans/credit-card-consolidation-loans/">Debt Consolidation Loans to Reduce Your Credit...</a></li><li class="be-list-item"><a class="be-related-link" href="https://www.sofi.com/banking/savings-account/">High Yield Savings Account - Open Online, No...</a></li><li class="be-list-item"><a class="be-related-link" href="https://www.sofi.com/home-loans/mortgage-rates/">Current Mortgage Rate</a></li></ul> </div></div>
+</div>
+  </div>
+
+    <div class="footer__col--questions-mobile be-also-of-interest"><div class="be-ix-link-block"><div class="be-ix-link-block"><div class="be-related-link-container"><h4 class="be-label" role="heading" aria-level="2">ALSO OF INTEREST</h4><ul class="be-list"><li class="be-list-item"><a class="be-related-link" href="https://www.sofi.com/personal-loans/">Apply Online for Personal Loans</a></li><li class="be-list-item"><a class="be-related-link" href="https://www.sofi.com/mortgage-calculator/">Home Mortgage Calculator</a></li><li class="be-list-item"><a class="be-related-link" href="https://www.sofi.com/personal-loans/credit-card-consolidation-loans/">Debt Consolidation Loans to Reduce Your Credit...</a></li><li class="be-list-item"><a class="be-related-link" href="https://www.sofi.com/banking/savings-account/">High Yield Savings Account - Open Online, No...</a></li><li class="be-list-item"><a class="be-related-link" href="https://www.sofi.com/home-loans/mortgage-rates/">Current Mortgage Rate</a></li></ul> </div></div>
+</div></div><div class="footer__col--signup">
+      <div class="footer__signup">
+        <div class="text-left align-bottoms otm-section">
+            <div>
+              <img height="60" src="https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/SoFi_OnTheMoney_lightmode.png" alt="SoFi Daily" loading="lazy">
+              <br>
+              <strong>
+                Intel, insights, and inspo for this financial moment, delivered straight to your inbox.
+              </strong>
+            </div>
+            
+            <p class="margin-none text-center">
+              <a class="btn" href="https://www.sofi.com/signup/on-the-money" id="otm-subscribe-footer">
+                Subscribe
+              </a>
+            </p>
+          </div>
+
+        <ul class="social-links">
+          <li>
+            <button onclick="window.sofiUtils.triggerModalById('m-exit-sofi', this);" data-link="https://www.facebook.com/SoFi" title="Facebook">
+                <img alt="social-logo-Facebook" src="https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/CN24-1943855__Facbook_Logo.svg" width="20" height="20">
+            </button>
+          </li>
+          <li>
+            <button onclick="window.sofiUtils.triggerModalById('m-exit-sofi', this);" data-link="http://www.linkedin.com/company/2301992" title="LinkedIn">
+                <img alt="social-logo-LinkedIn" src="https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/CN24-1943855_Linkedin_Logo.svg" width="20" height="20">
+            </button>
+          </li>
+          <li>
+            <button onclick="window.sofiUtils.triggerModalById('m-exit-sofi', this);" data-link="https://twitter.com/SoFi" title="Twitter">
+                <img alt="social-logo-Twitter" src="https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/CN24-1943855_X_Logo.svg" width="20" height="20">
+            </button>
+          </li>
+          <li>
+            <button onclick="window.sofiUtils.triggerModalById('m-exit-sofi', this);" data-link="https://instagram.com/sofi/" title="Instagram">
+                <img alt="social-logo-Instagram" src="https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/CN24-1943855_Instagram_Logo.svg" width="20" height="20">
+            </button>
+          </li>
+          <li>
+            <button onclick="window.sofiUtils.triggerModalById('m-exit-sofi', this);" data-link="https://www.youtube.com/channel/UCuoYE0bfkZCwaspBVQ59jfQ" rel="noopener noreferrer" title="YouTube" aria-label="YouTube">
+                <img alt="social-logo-YouTube" src="https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/CN24-1943855_Youtube_Logo.svg" width="20" height="20">
+            </button>
+          </li>
+        </ul>
+
+
+
+        <ul class="app-banners">
+          <li class="hide@mobile hide@tablet">
+            <img height="130" width="330" class="qr-app-banner" src="https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/Global-footer-QR-code%402x.png" alt="SoFi QR code, Download now, scan this with your phone’s camera" title="SoFi QR code" loading="lazy">
+          </li>
+          <li class="apple hide@desktop">
+            <a href="https://sofi.app.link/9PWl9h1gs4/" target="_blank" rel="noopener noreferrer" title="Apple">
+              <img height="35" width="116" src="https://d32ijn7u0aqfv4.cloudfront.net/dist/img/apple-badge-expires.png" alt="SoFi iOS App, Download on the App Store" title="SoFi iOS App" loading="lazy">
+            </a>
+          </li>
+          <li class="android hide@desktop">
+            <a href="https://sofi.app.link/iXoJohohs4" target="_blank" rel="noopener noreferrer" title="Android">
+              <img height="35" width="116" src="https://d32ijn7u0aqfv4.cloudfront.net/dist/img/android-badge-expires.png" alt="SoFi Android App, Get it on Google Play" title="SoFi Android App" loading="lazy">
+            </a>
+          </li>
+        </ul>
+
+        <p class="sf-office">
+          2750 East Cottonwood Parkway #300<br>
+          Cottonwood Heights, Utah 84121
+        </p>
+      </div>
+    </div>
+  </div>
+<!-- end footer-inner -->
+</footer>
+
+  <div class="subfooter">
+    <div class="subfooter__inner">
+      <div class="subfooter__legal">
+        
+           <span data-nosnippet="">
+
+    <p>
+    <a href="https://brokercheck.finra.org/" target="_blank" rel="”noreferrer" noopener”="">
+      <img decoding="async" src="https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/BrokerCheck-logo.png" alt="Broker Check by Finra">
+    </a>
+  </p>
+
+<p class="strong"><a href="https://www.sofi.com/rule-606-order-report/"><u>Rule 606 Order Routing</u></a></p>
+
+
+  
+  <div class="lf">
+    <strong>INVESTMENTS AND DIGITAL ASSETS ARE NOT FDIC INSURED 
+• ARE NOT BANK GUARANTEED • MAY LOSE VALUE</strong>
+  </div>
+<p>
+</p><p>
+SoFi Checking and Savings accounts are offered by SoFi Bank, N.A., Member FDIC.
+</p><p>
+</p><p>
+SoFi Credit Cards and SoFi debit cards are issued by SoFi Bank, N.A. pursuant to license by Mastercard® International Incorporated.
+</p><p>
+</p><p>
+SoFi Crypto products and services are offered by SoFi Bank, N.A., a national bank regulated by the Office of the Comptroller of the Currency.
+</p><p>
+</p><p>
+Loans originated by SoFi Bank, N.A., NMLS #696891 (www.nmlsconsumeraccess.org). Equal Housing Lender.
+</p><p>
+</p><p>
+Brokerage products offered through SoFi Securities LLC, member FINRA/SIPC.
+</p><p>
+</p><p>
+Advisory services are offered through SoFi Wealth LLC, an SEC-registered investment adviser.
+</p><p>
+</p><p>
+SoFi Relay offers users the ability to connect both SoFi accounts and external accounts using Plaid, Inc.’s service and for SoFi to present to you data we have received from the credit bureau. The credit score and associated data provided to you is a VantageScore® based on TransUnion® (the “Processing Agent”) data.
+</p><p>
+</p><p>
+<strong>SoFi Plus:</strong> <a href="https://www.sofi.com/terms-of-use/#sofi-plus"><u>Terms and conditions</u></a> apply. To learn more about SoFi Plus, please see the <a href="https://www.sofi.com/sofi-plus/"><u>SoFi Plus</u></a> page.
+</p><p>
+</p><p>
+<strong>SoFi Member Rewards:</strong> <a href="https://www.sofi.com/terms-of-use/#rewards"><u>Terms and conditions</u></a> apply. To learn more about SoFi Member Rewards, please see the <a href="https://www.sofi.com/rewards/"><u>Rewards</u></a> page.
+</p><p>
+</p><p>
+† New and existing Checking and Savings members who have not previously enrolled in Direct Deposit with SoFi are eligible to earn a cash bonus of either $50 (with at least $1,000 total Eligible Direct Deposits received during the Direct Deposit Bonus Period) <strong>OR</strong> $300 (with at least $5,000 total Eligible Direct Deposits received during the Direct Deposit Bonus Period). Cash bonus will be based on the total amount of Eligible Direct Deposit. If you have satisfied the Eligible Direct Deposit requirements but have not received a cash bonus in your Checking account, please contact us at 855-456-7634 with the details of your Eligible Direct Deposit. Direct Deposit Promotion begins on 12/7/2023 and will be available through 1/31/2026. Full terms at sofi.com/banking. SoFi Checking and Savings is offered through SoFi Bank, N.A., Member FDIC.
+</p><p>
+</p><p>
+SoFi members with Eligible Direct Deposit can earn 3.30% annual percentage yield (APY) on savings balances (including Vaults) and 0.50% APY on checking balances. There is no minimum Eligible Direct Deposit amount required to qualify for the 3.30% APY for savings (including Vaults). Members without Eligible Direct Deposit will earn 1.00% APY on savings balances (including Vaults) and 0.50% APY on checking balances. Interest rates are variable and subject to change at any time. These rates are current as of 12/23/25. Fees may reduce earnings. Additional information can be found at <a href="https://www.sofi.com/legal/banking-rate-sheet"><u>https://www.sofi.com/legal/banking-rate-sheet</u></a>.
+</p><p>
+</p><p>
+<strong>^ $1,000 value:</strong> See assumptions and details at <a href="https://sofi.com/SoFi-Plus"><u>SoFi.com/SoFi-Plus</u></a>, Value is not guaranteed and varies depending on benefits used. Terms apply.
+</p><p>
+</p><p>
+</p><p id="††">†† Your account is invested in assets that may lose value. However, SoFi Securities LLC, and the custodian of securities, Apex Clearing, are members of the Securities Investor Protection Corporation (SIPC). SIPC protects the securities in your brokerage account up to $500,000, including $250,000 for claims for cash. For more details, visit <a href="https://www.sipc.org/"><u>www.sipc.org</u></a>.</p>
+<p>
+</p><p>
+</p><p id="^^">^^ Deposits in checking and savings accounts are insured up to $250,000 per depositor for each account ownership category under the FDIC’s general deposit insurance rules. For more information visit <a href="https://fdic.gov/"><u>FDIC.gov</u></a></p>
+<p>
+</p><p>
+No brands or products mentioned are affiliated with SoFi, nor do they endorse or sponsor this offer. Third party trademarks referenced herein are property of their respective owners.
+</p><p>
+</p><p>
+*Terms and conditions apply. Only applicable for mortgage refinance applications received from 1/12/26 to 2/3/26. To be eligible you must not have submitted a mortgage refinance application within the preceding 90 days. Offer is subject to lender approval. Not eligible for Jumbo loan products. Cannot be combined with any other origination fee discount offers. SoFi reserves the right to change or terminate this offer at any time with or without notice.
+</p><p>
+</p><p>
+Screen images simulated. SoFi Bank, N.A., NMLS #696891. Member FDIC. ©2025 SoFi Technologies, Inc. All rights reserved. 
+
+
+              </p></span></div>
+
+      <div class="subfooter__links">
+        ©2026 Social Finance, LLC All rights reserved.
+      </div>
+
+      <div class="icon-wrap">
+        <div class="subfooter__icon subfooter__icon--norton">
+          <svg><use xlink:href="#norton-seal"></use></svg>
+        </div>
+
+        <div class="subfooter__icon subfooter__icon--ssl">
+          <svg><use xlink:href="#security-shield"></use></svg>
+          <span>TLS 1.2 Encrypted</span>
+        </div>
+
+        <div class="subfooter__icon subfooter__icon--equal-housing">
+          <svg><use xlink:href="#equalhousinglender"></use></svg>
+          <span>Equal Housing Lender</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><iframe src="https://a10819474327.cdn.optimizely.com/client_storage/a10819474327.html" hidden="" tabindex="-1" title="Optimizely Internal Frame" height="0" width="0" style="display: none;"></iframe><!-- page-wrap -->
+
+<script>
+// campaign vars
+var campaignSource = "";
+var campaignMedium = "";
+var campaignName = "";
+var campaignContent = "";
+</script>
+
+  <script type="text/javascript">
+    !function(){var b=function(){window.__AudioEyeSiteHash = "b4ef19477fde54599da2fcb62d0e3c44"; var a=document.createElement("script");a.src="https://wsmcdn.audioeye.com/aem.js";a.type="text/javascript";a.setAttribute("async","");document.getElementsByTagName("body")[0].appendChild(a)};"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",b):window.attachEvent&&window.attachEvent("onload",b):b()}();
+  </script>
+  <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp/wp-*.php","/wp/wp-admin/*","/wp/wp-content/uploads/*","/wp/wp-content/*","/wp/wp-content/plugins/*","/wp/wp-content/themes/sofi-wp-baby/*","/wp/wp-content/themes/sofi-v4/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script async="" type="text/javascript" src="https://d32ijn7u0aqfv4.cloudfront.net/dist/js/header-footer.d02c0d53.js" id="header_footer_js_async-js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" id="jquery-js"></script>
+<script type="text/javascript" id="brightedge-footer-js-extra">
+/* <![CDATA[ */
+var brightedgeFooter = {"beContentBody":"\u003Cdiv class=\"be-ix-link-block\"\u003E\u003Cdiv class=\"be-ix-link-block\"\u003E\u003Cdiv class=\"be-related-link-container\"\u003E\u003Ch4 class=\"be-label\" role=\"heading\" aria-level=\"2\"\u003EALSO OF INTEREST\u003C/h4\u003E\u003Cul class=\"be-list\"\u003E\u003Cli class=\"be-list-item\"\u003E\u003Ca class=\"be-related-link\" href=\"https://www.sofi.com/personal-loans/\"\u003EApply Online for Personal Loans\u003C/a\u003E\u003C/li\u003E\u003Cli class=\"be-list-item\"\u003E\u003Ca class=\"be-related-link\" href=\"https://www.sofi.com/mortgage-calculator/\"\u003EHome Mortgage Calculator\u003C/a\u003E\u003C/li\u003E\u003Cli class=\"be-list-item\"\u003E\u003Ca class=\"be-related-link\" href=\"https://www.sofi.com/personal-loans/credit-card-consolidation-loans/\"\u003EDebt Consolidation Loans to Reduce Your Credit...\u003C/a\u003E\u003C/li\u003E\u003Cli class=\"be-list-item\"\u003E\u003Ca class=\"be-related-link\" href=\"https://www.sofi.com/banking/savings-account/\"\u003EHigh Yield Savings Account - Open Online, No...\u003C/a\u003E\u003C/li\u003E\u003Cli class=\"be-list-item\"\u003E\u003Ca class=\"be-related-link\" href=\"https://www.sofi.com/home-loans/mortgage-rates/\"\u003ECurrent Mortgage Rate\u003C/a\u003E\u003C/li\u003E\u003C/ul\u003E \u003C/div\u003E\u003C/div\u003E\n\u003C/div\u003E"};
+//# sourceURL=brightedge-footer-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.sofi.com/wp/wp-content/themes/sofi-wp-baby/functions/brightedge-autopilot/front/footer.js" id="brightedge-footer-js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9df7ba095ab543e8',t:'MTc3NDA0MTI2OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;9df7ba095ab543e8&quot;,&quot;version&quot;:&quot;2025.9.1&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;token&quot;:&quot;1fc19ef2705b437eb1f8fa3f1e02b05e&quot;,&quot;b&quot;:1}" crossorigin="anonymous"></script>
+
+
+      <img src="/measure/pixel/refer?referrer=https://www.sofi.com" style="display: none;"><script type="text/javascript" id="" charset="">(function(){function f(a){var c="; "+document.cookie;a=c.split("; "+a+"\x3d");return a.length===2?a.pop().split(";").shift():""}function g(){this.get=function(a,c){var b=new XMLHttpRequest;b.open("GET",a,!0);b.onreadystatechange=function(){b.readyState===4&&b.status===200&&c(b.responseText)};b.send()}}function h(a){if(!a)return{};var c={};a=a.substring(1).split("\x26");for(var b=0;b<a.length;b++){var d=a[b].split("\x3d");c[decodeURIComponent(d[0])]=decodeURIComponent(d[1]||"")}return c}function k(){var a=
+window.location.hostname,c=window.location.search;c=h(c);if(c=c.gclid){var b=new Date;b.setTime(b.getTime()+864E5);document.cookie="SOFI_ECLID\x3d"+c+"; expires\x3d"+b.toUTCString()+"; domain\x3d."+a+"; path\x3d/; secure"}if(c=f("SOFI_ECLID"))try{var d=new g,l=setTimeout(function(){console.warn("Attribution controller request timed out")},1E3);d.get("//"+a+"/atr/p/v1/ck/sync",function(e){clearTimeout(l)})}catch(e){console.warn("Attribution controller request failed:",e)}}k()})();</script><script src="https://wsmcdn.audioeye.com/aem.js" type="text/javascript" async=""></script></body></html>

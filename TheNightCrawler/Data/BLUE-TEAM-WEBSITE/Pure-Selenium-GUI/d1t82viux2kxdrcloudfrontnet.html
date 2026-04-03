@@ -1,0 +1,67 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Decider Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="page">
+    <section class="card">
+        <header class="card__header">
+            <h1>Contact Form</h1>
+            <p class="sub">Adaptive bot detection with captcha fallback</p>
+        </header>
+        <form id="contact-form" novalidate="">
+            <div class="grid">
+                <label>First name
+                    <input type="text" name="firstName" autocomplete="given-name" required="">
+                </label>
+                <label>Last name
+                    <input type="text" name="lastName" autocomplete="family-name" required="">
+                </label>
+            </div>
+            <label>Email
+                <input type="email" name="emailId" autocomplete="email" required="">
+            </label>
+            <label>Message
+                <textarea name="text" rows="4" required=""></textarea>
+            </label>
+
+            <!-- Honeypots: visually hidden, programmatically focusable only by bots -->
+            <div class="honeypots" aria-hidden="true">
+                <label>Leave this field blank
+                    <input type="text" name="hp_url" tabindex="-1" autocomplete="off">
+                </label>
+                <label>Do not fill
+                    <input type="text" name="hp_comment" tabindex="-1" autocomplete="off">
+                </label>
+            </div>
+
+            <input type="hidden" name="sessionId" id="sessionId" value="3244a081-93b9-4be3-b918-63aa5f405195">
+            <input type="hidden" name="timezoneOffset" id="timezoneOffset" value="240">
+            <input type="hidden" name="screenHeight" id="screenHeight" value="878">
+            <input type="hidden" name="screenWidth" id="screenWidth" value="1352">
+            <input type="hidden" name="captchaCompleted" id="captchaCompleted" value="false">
+
+            <button type="submit">Send</button>
+        </form>
+
+        <div id="status" role="status" class="status status--muted">Submitting...</div>
+    </section>
+</main>
+
+<div id="captcha-modal" class="modal">
+    <div class="modal__content">
+        <h2>Prove you are human</h2>
+        <p id="captcha-text">Captcha required due to unusual activity</p>
+        <label class="captcha-check"><input type="checkbox" id="captcha-checkbox"> I am not a robot</label>
+        <div class="modal__actions">
+            <button id="captcha-submit">Continue</button>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+
+
+</body></html>

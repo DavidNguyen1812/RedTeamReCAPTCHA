@@ -1,0 +1,71 @@
+Key Indicator of Google reCAPTCHA
+
+v2 reCAPTCHA
+
+https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LciDaYrAAAAAGLCnHX5tLBvSMiK8Nlh17QNs5DI&co=aHR0cHM6Ly93d3cuc2xiLmNvbTo0NDM.&hl=en&v=vUgXt_KV952_-5BB2jjloYzl&size=invisible&badge=bottomright&anchor-ms=20000&execute-ms=30000&cb=j3ldox57qckn
+
+Starts with https://www.google.com/recaptcha/api2/
+
+If invisible, a parameter size=invisible will be in the URL query parameter, else if size=normal or not present, then it is a standard checkbox v2 CAPTCHA
+
+Can also be
+https://www.google.com/recaptcha/api.js?render=explicit
+
+Starts with https://www.google.com/recaptcha/api.js
+But render=explicit is in the URL parameter -> This could be v2 visible or invisible
+
+v3 reCAPTCHA
+
+Starts with https://www.google.com/recaptcha/api.js
+
+But render= 6L....(Site-key) is in the URL query parameter
+
+
+Enterprise reCAPTCHA
+
+ https://www.google.com/recaptcha/enterprise.js?render=6Le_FmYaAAAAAL_YYFMa4JzOwiyuxNj477iPYoNY
+
+Starts with  https://www.google.com/recaptcha/enterprise.js
+
+
+Key Indicator of CloudFare CAPTCHA
+
+You most likely will get a 403 Forbidden Status Code and redirect you to a CloudFare challenge/verification page that has a src URL either starts with https://challenges.cloudflare.com/cdn-cgi/challenge-platform/ or https://challenges.cloudflare.com/turnstile
+
+NOTE: Most website use CloudFare as their first line on defense. Then they can integrate another CAPTCHA vendor in another endpoint
+
+
+Key Indicator of invisible HCAPTCHA
+
+Mostly being implemented at the login or checkout or endpoint that involved PII data flow of a website. Usually has iframe src starts with https://newassets.hcaptcha.com/captcha/v1/, https://assets.hcaptcha.com/captcha/v1, or https://cf-assets.hcaptcha.com/captcha/v1
+ If URL query parameter in the src that has frame=checkbox-invisible or size=invisible indicated invisible mode is being used.
+
+Another indicator would be the src https://js.hcaptcha.com/1/api.js in the script tag following a URL query parameter of render=explicit
+
+
+Key Indicator of invisible MTCAPTCHA
+
+MTCAPTCHA was designed to be GDRP compliance, so it is very commonly used in majority of European websites.
+
+To implement MTCAPTCHA, developer have to add a global variable mtCaptchaConfig in the HTML content to specific which CAPTCHA mode and the configuration. The variable can also be in the script tag innerHTML.
+
+There are two way to detect invisible or visible MTCAPTCHA implementation
+
+One way is check if an iframe has src starts with https://service.mtcaptcha.com/mtcv1/ Once the iframe is located, we can check whether it has a style attribute with a display: none value in it. If it is, then that is an invisible MTCAPTCHA.
+
+The second way is the mtcaptchaConfig will have a setting lowFrictionInvisible as True or loadAnimation is False and autoFormValidate is True but the widgetSize have to be invisible. If the widgetSize is mini then the site enforce both invisible and visible MTCAPTCHA. The visible MTCAPTCHA will most likely appear at the site login, account register, checkout, ..etc.. endpoints where there is PII involves.
+
+
+Key Indicator of invisible ALTCHA
+
+Unlike any other CAPTCHA vendors listed above, ALTCHA captcha does not need to be integrated with a challenge workflow with a CAPTCHA server, but can be implemented locally on the website own server. ALTCHA use a cryptographic method called Proof-Of-Work. This enhance use-experience. The process are as followed:
+
+1. User make a request to the website.
+2. The website server generates a salt at any length the site dev set, longer length means longer brute force attempt following Big-O notation.
+3. The website server then geneartes a secret number and concatenates the salt and the number to hash it with the SHA alogrithm.
+4. An HMAC is used as a digital signature for the integrity of the challenge.
+5. The client then receives the challenge and must iteratively guess the secret number starting from 0 and combined with the salt and hash the solution and send to the server until the hash matches the server hash and the digital signature must matched for integrity.
+
+Why this stop DDOS bots, it force every request to alway solving the challenge iteratively, thus, increasing the computational power and time. Using CAPTCHA solver is infeasible since the client has to guess the secret number and the number only being known by the server.
+
+ To detect whether the ALTCHA mode is non-intrusive (invisible) or not, we can check for if the front end of the website has a tag <altcha-widget>. If so, we check if the style attribute has value ‘display: none’ or ‘visibility: hidden’. We can also check the auto attribute to contains any value ‘onload’, ‘onsubmit’, ‘onfocus’.

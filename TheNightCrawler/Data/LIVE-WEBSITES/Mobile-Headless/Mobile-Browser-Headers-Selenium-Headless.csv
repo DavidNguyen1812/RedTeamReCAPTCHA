@@ -1,0 +1,49 @@
+CAPTCHATYPE,ContentLength,StatusCode,URL
+NO CAPTCHA DETECTED,599184,200,https://www.udemy.com/
+NO CAPTCHA DETECTED,849992,200,https://www.sofi.com/
+NO CAPTCHA DETECTED,349688,200,https://www.connectwise.com/
+NO CAPTCHA DETECTED,252894,200,https://www.delta.com/
+NO CAPTCHA DETECTED,542471,200,https://www.colliers.com/en
+NO CAPTCHA DETECTED,210692,200,https://www.airtahiti.com/
+NO CAPTCHA DETECTED,270798,200,https://chatgpt.com/
+NO CAPTCHA DETECTED,620809,200,https://pos.toasttab.com/
+NO CAPTCHA DETECTED,129260,200,https://www.eon.com/en.html
+NO CAPTCHA DETECTED,162176,200,https://www.crowe.com/
+NO CAPTCHA DETECTED,880627,200,https://www.lego.com/en-us
+NO CAPTCHA DETECTED,56053,200,https://www.web.com/
+Google V2 CAPTCHA,481074,200,https://www.cummins.com/en-na
+NO CAPTCHA DETECTED,43107,200,https://www.researchgate.net/
+NO CAPTCHA DETECTED,466256,200,https://www.abbvie.com/
+NO CAPTCHA DETECTED,377226,200,https://grok.com/
+CLOUDFARE TURNSTILE CAPTCHA,14396,200,https://claude.ai/logout
+Invisible Google V2 CAPTCHA,274395,200,https://jobs.experian.com/jobs
+Invisible Google V2 CAPTCHA,314390,200,https://rtcamp.com/
+Invisible Google V2 CAPTCHA,268340,200,https://www.amp.com.au/
+Google Enterprise CAPTCHA (Invisible),605691,200,https://www.amtrak.com/home
+NO CAPTCHA DETECTED,192965,200,https://www.axi.com/int
+Google V2 with Check Box (Could Trigger Visible or Invisible) CAPTCHA,1089831,200,https://www.cardinalhealth.com/en.html
+Invisible Google V2 CAPTCHA,377116,200,https://www.cvent.com/
+Invisible Google V2 CAPTCHA,595377,200,https://www.interface.com/US/en-US.html
+Invisible Google V2 CAPTCHA,259183,200,https://www.moodys.com/
+Invisible Google V2 CAPTCHA,1546078,200,https://www.sierrawireless.com/
+Invisible Google V2 CAPTCHA,1086988,200,https://www.slb.com/
+Invisible Google V2 CAPTCHA,204219,200,https://www.travelers.com/
+Invisible Google V2 CAPTCHA,546292,200,https://www.weber.com/US/en/home/
+Invisible Google V2 CAPTCHA,129479,200,https://www.cookieyes.com/
+Invisible HCAPTCHA CAPTCHA,1071094,200,https://www.veeam.com/
+Invisible HCAPTCHA CAPTCHA,414145,200,https://www.riotgames.com/en
+Invisible HCAPTCHA CAPTCHA,54096,200,https://accounts.shopify.com/lookup?rid=db8432a2-109e-4221-b758-18338660d579&verify=1774039704-Gwa0MqUhgea8SIkrXdbocuDxst172XR2imROsYhq6XM%3D
+Invisible HCAPTCHA CAPTCHA,158842,200,https://dashboard.stripe.com/login
+Invisible HCAPTCHA CAPTCHA,9480,200,https://www.epicgames.com/id/login
+Passive HCAPTCHA CAPTCHA,135193,200,https://store.steampowered.com/join
+Active Challenge MTCAPTCHA,877120,200,https://www.bader.at/meinbader/anmeldung
+Low-Friction MTCAPTCHA,808755,200,https://www.goyard.com/us_en/customer/account/create/referer/
+Active Challenge MTCAPTCHA,315959,200,https://www.monamoda.nl/mijnaccount/aanmelding
+Active Challenge MTCAPTCHA,839224,200,https://www.klingel.nl/mijnaccount/aanmelding
+NO CAPTCHA DETECTED,110040,200,https://www.ghd.com/en/contact-us
+Active Challenge MTCAPTCHA,564561,200,https://www.brigitte-salzburg.at/meinkonto/anmeldung
+Active Challenge MTCAPTCHA,280649,200,https://amperecomputing.com/auth/register
+NO CAPTCHA DETECTED,12408809,200,https://edpuzzle.com/
+Active Challenge MTCAPTCHA,96797,200,https://admin.mtcaptcha.com/signup/profile?plantype=A
+Non-intrusive ALTCHA Captcha,64944,200,https://www.maximiles.com/
+Non-intrusive ALTCHA Captcha,675144,200,https://www.qcitymetro.com/

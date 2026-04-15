@@ -5,21 +5,14 @@
 ## Repo Structure:
 
 ```
-├── The k i          
-│   ├── 0-9                                                # Contain result keystroke extractions from running the extraction program
-│   ├── 0-9-clean.wav                                      # An audio of all the extracted keystroke combined
-│   ├── 0-9.wav                                            # Original audio before extraction
+├── TheNightCrawler          
+│   ├── Data                                               # Crawling Results
+│   ├── spiders                                            # The main scripts that define the crawler logic
+│   ├── __init__.py                                        # Init 
 │   ├── RecordingKeystrokeIsolator.ipynb                   # Keystroke isolator code
 │   └── keystrokeExtractionLogic                           # Data flow of how the keystroke isolator works
-├── CoATNet                                                # Four Pre-Trained CoATNet models                  
-├── InferencePhrase                                        # Inference Stage of the models
-│   ├── 0-9                                                # Isolated keystrokes from a sample attack recording
-│   ├── Models                                             # Contains 4 Pre-Trained CoATNet models and their training + eval result
-│   ├── 0-9.wav                                            # Original of the attack recording
-│   └── InferencePhrase.ipynb                              # Jupyter Notebook of the python code to run the models in infernece phrase to predict attacker recordings
-├── Keystroke-Datasets                                     # Clean Keystoke dataset obtain from /Botacin-s-Lab/EchoCrypt/
-├── Reading                                                # The original Harrison et Al paper that lay the foundation of this project 
-└── README.md                                              # This file
+├── README.md                                              # This file
+└── scrapy.cfg                                             # Important Scrapy config for the whole crawler system 
 ```
 
 ## Keystroke Datasets:

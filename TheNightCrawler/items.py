@@ -7,7 +7,6 @@ import scrapy
 
 
 class parsedItem(scrapy.Item):
-    # hrefURL = scrapy.Field()
     URL = scrapy.Field()
     CAPTCHATYPE = scrapy.Field()
     StatusCode = scrapy.Field()

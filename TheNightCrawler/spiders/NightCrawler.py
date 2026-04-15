@@ -107,14 +107,6 @@ class NightCrawlerSpider(scrapy.Spider):
 
     def start_requests(self):
         URLS = {
-            # "Test": ["https://admin.mtcaptcha.com/signup/profile?plantype=A"],
-            #"Demo CAPTCHA sites": ["https://www.abbvie.com/",
-                                   #"https://grok.com",
-                                   #"https://claude.ai/new"],
-
-            #"Dr Wei sites": ["https://mtcaptcha-red-team-invisible.onrender.com/",
-                             #"https://mtcaptcha-red-team-updated.onrender.com/"],
-
             "CloudFare Enforced Sites": ["https://www.udemy.com/",
                                         "https://www.sofi.com/",
                                         "https://www.connectwise.com/",
@@ -189,7 +181,7 @@ class NightCrawlerSpider(scrapy.Spider):
         domainNamePattern = re.compile(r"(?:www\.)?([a-zA-Z0-9])+(?:\.[a-zA-Z0-9]+){1,12}")
         match = domainNamePattern.search(response.url)
         if match:
-            fileName = match.group().replace("www.", "").replace(".com", "")
+            fileName = match.group().replace("www.", "").replace(".com", "").replace(".", "")
         else:
             fileName =  str(random.randint(1, 300))
 
@@ -203,7 +195,7 @@ class NightCrawlerSpider(scrapy.Spider):
                 except ElementNotInteractableException:
                     pass
             responseContent = browser.page_source
-            browser.save_screenshot(f"{fileName.replace(".", "")}.png")
+            browser.save_screenshot(f"{fileName}.png")
         elif response.url.startswith("https://d1t82viux2kxdr.cloudfront.net/"):
             browser.maximize_window()
             time.sleep(4)
@@ -239,8 +231,8 @@ class NightCrawlerSpider(scrapy.Spider):
         else:
             responseContent = browser.page_source
             browser.maximize_window()
-            browser.save_screenshot(f"{fileName.replace(".", "")}.png")
-        fileName = f"{fileName.replace(".", "")}.html"
+            browser.save_screenshot(f"{fileName}.png")
+        fileName = f"{fileName}.html"
         with open(fileName, "w") as f:
             f.write(responseContent)
         self.logger.info(f"Response HTML for URL {response.url}written to file {fileName}")
@@ -391,42 +383,8 @@ class NightCrawlerSpider(scrapy.Spider):
             StatusCode=response.status,
             ContentLength=len(response.text),
         )
-
-
         if response.status == 200:
             # DO SOME SCRAPING HERE...
             pass
-            """
-            initialHeight = browser.execute_script("return document.documentElement.scrollHeight")
-            while initialHeight != "Maximum Depth Reached":
-                trElements = browser.find_elements(By.TAG_NAME, 'tr')
-                if trElements:
-                    for tr in trElements:
-                        print(f'"https://{tr.get_attribute('data-domain')}",')
-                initialHeight = scrollToBottom(initialHeight, browser)
-            domainNamePattern = re.compile(r"www\\.(?:[a-zA-Z0-9]+){1,12}")
-            anchorTags = response.css('a')
-            urlItem = parsedItem()
-            hrefLinks = []
-            if anchorTags:
-                print(f"Locating all the referal links from {response.url}")
-                for anchorTag in anchorTags:
-                    try:
-                        if not anchorTag.attrib['href'].startswith(("https://", "http://")):
-                            if not response.url.startswith("https://proxy.scrapeops.io/v1/"):
-                                hrefLinks.append(response.url[:-1] + anchorTag.attrib['href'])
-                            else:
-                                match = domainNamePattern.search(anchorTag.attrib['href'])
-                                if match:
-                                    hrefLinks.append(f"https://{match.group()}{anchorTag.attrib['href']})")
-                                else:
-                                    pass
-                        else:
-                            hrefLinks.append(anchorTag.attrib['href'])
-                    except Exception as e:
-                        print(f"Error: {e}")
-                urlItem['hrefURL'] = hrefLinks
-                yield urlItem
-            """
         self.logger.info(f"CLOSING BROWSER SESSION FOR: {response.url}")
         browser.quit()

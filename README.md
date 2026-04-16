@@ -180,7 +180,7 @@ In settings.py, enable only "TheNightCrawler.middlewares.SeleniumWithScrapeOpsPr
 66       }
 67   }
 ```
-In the spider main script, "NightCrawler.py" at line 172, set the 'use_mobile_headers' argument to True. Using Proxy will need an authentic request header to bypass most CloudFare CAPTCHA
+In the spider main script, "NightCrawler.py" at line 172, set the 'use_mobile_headers' argument to True or False. Using Proxy will need an authentic request header to bypass most CloudFare CAPTCHA
 
 ```
 172   yield scrapy.Request(url=url, callback=self.parse, meta={'use_selenium': True, 'selenium_wait_time': 30, 'use_mobile_headers': True, 'headless': True})

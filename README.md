@@ -48,7 +48,17 @@
 
 In settings.py, enable only "TheNightCrawler.middlewares.SeleniumWithNothingMiddleware": 400
 
-![picture](https://drive.google.com/file/d/1J83j3v_eUXiW-Bj0G1k7cRQCUPTMGN_M/view?usp=sharing)
+```
+# Enable or disable downloader middlewares
+# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
+DOWNLOADER_MIDDLEWARES = {
+    "TheNightCrawler.middlewares.SeleniumWithNothingMiddleware": 420,
+    # "TheNightCrawler.middlewares.SeleniumWithScrapeOpsBrowserHeader": 420,
+    # "TheNightCrawler.middlewares.SeleniumWithScrapeOpsProxy": 420,
+    # "TheNightCrawler.middlewares.SeleniumWithUndetectedBrowser": 420,
+    "TheNightCrawler.downloadermiddlewares.retry.RetryMiddleware": None
+}
+```
 
 
 ## Contributors:

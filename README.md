@@ -44,23 +44,179 @@
 
 ## Instructions:
 
+**Switching Between Headless and GUI mode for all methods**
+
+In the spider main script, "NightCrawler.py" at line 172, change the argument 'headless' to True (Headless Mode) or False (Browser GUI)
+
+```
+yield scrapy.Request(url=url, callback=self.parse, meta={'use_selenium': True, 'selenium_wait_time': 30, 'use_mobile_headers': True, 'headless': True}) # Headless
+yield scrapy.Request(url=url, callback=self.parse, meta={'use_selenium': True, 'selenium_wait_time': 30, 'use_mobile_headers': True, 'headless': False}) # GUI
+```
+
 **Pure Selenium Method**
 
-In settings.py, enable only "TheNightCrawler.middlewares.SeleniumWithNothingMiddleware": 400
+In settings.py, enable only "TheNightCrawler.middlewares.SeleniumWithNothingMiddleware": 420 at line 41 and enable 'Pure-Selenium.csv': {' at line 58 to generate crawling result as CSV file.
 
 ```
-# Enable or disable downloader middlewares
-# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-DOWNLOADER_MIDDLEWARES = {
-    "TheNightCrawler.middlewares.SeleniumWithNothingMiddleware": 420,
-    # "TheNightCrawler.middlewares.SeleniumWithScrapeOpsBrowserHeader": 420,
-    # "TheNightCrawler.middlewares.SeleniumWithScrapeOpsProxy": 420,
-    # "TheNightCrawler.middlewares.SeleniumWithUndetectedBrowser": 420,
-    "TheNightCrawler.downloadermiddlewares.retry.RetryMiddleware": None
-}
+38    # Enable or disable downloader middlewares
+39    # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
+40    DOWNLOADER_MIDDLEWARES = {
+41    "TheNightCrawler.middlewares.SeleniumWithNothingMiddleware": 420,
+42    # "TheNightCrawler.middlewares.SeleniumWithScrapeOpsBrowserHeader": 420,
+43    # "TheNightCrawler.middlewares.SeleniumWithScrapeOpsProxy": 420,
+44    # "TheNightCrawler.middlewares.SeleniumWithUndetectedBrowser": 420,
+45    "TheNightCrawler.downloadermiddlewares.retry.RetryMiddleware": None
+46    }
+
+
+57   FEEDS = {
+58    'Pure-Selenium.csv': {
+59    # 'Non-Mobile-Browser-Headers-Selenium.csv': {
+60    # 'Mobile-Browser-Headers-Selenium.csv': {
+61    # 'ScrapeOPS-Proxy-Selenium.csv':{
+62    # 'Undetected-Browser-Selenium.csv': {
+63        'format': 'csv',
+64        'encoding': 'utf8',
+65        'overwrite': True
+66       }
+67   }
 ```
 
-In the spider main script, "NightCrawler.py" at line 
+In the spider main script, "NightCrawler.py" at line 172, the 'use_mobile_headers' argument won't be effective for this method.
+
+**Non-Mobile Headers Method**
+
+In settings.py, enable only "TheNightCrawler.middlewares.SeleniumWithScrapeOpsBrowserHeader": 420 at line 42 and enable 'Pure-Selenium.csv': {' at line 59 to generate crawling result as CSV file.
+
+```
+38    # Enable or disable downloader middlewares
+39    # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
+40    DOWNLOADER_MIDDLEWARES = {
+41    # "TheNightCrawler.middlewares.SeleniumWithNothingMiddleware": 420,
+42    "TheNightCrawler.middlewares.SeleniumWithScrapeOpsBrowserHeader": 420,
+43    # "TheNightCrawler.middlewares.SeleniumWithScrapeOpsProxy": 420,
+44    # "TheNightCrawler.middlewares.SeleniumWithUndetectedBrowser": 420,
+45    "TheNightCrawler.downloadermiddlewares.retry.RetryMiddleware": None
+46    }
+
+
+57   FEEDS = {
+58    # 'Pure-Selenium.csv': {
+59    'Non-Mobile-Browser-Headers-Selenium.csv': {
+60    # 'Mobile-Browser-Headers-Selenium.csv': {
+61    # 'ScrapeOPS-Proxy-Selenium.csv':{
+62    # 'Undetected-Browser-Selenium.csv': {
+63        'format': 'csv',
+64        'encoding': 'utf8',
+65        'overwrite': True
+66       }
+67   }
+```
+In the spider main script, "NightCrawler.py" at line 172, set the 'use_mobile_headers' argument to False.
+
+```
+172   yield scrapy.Request(url=url, callback=self.parse, meta={'use_selenium': True, 'selenium_wait_time': 30, 'use_mobile_headers': False, 'headless': True})
+```
+
+**Mobile Headers Method**
+
+In settings.py, enable only "TheNightCrawler.middlewares.SeleniumWithScrapeOpsBrowserHeader": 420 at line 42 and enable 'Mobile-Browser-Headers-Selenium.csv': { at line 60 to generate crawling result as CSV file.
+
+```
+38    # Enable or disable downloader middlewares
+39    # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
+40    DOWNLOADER_MIDDLEWARES = {
+41    # "TheNightCrawler.middlewares.SeleniumWithNothingMiddleware": 420,
+42    "TheNightCrawler.middlewares.SeleniumWithScrapeOpsBrowserHeader": 420,
+43    # "TheNightCrawler.middlewares.SeleniumWithScrapeOpsProxy": 420,
+44    # "TheNightCrawler.middlewares.SeleniumWithUndetectedBrowser": 420,
+45    "TheNightCrawler.downloadermiddlewares.retry.RetryMiddleware": None
+46    }
+
+
+57   FEEDS = {
+58    # 'Pure-Selenium.csv': {
+59    # 'Non-Mobile-Browser-Headers-Selenium.csv': {
+60    'Mobile-Browser-Headers-Selenium.csv': {
+61    # 'ScrapeOPS-Proxy-Selenium.csv':{
+62    # 'Undetected-Browser-Selenium.csv': {
+63        'format': 'csv',
+64        'encoding': 'utf8',
+65        'overwrite': True
+66       }
+67   }
+```
+In the spider main script, "NightCrawler.py" at line 172, set the 'use_mobile_headers' argument to True.
+
+```
+172   yield scrapy.Request(url=url, callback=self.parse, meta={'use_selenium': True, 'selenium_wait_time': 30, 'use_mobile_headers': True, 'headless': True})
+```
+
+**ScrapeOPS Proxy Method**
+
+In settings.py, enable only "TheNightCrawler.middlewares.SeleniumWithScrapeOpsProxy": 420, at line 43 and enable 'ScrapeOPS-Proxy-Selenium.csv':{ at line 61 to generate crawling result as CSV file.
+
+```
+38    # Enable or disable downloader middlewares
+39    # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
+40    DOWNLOADER_MIDDLEWARES = {
+41    # "TheNightCrawler.middlewares.SeleniumWithNothingMiddleware": 420,
+42    # "TheNightCrawler.middlewares.SeleniumWithScrapeOpsBrowserHeader": 420,
+43    "TheNightCrawler.middlewares.SeleniumWithScrapeOpsProxy": 420,
+44    # "TheNightCrawler.middlewares.SeleniumWithUndetectedBrowser": 420,
+45    "TheNightCrawler.downloadermiddlewares.retry.RetryMiddleware": None
+46    }
+
+
+57   FEEDS = {
+58    # 'Pure-Selenium.csv': {
+59    # 'Non-Mobile-Browser-Headers-Selenium.csv': {
+60    # 'Mobile-Browser-Headers-Selenium.csv': {
+61    'ScrapeOPS-Proxy-Selenium.csv':{
+62    # 'Undetected-Browser-Selenium.csv': {
+63        'format': 'csv',
+64        'encoding': 'utf8',
+65        'overwrite': True
+66       }
+67   }
+```
+In the spider main script, "NightCrawler.py" at line 172, set the 'use_mobile_headers' argument to True. Using Proxy will need an authentic request header to bypass most CloudFare CAPTCHA
+
+```
+172   yield scrapy.Request(url=url, callback=self.parse, meta={'use_selenium': True, 'selenium_wait_time': 30, 'use_mobile_headers': True, 'headless': True})
+```
+
+**Undetected Chrome Browser Method**
+
+In settings.py, enable only "TheNightCrawler.middlewares.SeleniumWithUndetectedBrowser": 420, at line 44 and enable 'Undetected-Browser-Selenium.csv': { at line 62 to generate crawling result as CSV file.
+
+```
+38    # Enable or disable downloader middlewares
+39    # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
+40    DOWNLOADER_MIDDLEWARES = {
+41    # "TheNightCrawler.middlewares.SeleniumWithNothingMiddleware": 420,
+42    # "TheNightCrawler.middlewares.SeleniumWithScrapeOpsBrowserHeader": 420,
+43    # "TheNightCrawler.middlewares.SeleniumWithScrapeOpsProxy": 420,
+44    "TheNightCrawler.middlewares.SeleniumWithUndetectedBrowser": 420,
+45    "TheNightCrawler.downloadermiddlewares.retry.RetryMiddleware": None
+46    }
+
+
+57   FEEDS = {
+58    # 'Pure-Selenium.csv': {
+59    # 'Non-Mobile-Browser-Headers-Selenium.csv': {
+60    # 'Mobile-Browser-Headers-Selenium.csv': {
+61    # 'ScrapeOPS-Proxy-Selenium.csv':{
+62    'Undetected-Browser-Selenium.csv': {
+63        'format': 'csv',
+64        'encoding': 'utf8',
+65        'overwrite': True
+66       }
+67   }
+```
+
+In the spider main script, "NightCrawler.py" at line 172, the 'use_mobile_headers' argument won't be effective for this method. 
+
 
 ## Contributors:
    1. David Nguyen - DavidNguyen1812

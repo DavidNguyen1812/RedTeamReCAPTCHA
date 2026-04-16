@@ -42,14 +42,22 @@
 └── scrapy.cfg                                             # Important Scrapy config for the whole crawler system 
 ```
 
-## Keystroke Datasets:
+## Instructions:
 
-Original dataset can be found through this [link](https://github.com/Botacin-s-Lab/EchoCrypt/tree/main/dataset)
+**Pure Selenium Method**
+
+In settings.py, enable only "TheNightCrawler.middlewares.SeleniumWithNothingMiddleware": 400
+
+![picture](https://drive.google.com/file/d/1J83j3v_eUXiW-Bj0G1k7cRQCUPTMGN_M/view?usp=sharing)
 
 
 ## Contributors:
    1. David Nguyen - DavidNguyen1812
-   2. Sarah Soliman - sarahsolimans
+   2. Anirudh Maramraj - Catty-Wampus
+   3. Bishesh Joshi - Wartham
+   4. Diemni Dao - DiemmiDao
+   5. Hiten Chintapalli - Hiten1810
+   6. Joseph Nguyen - jo-ngu
 
 
 

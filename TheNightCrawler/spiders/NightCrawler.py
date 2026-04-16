@@ -163,14 +163,13 @@ class NightCrawlerSpider(scrapy.Spider):
            "Blue Team Sites": ['https://d1t82viux2kxdr.cloudfront.net/']
         }
         for category in URLS:
-            if category == "Blue Team Sites":
-                self.logger.info("\n\n")
-                self.logger.info("=" * 40)
-                self.logger.info(f"CRAWLING WEBSITES IN CATEGORY {category}\nTotal: {len(URLS[category])} URLS")
-                self.logger.info("=" * 40)
-                self.logger.info("\n\n")
-                for url in URLS[category]:
-                    yield scrapy.Request(url=url, callback=self.parse, meta={'use_selenium': True, 'selenium_wait_time': 30, 'use_mobile_headers': True, 'headless': False})
+            self.logger.info("\n\n")
+            self.logger.info("=" * 40)
+            self.logger.info(f"CRAWLING WEBSITES IN CATEGORY {category}\nTotal: {len(URLS[category])} URLS")
+            self.logger.info("=" * 40)
+            self.logger.info("\n\n")
+            for url in URLS[category]:
+                yield scrapy.Request(url=url, callback=self.parse, meta={'use_selenium': True, 'selenium_wait_time': 30, 'use_mobile_headers': True, 'headless': False})
 
     def parse(self, response):
         self.logger.info(f'Parsing URL: {response.url}')

@@ -58,7 +58,7 @@ FEEDS = {
     # 'Pure-Selenium.csv': {
     # 'Non-Mobile-Browser-Headers-Selenium.csv': {
     # 'Mobile-Browser-Headers-Selenium.csv': {
-    'ScrapeOPS-Proxy-Selenium.csv':{
+    # 'ScrapeOPS-Proxy-Selenium.csv':{
     # 'Undetected-Browser-Selenium.csv': {
         'format': 'csv',
         'encoding': 'utf8',

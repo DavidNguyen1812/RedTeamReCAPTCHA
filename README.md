@@ -42,6 +42,19 @@
 └── scrapy.cfg                                             # Important Scrapy config for the whole crawler system 
 ```
 
+## System Requirements:
+
+```
+pip install the-bumblebee==1.0.2
+pip install selenium==4.40.0
+pip install selenium-wire==5.1.0
+pip install scrapy==2.14.1
+pip install python-dotenv==1.2.1
+Need to have ScrapeOps Proxy API
+Need to have chrome driver install for selenium
+```
+
+
 ## Instructions:
 
 **Switching Between Headless and GUI mode for all methods**

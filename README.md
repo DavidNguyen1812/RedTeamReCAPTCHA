@@ -5,6 +5,9 @@
 ## Repo Structure:
 
 ```
+├── Final Presentations                                    # The group final slideshows for both SAGE and final conference
+├── GroupWeeklyPresentations                               # The group weekly meeting with sponsor and mentor reports
+├── Readings                                               # Essential research documents 
 ├── TheNightCrawler          
 │   ├── Data                                               # Crawling Results
 │   │   ├── BLUE-TEAM-WEBSITE                              # Resulting webpage screenshots and HTML from a self made website with self made CAPTCHA algorithm by the Blue Team

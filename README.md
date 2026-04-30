@@ -5,6 +5,7 @@
 ## Repo Structure:
 
 ```
+├── Final Paper                                            # The group final conference paper
 ├── Final Presentations                                    # The group final slideshows for both SAGE and final conference
 ├── GroupWeeklyPresentations                               # The group weekly meeting with sponsor and mentor reports
 ├── Readings                                               # Essential research documents 
